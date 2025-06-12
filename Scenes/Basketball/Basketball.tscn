@@ -1,0 +1,134 @@
+[gd_scene load_steps=17 format=3 uid="uid://ofljkb1x0r3d"]
+
+[ext_resource type="Texture2D" uid="uid://dgmp1t4mru77w" path="res://assets/basketball/basketball_rotate_4x.png" id="1_bglk3"]
+[ext_resource type="Script" uid="uid://v74dvo2uaeds" path="res://Scenes/Basketball/Basketball.gd" id="1_grtfd"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_grtfd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0tx6"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(0, 0, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykwpt"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(156, 0, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwac8"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(312, 0, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o268s"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(468, 0, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8rfa"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(0, 156, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmnj0"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(156, 156, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eema8"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(312, 156, 156, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yy65x"]
+atlas = ExtResource("1_bglk3")
+region = Rect2(468, 156, 156, 156)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sixnf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0tx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykwpt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwac8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o268s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8rfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmnj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eema8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yy65x")
+}],
+"loop": true,
+"name": &"basketball_rotate",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hsyyo"]
+radius = 38.0
+
+[sub_resource type="Animation" id="Animation_m0tx6"]
+resource_name = "basketball_rotate"
+length = 1.15
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.2001, 0.250036, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.900041, 0.95, 1, 1.05, 1.1, 1.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.261799, -0.523599, -0.785398, -1.0472, -1.309, -1.309, -1.5708, -1.8326, -2.0944, -2.35619, -2.61799, -2.87979, -3.14159, -3.40339, -3.66519, -3.92699, -4.18879, -4.45059, -4.71239, -4.97419, -5.23599, -5.49779, -5.75959, -6.02139, -6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_ykwpt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vwac8"]
+_data = {
+&"RESET": SubResource("Animation_ykwpt"),
+&"basketball_rotate": SubResource("Animation_m0tx6")
+}
+
+[node name="Basketball" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_grtfd")
+freeze = true
+script = ExtResource("1_grtfd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_sixnf")
+animation = &"basketball_rotate"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hsyyo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vwac8")
+}
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
