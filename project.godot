@@ -13,8 +13,3 @@ config_version=5
 config/name="basketball_shooter_simulator"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
-
-[editor]
-
-naming/scene_name_casing=1
-naming/script_name_casing=1
