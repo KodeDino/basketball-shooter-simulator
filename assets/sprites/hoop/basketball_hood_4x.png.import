@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0qsasf2c0643"
-path="res://.godot/imported/basketball_hood_4x.png-b8d693b27cfdc39b679ecaf638787597.ctex"
+path="res://.godot/imported/basketball_hood_4x.png-2a8ff4d8cb545715ad4c3de51e345738.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hoop/basketball_hood_4x.png"
-dest_files=["res://.godot/imported/basketball_hood_4x.png-b8d693b27cfdc39b679ecaf638787597.ctex"]
+source_file="res://assets/sprites/hoop/basketball_hood_4x.png"
+dest_files=["res://.godot/imported/basketball_hood_4x.png-2a8ff4d8cb545715ad4c3de51e345738.ctex"]
 
 [params]
 
