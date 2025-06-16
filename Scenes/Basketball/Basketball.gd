@@ -60,8 +60,14 @@ func update_arrow_scale() -> void:
 	arrow_sprite.rotation = (_start_position - position).angle()
 	
 	
+func start_releasing() -> void:
+	freeze = false
+	arrow_sprite.hide()
+	apply_central_impulse(calculate_impulse())
+	
+	
 func calculate_impulse() -> Vector2:
-	return _dragged_vector * IMPULSE_MULTIPLIER
+	return _dragged_vector * -IMPULSE_MULTIPLIER
 
 	
 func change_state(new_state: BasketballStates) -> void:
@@ -74,13 +80,18 @@ func change_state(new_state: BasketballStates) -> void:
 		BasketballStates.Drag:
 			start_dragging()
 		BasketballStates.Release:
-			print('We are in release state')
+			start_releasing()
 	
 
 func update_state() -> void:
 	match _state:
 		BasketballStates.Drag:
 			handle_dragging()
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_released("drag") and _state == BasketballStates.Drag:
+		call_deferred('change_state', BasketballStates.Release)
 
 
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
