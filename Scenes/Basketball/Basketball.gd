@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+class_name Basketball
+
 
 const MIN_CLAMP = Vector2(-60, 0)
 const MAX_CLAMP = Vector2(0, 60)
