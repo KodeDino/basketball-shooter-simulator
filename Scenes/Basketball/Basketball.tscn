@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://s2ocnquktc8k" path="res://assets/sprites/arrow/arrow.png" id="3_m0tx6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_grtfd"]
+bounce = 0.3
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m0tx6"]
 atlas = ExtResource("2_grtfd")
