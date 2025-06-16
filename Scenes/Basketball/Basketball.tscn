@@ -129,9 +129,10 @@ _data = {
 }
 
 [node name="Basketball" type="RigidBody2D"]
-position = Vector2(73, 96)
+input_pickable = true
 physics_material_override = SubResource("PhysicsMaterial_grtfd")
 freeze = true
+contact_monitor = true
 script = ExtResource("1_grtfd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -154,4 +155,5 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_m0tx6")
 offset = Vector2(300, 0)
 
+[connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
