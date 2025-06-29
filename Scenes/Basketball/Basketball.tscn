@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://s2ocnquktc8k" path="res://assets/sprites/arrow/arrow.png" id="3_m0tx6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_grtfd"]
-bounce = 0.3
+bounce = 0.5
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m0tx6"]
 atlas = ExtResource("2_grtfd")
@@ -149,12 +149,12 @@ libraries = {
 &"": SubResource("AnimationLibrary_vwac8")
 }
 
-[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
-
 [node name="ArrowSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_m0tx6")
 offset = Vector2(300, 0)
 
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
-[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

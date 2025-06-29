@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cs7kkatnq4wci"]
+[gd_scene load_steps=11 format=3 uid="uid://cs7kkatnq4wci"]
 
 [ext_resource type="Texture2D" uid="uid://c0qsasf2c0643" path="res://assets/sprites/hoop/basketball_hood_4x.png" id="1_1527f"]
 [ext_resource type="Script" uid="uid://br4nq0jha0uca" path="res://Scenes/Hoop/Hoop.gd" id="1_mmhsj"]
@@ -42,27 +42,39 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sd2y"]
+size = Vector2(100, 2.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1527f"]
-size = Vector2(98, 4)
+size = Vector2(68, 3.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e84n4"]
 size = Vector2(6, 12)
 
 [node name="Hoop" type="Node2D"]
 script = ExtResource("1_mmhsj")
+net_drag = 0.95
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_e84n4")
 animation = &"hoop"
+frame = 4
+frame_progress = 1.0
+
+[node name="HoopTriggerArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HoopTriggerArea"]
+position = Vector2(-17, -12)
+shape = SubResource("RectangleShape2D_3sd2y")
 
 [node name="ScoreArea" type="Area2D" parent="."]
+position = Vector2(-14, 44)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
-position = Vector2(-15, -7)
 shape = SubResource("RectangleShape2D_1527f")
 
-[node name="Net" type="StaticBody2D" parent="."]
+[node name="Net" type="Area2D" parent="."]
 
 [node name="AnimationTriggerArea" type="Area2D" parent="Net"]
 
@@ -73,21 +85,22 @@ polygon = PackedVector2Array(-64, -9, -62, 0, -61, 6, -58, 19, -56, 29, -52, 47,
 polygon = PackedVector2Array(34, -9, 32, 0, 31, 9, 29, 20, 26, 32, 23, 45, 19, 60, 28, 60, 29, 30, 37, -8)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Net"]
-visible = false
 polygon = PackedVector2Array(-65, -9, -65, 6, -62, 9, -62, 24, -59, 27, -59, 39, -56, 42, -56, 60, -58, 60, -58, 42, -61, 39, -61, 27, -64, 24, -64, 9, -67, 6, -67, -9)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Net"]
-visible = false
 polygon = PackedVector2Array(35, -9, 35, 6, 32, 9, 32, 24, 29, 27, 29, 39, 26, 42, 26, 60, 28, 60, 28, 42, 31, 39, 31, 27, 34, 24, 34, 9, 37, 6, 37, -9)
 
-[node name="board" type="StaticBody2D" parent="."]
+[node name="Board" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="board"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Board"]
 position = Vector2(4, -4)
 polygon = PackedVector2Array(69, -56, 61, -56, 61, -23, 40, -23, 40, -17, 33, -17, 30, -5, 39, -5, 39, -2, 55, 13, 60, 13, 60, 49, 70, 49)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="board"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board"]
 position = Vector2(-71, -15)
 shape = SubResource("RectangleShape2D_e84n4")
 
+[connection signal="body_entered" from="HoopTriggerArea" to="." method="_on_hoop_trigger_area_body_entered"]
+[connection signal="body_entered" from="ScoreArea" to="." method="_on_score_area_body_entered"]
+[connection signal="body_entered" from="Net" to="." method="_on_net_body_entered"]
 [connection signal="body_entered" from="Net/AnimationTriggerArea" to="." method="_on_animation_trigger_area_body_entered"]
