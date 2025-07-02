@@ -52,6 +52,7 @@ size = Vector2(68, 3.5)
 size = Vector2(6, 12)
 
 [node name="Hoop" type="Node2D"]
+z_index = 5
 script = ExtResource("1_mmhsj")
 net_drag = 0.95
 

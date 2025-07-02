@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://dabrcvdqw3sq8"]
+
+[ext_resource type="Texture2D" uid="uid://biilq70o24i7s" path="res://assets/sprites/buttons/button-Sheet.png" id="1_cdkru"]
+[ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/MainMenu/main_menu.gd" id="1_sg7ab"]
+[ext_resource type="AudioStream" uid="uid://nslvimf6xcyj" path="res://assets/sprites/sounds/basketball-bounce.wav" id="2_c7oo3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7oo3"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 0, 210, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg7ab"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 170, 210, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpx3y"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 85, 210, 85)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sg7ab")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 48
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_c7oo3")
+texture_pressed = SubResource("AtlasTexture_sg7ab")
+texture_hover = SubResource("AtlasTexture_kpx3y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_c7oo3")
+
+[connection signal="pressed" from="MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]
