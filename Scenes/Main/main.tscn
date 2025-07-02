@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://fmc0bo8n1ood"]
+[gd_scene load_steps=4 format=3 uid="uid://bq0qgp7h1lsxc"]
 
 [ext_resource type="PackedScene" uid="uid://ofljkb1x0r3d" path="res://Scenes/Basketball/Basketball.tscn" id="1_qtv3y"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_cmk6n"]
@@ -7,10 +7,10 @@
 [node name="Main" type="Node2D"]
 
 [node name="Basketball" parent="." instance=ExtResource("1_qtv3y")]
-position = Vector2(196, 381)
+position = Vector2(209, 446)
 
 [node name="Hoop" parent="." instance=ExtResource("2_cmk6n")]
-position = Vector2(353, 460)
+position = Vector2(839, 267)
 
 [node name="Hud" parent="." instance=ExtResource("3_cmk6n")]
 anchors_preset = 0

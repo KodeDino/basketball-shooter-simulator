@@ -14,4 +14,5 @@ func _on_basketball_score() -> void:
 
 
 func update_score_label() -> void:
-	score_label.text = str(ScoreManager._score)
+	#score_label.text = str(ScoreManager._score)
+	score_label.text = "%02d" % ScoreManager._score

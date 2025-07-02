@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="basketball_shooter_simulator"
-run/main_scene="uid://fmc0bo8n1ood"
+run/main_scene="uid://bq0qgp7h1lsxc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 SignalManager="*res://Autoloads/SignalManager.gd"
 ScoreManager="*res://Autoloads/ScoreManager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 
