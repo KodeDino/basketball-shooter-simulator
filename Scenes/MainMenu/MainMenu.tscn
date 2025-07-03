@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://biilq70o24i7s" path="res://assets/sprites/buttons/button-Sheet.png" id="1_cdkru"]
 [ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/MainMenu/main_menu.gd" id="1_sg7ab"]
-[ext_resource type="AudioStream" uid="uid://nslvimf6xcyj" path="res://assets/sprites/sounds/basketball-bounce.wav" id="2_c7oo3"]
+[ext_resource type="AudioStream" uid="uid://huqjit2vn37u" path="res://assets/sprites/sounds/basketball_bounce.mp3" id="3_sg7ab"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c7oo3"]
 atlas = ExtResource("1_cdkru")
@@ -46,6 +46,7 @@ texture_pressed = SubResource("AtlasTexture_sg7ab")
 texture_hover = SubResource("AtlasTexture_kpx3y")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_c7oo3")
+stream = ExtResource("3_sg7ab")
+volume_db = 5.0
 
 [connection signal="pressed" from="MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]
