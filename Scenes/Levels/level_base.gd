@@ -2,8 +2,6 @@ extends Node2D
 
 @onready var basketball_spawn_spot: Marker2D = $BasketballSpawnSpot
 const BASKETBALL = preload("res://Scenes/Basketball/Basketball.tscn")
-const MAX_SPAWN_TIME = 3
-var basketball_spawn_time = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,8 +20,8 @@ func _on_basketball_removed() -> void:
 
 
 func spawn_basketball() -> void:
-	if basketball_spawn_time < MAX_SPAWN_TIME:
+	if ScoreManager._chance > 0:
 		var basketball = BASKETBALL.instantiate()
 		basketball.position = basketball_spawn_spot.position
 		add_child(basketball)
-		basketball_spawn_time += 1
+		ScoreManager.reduce_change()

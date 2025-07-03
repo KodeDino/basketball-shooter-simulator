@@ -13,4 +13,6 @@ position = Vector2(178, 447)
 [node name="Hoop" parent="." instance=ExtResource("2_7t6so")]
 position = Vector2(736, 330)
 
-[node name="Hud" parent="." instance=ExtResource("3_63row")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("3_63row")]
