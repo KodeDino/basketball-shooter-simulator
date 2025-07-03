@@ -100,6 +100,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
+	SignalManager.emit_on_basketball_removed()
 	queue_free()
 
 
