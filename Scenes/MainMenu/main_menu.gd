@@ -1,6 +1,7 @@
 extends Control
 
 @onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
+const LEVEL_BASE = preload("res://Scenes/Levels/LevelBase.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,4 +15,5 @@ func _process(delta: float) -> void:
 
 func _on_texture_button_pressed() -> void:
 	audio_stream_player.play()
-	# TODO change scene
+	await audio_stream_player.finished
+	SceneManager.load_level_base()
