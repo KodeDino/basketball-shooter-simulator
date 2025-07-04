@@ -1,8 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://dabrcvdqw3sq8"]
+[gd_scene load_steps=9 format=3 uid="uid://dabrcvdqw3sq8"]
 
 [ext_resource type="Texture2D" uid="uid://biilq70o24i7s" path="res://assets/sprites/buttons/button-Sheet.png" id="1_cdkru"]
 [ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/MainMenu/main_menu.gd" id="1_sg7ab"]
 [ext_resource type="AudioStream" uid="uid://huqjit2vn37u" path="res://assets/sprites/sounds/basketball_bounce.mp3" id="3_sg7ab"]
+
+[sub_resource type="SystemFont" id="SystemFont_sg7ab"]
+font_names = PackedStringArray("04b 30")
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpx3y"]
+font = SubResource("SystemFont_sg7ab")
+font_size = 52
+font_color = Color(0.780392, 0.6, 0.266667, 1)
+outline_size = 10
+outline_color = Color(0.266667, 0.592157, 0.780392, 1)
+shadow_size = 20
+shadow_color = Color(0.156863, 0.156863, 0.286275, 1)
+shadow_offset = Vector2(5, 5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c7oo3"]
 atlas = ExtResource("1_cdkru")
@@ -25,19 +38,35 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sg7ab")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Title" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -422.0
+offset_top = -124.0
+offset_right = 422.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Basketball Simulator"
+label_settings = SubResource("LabelSettings_kpx3y")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_top = -85.0
+offset_left = -105.0
+offset_top = -248.0
+offset_right = 105.0
+offset_bottom = -163.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/margin_bottom = 48
-
-[node name="TextureButton" type="TextureButton" parent="MarginContainer"]
-layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 toggle_mode = true
@@ -49,4 +78,4 @@ texture_hover = SubResource("AtlasTexture_kpx3y")
 stream = ExtResource("3_sg7ab")
 volume_db = 5.0
 
-[connection signal="pressed" from="MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
