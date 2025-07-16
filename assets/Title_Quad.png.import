@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s2ocnquktc8k"
-path="res://.godot/imported/arrow.png-2f020102dbb878e2229f2f434a11eb8a.ctex"
+uid="uid://tjg5scvvpm0n"
+path="res://.godot/imported/Title_Quad.png-5b92b704285fe4f68ea6e9825d02b902.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/arrow/arrow.png"
-dest_files=["res://.godot/imported/arrow.png-2f020102dbb878e2229f2f434a11eb8a.ctex"]
+source_file="res://assets/Title_Quad.png"
+dest_files=["res://.godot/imported/Title_Quad.png-5b92b704285fe4f68ea6e9825d02b902.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

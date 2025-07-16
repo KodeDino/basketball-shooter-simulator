@@ -1,84 +1,70 @@
-[gd_scene load_steps=20 format=3 uid="uid://ofljkb1x0r3d"]
+[gd_scene load_steps=18 format=3 uid="uid://ofljkb1x0r3d"]
 
 [ext_resource type="Script" uid="uid://v74dvo2uaeds" path="res://Scenes/Basketball/Basketball.gd" id="1_grtfd"]
-[ext_resource type="Texture2D" uid="uid://d00mtra7iwcuq" path="res://assets/sprites/basketball/basketball_better.png" id="2_grtfd"]
-[ext_resource type="Texture2D" uid="uid://s2ocnquktc8k" path="res://assets/sprites/arrow/arrow.png" id="3_m0tx6"]
+[ext_resource type="Texture2D" uid="uid://dggax2aq73yk1" path="res://assets/sprites/basketball/basketball_25x25-Sheet.png" id="2_m0tx6"]
+[ext_resource type="Texture2D" uid="uid://d28sfxn7tt78s" path="res://assets/sprites/arrow/arrow_24x24.png" id="3_m0tx6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_grtfd"]
 bounce = 0.5
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m0tx6"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(0, 0, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hsyyo"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(780, 195, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sixnf"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(585, 195, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yy65x"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(390, 195, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eema8"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(195, 195, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wmnj0"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(0, 195, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r8rfa"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(780, 0, 195, 195)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o268s"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(585, 0, 195, 195)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykwpt"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(0, 0, 25, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vwac8"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(390, 0, 195, 195)
+atlas = ExtResource("2_m0tx6")
+region = Rect2(25, 0, 25, 25)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ykwpt"]
-atlas = ExtResource("2_grtfd")
-region = Rect2(195, 0, 195, 195)
+[sub_resource type="AtlasTexture" id="AtlasTexture_o268s"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(50, 0, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8rfa"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(75, 0, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmnj0"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(0, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eema8"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(25, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yy65x"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(50, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sixnf"]
+atlas = ExtResource("2_m0tx6")
+region = Rect2(75, 25, 25, 25)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sixnf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m0tx6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hsyyo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sixnf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yy65x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eema8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wmnj0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r8rfa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o268s")
+"texture": SubResource("AtlasTexture_ykwpt")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vwac8")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ykwpt")
+"texture": SubResource("AtlasTexture_o268s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8rfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmnj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eema8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yy65x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sixnf")
 }],
 "loop": false,
 "name": &"basketball_rotate",
@@ -86,7 +72,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hsyyo"]
-radius = 38.0
+radius = 12.0
 
 [sub_resource type="Animation" id="Animation_ykwpt"]
 length = 1.2
@@ -137,7 +123,6 @@ contact_monitor = true
 script = ExtResource("1_grtfd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_sixnf")
 animation = &"basketball_rotate"
 
@@ -150,11 +135,13 @@ libraries = {
 }
 
 [node name="ArrowSprite" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_m0tx6")
-offset = Vector2(300, 0)
+offset = Vector2(30, 0)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-4.8, -4.8)
+scale = Vector2(0.32, 0.32)
+rect = Rect2(-10, -10, 50, 50)
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

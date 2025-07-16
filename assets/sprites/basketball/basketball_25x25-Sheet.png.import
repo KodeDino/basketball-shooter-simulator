@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgmp1t4mru77w"
-path="res://.godot/imported/basketball_rotate_4x.png-f2e0650c1851832f2edbef09ebc23789.ctex"
+uid="uid://dggax2aq73yk1"
+path="res://.godot/imported/basketball_25x25-Sheet.png-cd8ee801e0dad74c1175891633d30364.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basketball/basketball_rotate_4x.png"
-dest_files=["res://.godot/imported/basketball_rotate_4x.png-f2e0650c1851832f2edbef09ebc23789.ctex"]
+source_file="res://assets/sprites/basketball/basketball_25x25-Sheet.png"
+dest_files=["res://.godot/imported/basketball_25x25-Sheet.png-cd8ee801e0dad74c1175891633d30364.ctex"]
 
 [params]
 

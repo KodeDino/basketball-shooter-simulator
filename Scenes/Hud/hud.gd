@@ -15,7 +15,6 @@ func _ready() -> void:
 func _on_basketball_score() -> void:
 	update_score_label()
 
-
 func _on_basketball_removed() -> void:
 	update_change_label()
 

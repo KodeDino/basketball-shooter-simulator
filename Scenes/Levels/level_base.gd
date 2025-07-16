@@ -14,7 +14,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-
 func _on_basketball_removed() -> void:
 	spawn_basketball()
 

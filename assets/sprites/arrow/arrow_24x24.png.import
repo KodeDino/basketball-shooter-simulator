@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0qsasf2c0643"
-path="res://.godot/imported/basketball_hood_4x.png-2a8ff4d8cb545715ad4c3de51e345738.ctex"
+uid="uid://d28sfxn7tt78s"
+path="res://.godot/imported/arrow_24x24.png-6b389889a0008dc91dee9f144f21eecd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/hoop/basketball_hood_4x.png"
-dest_files=["res://.godot/imported/basketball_hood_4x.png-2a8ff4d8cb545715ad4c3de51e345738.ctex"]
+source_file="res://assets/sprites/arrow/arrow_24x24.png"
+dest_files=["res://.godot/imported/arrow_24x24.png-6b389889a0008dc91dee9f144f21eecd.ctex"]
 
 [params]
 

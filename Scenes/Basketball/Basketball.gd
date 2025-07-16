@@ -2,10 +2,9 @@ extends RigidBody2D
 
 class_name Basketball
 
-
-const MIN_CLAMP = Vector2(-60, 0)
-const MAX_CLAMP = Vector2(0, 60)
-const IMPULSE_MULTIPLIER = 20
+const MIN_CLAMP = Vector2(-20, 0)
+const MAX_CLAMP = Vector2(0, 20)
+const IMPULSE_MULTIPLIER = 25
 const IMPULSE_MAX = 1500
 
 
