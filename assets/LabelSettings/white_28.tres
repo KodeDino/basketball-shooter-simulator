@@ -1,7 +1,9 @@
-[gd_resource type="LabelSettings" format=3 uid="uid://bsqsc46ud6fxg"]
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bsqsc46ud6fxg"]
+
+[sub_resource type="SystemFont" id="SystemFont_jp3fe"]
+font_names = PackedStringArray("04b 30")
 
 [resource]
-font_size = 28
-shadow_size = 5
-shadow_color = Color(0.0470588, 0.121569, 0.788235, 1)
-shadow_offset = Vector2(2, 2)
+font = SubResource("SystemFont_jp3fe")
+font_size = 4
+shadow_color = Color(0.239216, 0.239216, 0.960784, 1)

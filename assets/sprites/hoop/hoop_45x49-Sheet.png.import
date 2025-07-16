@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d00mtra7iwcuq"
-path="res://.godot/imported/basketball_better.png-29a58f5b6e0281d4299ca0b13976919b.ctex"
+uid="uid://bekhow28k6h3m"
+path="res://.godot/imported/hoop_45x49-Sheet.png-e9268a2459635f33c7ef7d70a1b3bcd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/basketball/basketball_better.png"
-dest_files=["res://.godot/imported/basketball_better.png-29a58f5b6e0281d4299ca0b13976919b.ctex"]
+source_file="res://assets/sprites/hoop/hoop_45x49-Sheet.png"
+dest_files=["res://.godot/imported/hoop_45x49-Sheet.png-e9268a2459635f33c7ef7d70a1b3bcd4.ctex"]
 
 [params]
 

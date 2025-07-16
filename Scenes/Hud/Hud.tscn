@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0vgtiiioprbo"]
+[gd_scene load_steps=5 format=3 uid="uid://c0vgtiiioprbo"]
 
 [ext_resource type="Script" uid="uid://bu4rldltwabdm" path="res://Scenes/Hud/hud.gd" id="1_vvs1i"]
 [ext_resource type="LabelSettings" uid="uid://bsqsc46ud6fxg" path="res://assets/LabelSettings/white_28.tres" id="2_iteex"]
 
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
 [sub_resource type="LabelSettings" id="LabelSettings_xymhr"]
-font_size = 28
-shadow_size = 5
-shadow_color = Color(0.0470588, 0.121569, 0.788235, 1)
-shadow_offset = Vector2(2, 2)
+font = SubResource("SystemFont_iteex")
+font_size = 4
+shadow_color = Color(0.24, 0.24, 0.96, 1)
 
 [node name="Hud" type="Control"]
 layout_mode = 3
@@ -29,10 +32,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2

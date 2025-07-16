@@ -8,10 +8,10 @@
 script = ExtResource("1_ami44")
 
 [node name="BasketballSpawnSpot" type="Marker2D" parent="."]
-position = Vector2(178, 447)
+position = Vector2(53, 103)
 
 [node name="Hoop" parent="." instance=ExtResource("2_7t6so")]
-position = Vector2(736, 330)
+position = Vector2(240, 52)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
