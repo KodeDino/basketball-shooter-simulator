@@ -1,16 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0vgtiiioprbo"]
+[gd_scene load_steps=3 format=3 uid="uid://c0vgtiiioprbo"]
 
 [ext_resource type="Script" uid="uid://bu4rldltwabdm" path="res://Scenes/Hud/hud.gd" id="1_vvs1i"]
-[ext_resource type="LabelSettings" uid="uid://bsqsc46ud6fxg" path="res://assets/LabelSettings/white_28.tres" id="2_iteex"]
-
-[sub_resource type="SystemFont" id="SystemFont_iteex"]
-font_names = PackedStringArray("04b 30")
-subpixel_positioning = 0
-
-[sub_resource type="LabelSettings" id="LabelSettings_xymhr"]
-font = SubResource("SystemFont_iteex")
-font_size = 4
-shadow_color = Color(0.24, 0.24, 0.96, 1)
+[ext_resource type="LabelSettings" uid="uid://1r0kyx63wesf" path="res://assets/LabelSettings/hud_label_setting.tres" id="2_iteex"]
 
 [node name="Hud" type="Control"]
 layout_mode = 3
@@ -49,4 +40,4 @@ label_settings = ExtResource("2_iteex")
 [node name="ChanceLabel" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Remaining 00"
-label_settings = SubResource("LabelSettings_xymhr")
+label_settings = ExtResource("2_iteex")
