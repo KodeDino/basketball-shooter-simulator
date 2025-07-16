@@ -1,9 +1,0 @@
-[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bsqsc46ud6fxg"]
-
-[sub_resource type="SystemFont" id="SystemFont_jp3fe"]
-font_names = PackedStringArray("04b 30")
-
-[resource]
-font = SubResource("SystemFont_jp3fe")
-font_size = 4
-shadow_color = Color(0.239216, 0.239216, 0.960784, 1)

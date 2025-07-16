@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://1r0kyx63wesf"]
+
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[resource]
+font = SubResource("SystemFont_iteex")
+font_size = 4
+shadow_color = Color(0.24, 0.24, 0.96, 1)
