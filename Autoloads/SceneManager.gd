@@ -1,6 +1,6 @@
 extends Node
 
-const LEVEL_BASE = preload("res://Scenes/Levels/LevelBase.tscn")
+const LEVEL_ONE = preload("res://Scenes/Levels/LevelOne/LevelOne.tscn")
 const MAIN_MENU = preload("res://Scenes/MainMenu/MainMenu.tscn")
 const TRANSITION = preload("res://Scenes/Transition/Transition.tscn")
 
@@ -16,5 +16,5 @@ func load_main_menu() -> void:
 	load_next_scene(MAIN_MENU)
 
 
-func load_level_base() -> void:
-	load_next_scene(LEVEL_BASE)
+func load_level_one() -> void:
+	load_next_scene(LEVEL_ONE)
