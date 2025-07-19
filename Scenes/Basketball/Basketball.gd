@@ -23,9 +23,6 @@ var _dragged_vector: Vector2 = Vector2.ZERO
 var _arrow_scale_x: float = 0.0
 
 
-var passed_through_hoop: bool = false
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	setup()
