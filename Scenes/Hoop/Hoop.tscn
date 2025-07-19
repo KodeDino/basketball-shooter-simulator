@@ -43,7 +43,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sd2y"]
-size = Vector2(32.6029, 1)
+size = Vector2(28.9772, 16.9655)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1527f"]
 size = Vector2(29, 1)
@@ -65,7 +65,7 @@ frame_progress = 1.0
 [node name="HoopTriggerArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HoopTriggerArea"]
-position = Vector2(-4.01725, 0)
+position = Vector2(-4.06157, 7.98277)
 shape = SubResource("RectangleShape2D_3sd2y")
 
 [node name="ScoreArea" type="Area2D" parent="."]
@@ -98,5 +98,6 @@ position = Vector2(-22, -1.5)
 shape = SubResource("RectangleShape2D_tvs0s")
 
 [connection signal="body_entered" from="HoopTriggerArea" to="." method="_on_hoop_trigger_area_body_entered"]
+[connection signal="body_exited" from="HoopTriggerArea" to="." method="_on_hoop_trigger_area_body_exited"]
 [connection signal="body_entered" from="ScoreArea" to="." method="_on_score_area_body_entered"]
 [connection signal="body_entered" from="Net" to="." method="_on_net_body_entered"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbgxsja76smv3"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase.tscn" id="1_shcrp"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_ua6ne"]
+
+[node name="BugReproduction" instance=ExtResource("1_shcrp")]
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_ua6ne")]
+position = Vector2(127, 120)
