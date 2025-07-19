@@ -10,3 +10,7 @@ func increment_score() -> void:
 
 func reduce_change() -> void:
 	_chance -= 1
+
+func reset() -> void:
+	_score = 0
+	_chance = 10

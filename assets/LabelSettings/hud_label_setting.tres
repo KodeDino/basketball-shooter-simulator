@@ -6,5 +6,5 @@ subpixel_positioning = 0
 
 [resource]
 font = SubResource("SystemFont_iteex")
-font_size = 4
-shadow_color = Color(0.24, 0.24, 0.96, 1)
+font_size = 6
+shadow_color = Color(0.2585, 0.1782, 0.66, 1)
