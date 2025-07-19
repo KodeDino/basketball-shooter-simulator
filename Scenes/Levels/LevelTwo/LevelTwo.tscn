@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8e4oqdwtwhkv"]
+[gd_scene load_steps=4 format=3 uid="uid://b8e4oqdwtwhkv"]
 
 [ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase.tscn" id="1_pwu5e"]
+[ext_resource type="PackedScene" uid="uid://boppue0wwcj05" path="res://Scenes/Levels/LevelThree/LevelThree.tscn" id="2_33g33"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_l3d28"]
 
 [node name="LevelTwo" instance=ExtResource("1_pwu5e")]
+next_level_scene = ExtResource("2_33g33")
+enemy_score = 4
 
 [node name="Hoop" parent="." index="1" instance=ExtResource("2_l3d28")]
 position = Vector2(150, 75)
