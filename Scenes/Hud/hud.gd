@@ -4,10 +4,8 @@ extends Control
 @onready var chance_label: Label = $MarginContainer/VBoxContainer/ChanceLabel
 
 
-
 func _ready() -> void:
-	update_score_label()
-	update_change_label()
+	update_display()
 	SignalManager.on_basketball_score.connect(_on_basketball_score)
 	SignalManager.on_basketball_removed.connect(_on_basketball_removed)
 
@@ -26,3 +24,7 @@ func update_score_label() -> void:
 func update_change_label() -> void:
 	chance_label.text = "Remaining %02d" % ScoreManager._chance
 	
+
+func update_display() -> void:
+	update_score_label()
+	update_change_label()
