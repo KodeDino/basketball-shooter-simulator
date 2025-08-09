@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 SignalManager="*res://Autoloads/SignalManager.gd"
 SceneManager="*res://Autoloads/SceneManager.gd"
 ScoreManager="*res://Autoloads/ScoreManager.gd"
+DialogueManager="*res://Autoloads/DialogueManager.gd"
 
 [display]
 
