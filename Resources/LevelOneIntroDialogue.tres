@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3 uid="uid://2hpy7t4g0v1t"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="2_qkvl5"]
+
+[resource]
+script = ExtResource("2_qkvl5")
+dialogue_sequence = Array[Dictionary]([{
+"character": "Alex",
+"line": "Yoooo! XXX! nice shot, accurate as always Ey?!"
+}, {
+"character": "Bob",
+"line": "Heehee"
+}, {
+"character": "Alex",
+"line": "Let's shoot some points"
+}, {
+"character": "Bob",
+"line": "Sure!"
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

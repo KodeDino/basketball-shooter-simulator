@@ -3,6 +3,9 @@ extends Node2D
 @export var next_level_scene: PackedScene
 @export var enemy_score: int = 3
 @onready var hud: Control = $CanvasLayer/Hud
+@onready var enemy_score_label: Label = $CanvasLayer/MarginContainer/EnemyScore
+
+
 
 
 @onready var basketball_spawn_spot: Marker2D = $BasketballSpawnSpot
@@ -14,6 +17,7 @@ func _ready() -> void:
 	hud.update_display()
 	spawn_basketball()
 	SignalManager.on_basketball_removed.connect(_on_basketball_removed)
+	enemy_score_label.text = "Opponent Score %02d" % enemy_score
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

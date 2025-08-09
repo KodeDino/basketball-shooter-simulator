@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbbebvloop21"]
+[gd_scene load_steps=5 format=3 uid="uid://cbbebvloop21"]
 
 [ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase.tscn" id="1_2ocb1"]
 [ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="2_85dct"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_orjfg"]
+[ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://assets/Background/Background_01_Shanghai.png" id="3_r58k2"]
 
 [node name="LevelOne" instance=ExtResource("1_2ocb1")]
 next_level_scene = ExtResource("2_85dct")
 
-[node name="Hoop" parent="." index="1" instance=ExtResource("2_orjfg")]
+[node name="Background" type="Sprite2D" parent="." index="0"]
+position = Vector2(142, 80)
+texture = ExtResource("3_r58k2")
+
+[node name="Hoop" parent="." index="2" instance=ExtResource("2_orjfg")]
 position = Vector2(125, 100)
