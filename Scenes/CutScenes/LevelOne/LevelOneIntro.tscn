@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://jn6h77jwd8va"]
+[gd_scene load_steps=13 format=3 uid="uid://jn6h77jwd8va"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneIntro.gd" id="1_wf6bf"]
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bly4u3rqwg8kw" path="res://assets/Character/Main Character_Stand_merge_duplicates.png" id="4_uqfph"]
 [ext_resource type="AudioStream" uid="uid://bdmycuhcpyagk" path="res://assets/sprites/sounds/crowded_basketball_court.mp3" id="5_3aagc"]
 [ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://assets/Character/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
+[ext_resource type="PackedScene" uid="uid://cbbebvloop21" path="res://Scenes/Levels/LevelOne/LevelOne.tscn" id="7_2ayky"]
 
 [sub_resource type="Animation" id="Animation_wf6bf"]
 resource_name = "npc_animation"
@@ -232,6 +233,7 @@ offset_top = 50.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("4_ib2b1")
+next_scene = ExtResource("7_2ayky")
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/DialoguePanel"]
 layout_mode = 1

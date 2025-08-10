@@ -6,8 +6,6 @@ extends Node2D
 @onready var enemy_score_label: Label = $CanvasLayer/MarginContainer/EnemyScore
 
 
-
-
 @onready var basketball_spawn_spot: Marker2D = $BasketballSpawnSpot
 const BASKETBALL = preload("res://Scenes/Basketball/Basketball.tscn")
 

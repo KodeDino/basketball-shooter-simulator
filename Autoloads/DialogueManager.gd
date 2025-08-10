@@ -3,7 +3,7 @@ extends Node
 
 var current_dialogue: DialogueResource
 var current_line_index: int = 0
-
+const LEVEL_ONE = preload("res://Scenes/Levels/LevelOne/LevelOne.tscn")
 
 func get_current_dialogue_data() -> Dictionary:
 	return current_dialogue.dialogue_sequence[current_line_index]

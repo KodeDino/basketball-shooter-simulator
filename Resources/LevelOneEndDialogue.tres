@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3 uid="uid://luty4yhr3lmk"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_c77l5"]
+
+[resource]
+script = ExtResource("1_c77l5")
+dialogue_sequence = Array[Dictionary]([{
+"character": "Kodi",
+"line": "What's happening?!"
+}, {
+"character": "Alex",
+"line": "Look! That big fire ball falling from the sky!"
+}, {
+"character": "Kodi",
+"line": "[shake]Sht![/shake] That's where I live, I gotta go!"
+}, {
+"character": "Alex",
+"line": "HEY! WAIT!"
+}, {
+"character": "Kodi",
+"line": "(Hopefully I could get back fast)"
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

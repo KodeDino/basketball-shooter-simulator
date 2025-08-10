@@ -8,13 +8,13 @@ dialogue_sequence = Array[Dictionary]([{
 "character": "Alex",
 "line": "Yoooo! XXX! nice shot, accurate as always Ey?!"
 }, {
-"character": "Bob",
+"character": "Kodi",
 "line": "Heehee"
 }, {
 "character": "Alex",
 "line": "Let's shoot some points"
 }, {
-"character": "Bob",
+"character": "Kodi",
 "line": "Sure!"
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

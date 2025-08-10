@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmdtay6i371mx"
-path="res://.godot/imported/basketball_meteorite3.png-9d0fdfc4d279e5c6960313d1009771b9.ctex"
+uid="uid://bbn88ac3a37ev"
+path="res://.godot/imported/basketball_meteorite_sprite_sheet_fire.png-c32369ab8a95992feb827845b50061ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/basketball/basketball_meteorite3.png"
-dest_files=["res://.godot/imported/basketball_meteorite3.png-9d0fdfc4d279e5c6960313d1009771b9.ctex"]
+source_file="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_fire.png"
+dest_files=["res://.godot/imported/basketball_meteorite_sprite_sheet_fire.png-c32369ab8a95992feb827845b50061ba.ctex"]
 
 [params]
 
