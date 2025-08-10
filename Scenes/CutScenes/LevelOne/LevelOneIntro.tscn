@@ -1,17 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://drnmiy5em6617"]
+[gd_scene load_steps=13 format=3 uid="uid://jn6h77jwd8va"]
 
-[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOneIntro.gd" id="1_wf6bf"]
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneIntro.gd" id="1_wf6bf"]
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
 [ext_resource type="Texture2D" uid="uid://ciw3nd47igehk" path="res://assets/NPCs/npc-sprite-sheet.png" id="2_ncsn6"]
 [ext_resource type="Script" uid="uid://drr50rjlcnjkq" path="res://Scenes/CutScenes/DialoguePanel.gd" id="4_ib2b1"]
+[ext_resource type="Texture2D" uid="uid://bly4u3rqwg8kw" path="res://assets/Character/Main Character_Stand_merge_duplicates.png" id="4_uqfph"]
 [ext_resource type="AudioStream" uid="uid://bdmycuhcpyagk" path="res://assets/sprites/sounds/crowded_basketball_court.mp3" id="5_3aagc"]
+[ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://assets/Character/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
 
 [sub_resource type="Animation" id="Animation_ib2b1"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("NPCSprites/NPCRed:region_rect")
+tracks/0/path = NodePath("CharacterSprites/NPCRed:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -23,7 +25,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("NPCSprites/NPCWhite:region_rect")
+tracks/1/path = NodePath("CharacterSprites/NPCWhite:region_rect")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -35,7 +37,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("NPCSprites/NPCBrown:region_rect")
+tracks/2/path = NodePath("CharacterSprites/NPCBrown:region_rect")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -47,7 +49,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("NPCSprites/NPCYellow:region_rect")
+tracks/3/path = NodePath("CharacterSprites/NPCYellow:region_rect")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -59,7 +61,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("NPCSprites/NPCGreen:region_rect")
+tracks/4/path = NodePath("CharacterSprites/NPCGreen:region_rect")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -71,7 +73,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("NPCSprites/NPCGray:region_rect")
+tracks/5/path = NodePath("CharacterSprites/NPCGray:region_rect")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -80,19 +82,43 @@ tracks/5/keys = {
 "update": 0,
 "values": [Rect2(0, 0, 0, 0)]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CharacterSprites/MainCharacter:region_rect")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(250, 0, 50, 100)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CharacterSprites/Boss:region_rect")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_wf6bf"]
 resource_name = "npc_animation"
-length = 5.0
+length = 3.0
 step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("NPCSprites/NPCRed:region_rect")
+tracks/0/path = NodePath("CharacterSprites/NPCRed:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.5, 1.00296, 1.06, 1.6, 1.8, 2.4, 2.45704, 3.6, 3.8, 4.5, 4.55704),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.70296, 0.76, 1.21, 1.41, 1.69296, 1.75, 2.21, 2.41, 2.81296, 2.87),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100)]
@@ -100,43 +126,43 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("NPCSprites/NPCWhite:region_rect")
+tracks/1/path = NodePath("CharacterSprites/NPCWhite:region_rect")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.5, 3.31, 3.36),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.31, 0.51, 0.99, 1.04, 1.8, 2, 2.48, 2.53),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(250, 0, 50, 100), Rect2(250, 200, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 100, 50, 100), Rect2(250, 0, 50, 100)]
+"values": [Rect2(250, 0, 50, 100), Rect2(250, 200, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 100, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 200, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 100, 50, 100), Rect2(250, 0, 50, 100)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("NPCSprites/NPCBrown:region_rect")
+tracks/2/path = NodePath("CharacterSprites/NPCBrown:region_rect")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 0.79, 2.59919, 2.6391),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.48, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.67918, 1.8, 2, 2.2, 2.4, 2.6, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 200, 50, 100)]
+"values": [Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("NPCSprites/NPCYellow:region_rect")
+tracks/3/path = NodePath("CharacterSprites/NPCYellow:region_rect")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.21, 0.4, 0.44, 0.6, 0.81),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.44, 0.8, 1, 1.28, 1.32, 1.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(50, 0, 50, 100), Rect2(50, 100, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 200, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 300, 50, 100), Rect2(50, 400, 50, 100)]
+"values": [Rect2(50, 0, 50, 100), Rect2(50, 200, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 100, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 200, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 300, 50, 100), Rect2(50, 400, 50, 100)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("NPCSprites/NPCGreen:region_rect")
+tracks/4/path = NodePath("CharacterSprites/NPCGreen:region_rect")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -148,11 +174,11 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("NPCSprites/NPCGray:region_rect")
+tracks/5/path = NodePath("CharacterSprites/NPCGray:region_rect")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.981436, 1.05817, 4.24, 4.3),
+"times": PackedFloat32Array(0, 1, 1.1, 2, 2.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [Rect2(200, 0, 50, 100), Rect2(200, 100, 50, 100), Rect2(200, 0, 50, 100), Rect2(200, 100, 50, 100), Rect2(200, 0, 50, 100)]
@@ -164,12 +190,36 @@ tracks/6/path = NodePath(".")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(4.99),
+"times": PackedFloat32Array(3),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"show_panel"
 }]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CharacterSprites/MainCharacter:region_rect")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CharacterSprites/Boss:region_rect")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.45, 0.5, 0.7, 0.95, 1.2, 1.45, 1.5, 1.7, 1.95, 2.2, 2.45, 2.5, 2.7, 2.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3aagc"]
@@ -181,6 +231,8 @@ _data = {
 [sub_resource type="SystemFont" id="SystemFont_wf6bf"]
 font_names = PackedStringArray("04b 30")
 subpixel_positioning = 0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6sxgl"]
 
 [node name="LevelOneIntro" type="Node2D"]
 script = ExtResource("1_wf6bf")
@@ -195,36 +247,47 @@ libraries = {
 }
 autoplay = "npc_animation"
 
-[node name="NPCSprites" type="Node" parent="."]
+[node name="CharacterSprites" type="Node" parent="."]
 
-[node name="NPCRed" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCRed" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(26.2479, 100.673)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
 
-[node name="NPCWhite" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCWhite" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(267.358, 100.723)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
 
-[node name="NPCBrown" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCBrown" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(166.151, 99.6977)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
 
-[node name="NPCYellow" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCYellow" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(68.9303, 100.61)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
 
-[node name="NPCGreen" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCGreen" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(115.039, 100.543)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
 
-[node name="NPCGray" type="Sprite2D" parent="NPCSprites"]
+[node name="NPCGray" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(216.413, 99.5161)
 texture = ExtResource("2_ncsn6")
+region_enabled = true
+
+[node name="MainCharacter" type="Sprite2D" parent="CharacterSprites"]
+position = Vector2(50, 111)
+texture = ExtResource("4_uqfph")
+region_enabled = true
+region_rect = Rect2(250, 0, 50, 100)
+
+[node name="Boss" type="Sprite2D" parent="CharacterSprites"]
+position = Vector2(237, 111)
+texture = ExtResource("5_6sxgl")
 region_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -286,6 +349,7 @@ size_flags_vertical = 8
 theme_override_colors/font_hover_color = Color(0.368054, 0.803247, 0.458787, 1)
 theme_override_fonts/font = SubResource("SystemFont_wf6bf")
 theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6sxgl")
 text = "Next"
 flat = true
 
