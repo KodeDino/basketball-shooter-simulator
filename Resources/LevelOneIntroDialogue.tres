@@ -1,20 +1,28 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3 uid="uid://2hpy7t4g0v1t"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://2hpy7t4g0v1t"]
 
+[ext_resource type="Texture2D" uid="uid://cpthadq77feoy" path="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_1_Normal.png" id="1_teufc"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="2_qkvl5"]
+[ext_resource type="Texture2D" uid="uid://b4txomu62ybeo" path="res://assets/Bust Shot/Main Character_Bust Shot_2_Hehe.png" id="2_vvthe"]
+[ext_resource type="Texture2D" uid="uid://b42cuaisgf5cp" path="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_2_Proud.png" id="3_7xjxm"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="4_wk5ea"]
 
 [resource]
 script = ExtResource("2_qkvl5")
 dialogue_sequence = Array[Dictionary]([{
-"character": "Alex",
-"line": "Yoooo! XXX! nice shot, accurate as always Ey?!"
+"character": "阿强",
+"line": "哟！！！科迪！好球啊，还是这么准啊！",
+"texture": ExtResource("1_teufc")
 }, {
-"character": "Kodi",
-"line": "Heehee"
+"character": "科迪",
+"line": "嘿嘿",
+"texture": ExtResource("2_vvthe")
 }, {
-"character": "Alex",
-"line": "Let's shoot some points"
+"character": "阿强",
+"line": "如何？来比一场吧，看谁进的多？",
+"texture": ExtResource("3_7xjxm")
 }, {
-"character": "Kodi",
-"line": "Sure!"
+"character": "科迪",
+"line": "来！",
+"texture": ExtResource("4_wk5ea")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://biilq70o24i7s" path="res://assets/sprites/buttons/button-Sheet.png" id="1_cdkru"]
 [ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/MainMenu/main_menu.gd" id="1_sg7ab"]
-[ext_resource type="Texture2D" uid="uid://tjg5scvvpm0n" path="res://assets/Title_Quad.png" id="2_kpx3y"]
+[ext_resource type="Texture2D" uid="uid://cedjh3bko6txn" path="res://assets/Background/Title.png" id="2_kpx3y"]
 [ext_resource type="AudioStream" uid="uid://huqjit2vn37u" path="res://assets/sprites/sounds/basketball_bounce.mp3" id="3_sg7ab"]
 
 [sub_resource type="SystemFont" id="SystemFont_sg7ab"]

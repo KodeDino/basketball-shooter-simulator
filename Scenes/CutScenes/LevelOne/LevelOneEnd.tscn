@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://baj46iw54g827"]
+[gd_scene load_steps=13 format=3 uid="uid://baj46iw54g827"]
 
 [ext_resource type="Script" uid="uid://dww7b3fqttkkr" path="res://Scenes/CutScenes/LevelOne/LevelOneEnd.gd" id="1_ko2o6"]
 [ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
@@ -57,11 +57,22 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(59, 7)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MeshInstance2D:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_f04yw"]
 resource_name = "basketball_meteroite"
-length = 2.0
-loop_mode = 1
+length = 3.5
 step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -70,7 +81,7 @@ tracks/0/path = NodePath("BasketballMeteorite/Fire:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"times": PackedFloat32Array(1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38)]
@@ -82,7 +93,7 @@ tracks/1/path = NodePath("BasketballMeteorite/Ball:region_rect")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"times": PackedFloat32Array(1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15)]
@@ -94,7 +105,7 @@ tracks/2/path = NodePath("BasketballMeteorite/Ball:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(1.5, 3.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, -15.708]
@@ -106,10 +117,10 @@ tracks/3/path = NodePath("BasketballMeteorite:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 1.45, 1.5, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(120, 30)]
+"values": [Vector2(-15, -15), Vector2(-15, -15), Vector2(0, 0), Vector2(120, 30)]
 }
 tracks/4/type = "method"
 tracks/4/imported = false
@@ -118,12 +129,24 @@ tracks/4/path = NodePath(".")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(2),
+"times": PackedFloat32Array(3.5),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"show_panel"
 }]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MeshInstance2D:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.5, 0.84, 1.21, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rqe37"]
@@ -137,6 +160,9 @@ font_names = PackedStringArray("04b 30")
 subpixel_positioning = 0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqe37"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_f04yw"]
+size = Vector2(300, 200)
 
 [node name="LevelOneEnd" type="Node2D"]
 script = ExtResource("1_ko2o6")
@@ -167,6 +193,18 @@ region_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
+
+[node name="PortraitRect" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.2, 0.2)
+stretch_mode = 5
+
+[node name="OpponentMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(145, 10)
+
+[node name="MainCharacterMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(0, 10)
 
 [node name="NamePanel" type="Panel" parent="CanvasLayer"]
 anchors_preset = -1
@@ -210,7 +248,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
 
 [node name="DialogueLabel" type="RichTextLabel" parent="CanvasLayer/DialoguePanel/MarginContainer"]
 layout_mode = 2
@@ -228,5 +268,9 @@ theme_override_font_sizes/font_size = 8
 theme_override_styles/focus = SubResource("StyleBoxEmpty_rqe37")
 text = "Next"
 flat = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(143, 80)
+mesh = SubResource("QuadMesh_f04yw")
 
 [connection signal="pressed" from="CanvasLayer/DialoguePanel/MarginContainer/Button" to="CanvasLayer/DialoguePanel" method="_on_button_pressed"]
