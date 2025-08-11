@@ -13,7 +13,6 @@ func _ready() -> void:
 func show_panel() -> void:
 	audio_stream_player.stop()
 	var dialogue_data = load("res://Resources/LevelOneIntroDialogue.tres")
-
 	DialogueManager.start_dialogue(dialogue_data)
 	canvas_layer.show()
 

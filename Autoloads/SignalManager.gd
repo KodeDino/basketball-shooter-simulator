@@ -11,6 +11,7 @@ func emit_on_basketball_score() -> void:
 func emit_on_basketball_removed() -> void:
 	on_basketball_removed.emit()
 
+# signal emitted with the updated dialogue data
 func emit_on_dialogue_updated(data: Dictionary) -> void:
 	on_dialogue_updated.emit(data)
 
