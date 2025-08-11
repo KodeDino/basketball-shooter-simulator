@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dveyhwh8ad8im"
-path="res://.godot/imported/basketball_meteorite2.png-3a8b42c8c20929e215dbfb49029736e2.ctex"
+uid="uid://b6pm4xmh1ylwn"
+path="res://.godot/imported/Boss_01_Shanghai_Bust Shot_3_Shocked.png-21ea98152dd462197d77f653950324f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/basketball/basketball_meteorite2.png"
-dest_files=["res://.godot/imported/basketball_meteorite2.png-3a8b42c8c20929e215dbfb49029736e2.ctex"]
+source_file="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_3_Shocked.png"
+dest_files=["res://.godot/imported/Boss_01_Shanghai_Bust Shot_3_Shocked.png-21ea98152dd462197d77f653950324f2.ctex"]
 
 [params]
 

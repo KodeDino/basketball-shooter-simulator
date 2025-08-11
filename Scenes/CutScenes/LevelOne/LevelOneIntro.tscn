@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://jn6h77jwd8va"]
+[gd_scene load_steps=13 format=3 uid="uid://jn6h77jwd8va"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneIntro.gd" id="1_wf6bf"]
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bly4u3rqwg8kw" path="res://assets/Character/Main Character_Stand_merge_duplicates.png" id="4_uqfph"]
 [ext_resource type="AudioStream" uid="uid://bdmycuhcpyagk" path="res://assets/sprites/sounds/crowded_basketball_court.mp3" id="5_3aagc"]
 [ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://assets/Character/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
+[ext_resource type="PackedScene" uid="uid://cbbebvloop21" path="res://Scenes/Levels/LevelOne/LevelOne.tscn" id="7_2ayky"]
 
 [sub_resource type="Animation" id="Animation_wf6bf"]
 resource_name = "npc_animation"
@@ -200,6 +201,18 @@ region_rect = Rect2(0, 0, 60, 100)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
 
+[node name="PortraitRect" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.2, 0.2)
+stretch_mode = 5
+
+[node name="OpponentMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(145, 10)
+
+[node name="MainCharacterMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(0, 10)
+
 [node name="NamePanel" type="Panel" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_top = 0.9
@@ -232,6 +245,7 @@ offset_top = 50.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("4_ib2b1")
+next_scene = ExtResource("7_2ayky")
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/DialoguePanel"]
 layout_mode = 1
@@ -241,7 +255,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
 
 [node name="DialogueLabel" type="RichTextLabel" parent="CanvasLayer/DialoguePanel/MarginContainer"]
 layout_mode = 2

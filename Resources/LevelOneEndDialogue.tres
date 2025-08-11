@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://luty4yhr3lmk"]
+
+[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="1_5n34g"]
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_c77l5"]
+[ext_resource type="Texture2D" uid="uid://b6pm4xmh1ylwn" path="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_3_Shocked.png" id="2_5m7lm"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="3_si6l4"]
+[ext_resource type="Texture2D" uid="uid://70c8d4fcl2tx" path="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_4_Nervous.png" id="4_bq25x"]
+
+[resource]
+script = ExtResource("1_c77l5")
+dialogue_sequence = Array[Dictionary]([{
+"character": "科迪",
+"line": "发生什么事了？！",
+"texture": ExtResource("1_5n34g")
+}, {
+"character": "阿强",
+"line": "看啊！天上那颗火球！",
+"texture": ExtResource("2_5m7lm")
+}, {
+"character": "科迪",
+"line": "[shake]！！！[/shake] 那是我家的方向！不行，我得赶紧回去！",
+"texture": ExtResource("3_si6l4")
+}, {
+"character": "阿强",
+"line": "欸！等等科迪！",
+"texture": ExtResource("4_bq25x")
+}, {
+"character": "科迪",
+"line": "（希望能赶得上）",
+"texture": ExtResource("3_si6l4")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

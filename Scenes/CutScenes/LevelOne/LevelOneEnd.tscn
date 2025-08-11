@@ -1,0 +1,276 @@
+[gd_scene load_steps=13 format=3 uid="uid://baj46iw54g827"]
+
+[ext_resource type="Script" uid="uid://dww7b3fqttkkr" path="res://Scenes/CutScenes/LevelOne/LevelOneEnd.gd" id="1_ko2o6"]
+[ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
+[ext_resource type="Texture2D" uid="uid://cfhr8xfj6muyr" path="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_ball.png" id="2_bfov8"]
+[ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://assets/Background/Background_01_Shanghai-2.png" id="3_ko2o6"]
+[ext_resource type="Script" uid="uid://drr50rjlcnjkq" path="res://Scenes/CutScenes/DialoguePanel.gd" id="5_f04yw"]
+[ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="6_f04yw"]
+
+[sub_resource type="Animation" id="Animation_rtbb3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BasketballMeteorite/Fire:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BasketballMeteorite/Ball:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BasketballMeteorite/Ball:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BasketballMeteorite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(59, 7)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MeshInstance2D:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_f04yw"]
+resource_name = "basketball_meteroite"
+length = 3.5
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BasketballMeteorite/Fire:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38), Rect2(0, 0, 37, 38), Rect2(37, 0, 37, 38), Rect2(74, 0, 37, 38)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BasketballMeteorite/Ball:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15), Rect2(15, 0, 15, 15), Rect2(30, 0, 15, 15), Rect2(45, 0, 15, 15), Rect2(60, 0, 15, 15), Rect2(0, 0, 15, 15)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BasketballMeteorite/Ball:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -15.708]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BasketballMeteorite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.45, 1.5, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-15, -15), Vector2(-15, -15), Vector2(0, 0), Vector2(120, 30)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"show_panel"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MeshInstance2D:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.5, 0.84, 1.21, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rqe37"]
+_data = {
+&"RESET": SubResource("Animation_rtbb3"),
+&"basketball_meteroite": SubResource("Animation_f04yw")
+}
+
+[sub_resource type="SystemFont" id="SystemFont_rtbb3"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqe37"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_f04yw"]
+size = Vector2(300, 200)
+
+[node name="LevelOneEnd" type="Node2D"]
+script = ExtResource("1_ko2o6")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(142, 80)
+texture = ExtResource("3_ko2o6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_rqe37")
+}
+autoplay = "basketball_meteroite"
+
+[node name="BasketballMeteorite" type="Node2D" parent="."]
+position = Vector2(59, 7)
+rotation = -0.314159
+scale = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Sprite2D" parent="BasketballMeteorite"]
+texture = ExtResource("1_sm7ws")
+region_enabled = true
+
+[node name="Ball" type="Sprite2D" parent="BasketballMeteorite"]
+position = Vector2(9, 9.5)
+texture = ExtResource("2_bfov8")
+region_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="PortraitRect" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.2, 0.2)
+stretch_mode = 5
+
+[node name="OpponentMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(145, 10)
+
+[node name="MainCharacterMarker" type="Marker2D" parent="CanvasLayer"]
+position = Vector2(0, 10)
+
+[node name="NamePanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_top = 0.9
+anchor_right = 0.2
+anchor_bottom = 1.0
+offset_top = -46.8
+offset_bottom = -46.8
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/NamePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="NameLabel" type="RichTextLabel" parent="CanvasLayer/NamePanel/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+
+[node name="DialoguePanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("5_f04yw")
+next_scene = ExtResource("6_f04yw")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/DialoguePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="DialogueLabel" type="RichTextLabel" parent="CanvasLayer/DialoguePanel/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+tab_size = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/DialoguePanel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_hover_color = Color(0.368054, 0.803247, 0.458787, 1)
+theme_override_fonts/font = SubResource("SystemFont_rtbb3")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rqe37")
+text = "Next"
+flat = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(143, 80)
+mesh = SubResource("QuadMesh_f04yw")
+
+[connection signal="pressed" from="CanvasLayer/DialoguePanel/MarginContainer/Button" to="CanvasLayer/DialoguePanel" method="_on_button_pressed"]

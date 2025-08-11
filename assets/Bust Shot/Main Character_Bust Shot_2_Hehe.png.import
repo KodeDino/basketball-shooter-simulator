@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3pyuxqpb12hy"
-path="res://.godot/imported/basketball_meteorite1.png-b1273b665263f52a673a73a9f09a5fa7.ctex"
+uid="uid://b4txomu62ybeo"
+path="res://.godot/imported/Main Character_Bust Shot_2_Hehe.png-98513a75a104be87ff66fcc3840ec2bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/basketball/basketball_meteorite1.png"
-dest_files=["res://.godot/imported/basketball_meteorite1.png-b1273b665263f52a673a73a9f09a5fa7.ctex"]
+source_file="res://assets/Bust Shot/Main Character_Bust Shot_2_Hehe.png"
+dest_files=["res://.godot/imported/Main Character_Bust Shot_2_Hehe.png-98513a75a104be87ff66fcc3840ec2bf.ctex"]
 
 [params]
 
