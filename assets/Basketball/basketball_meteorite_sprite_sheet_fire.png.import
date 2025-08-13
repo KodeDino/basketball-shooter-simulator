@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkfa1svkrpuau"
-path="res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"
+uid="uid://bbn88ac3a37ev"
+path="res://.godot/imported/basketball_meteorite_sprite_sheet_fire.png-8f8bccaaa31081c28f1a36176452e330.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Background_01_Shanghai-2.png"
-dest_files=["res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"]
+source_file="res://Assets/Basketball/basketball_meteorite_sprite_sheet_fire.png"
+dest_files=["res://.godot/imported/basketball_meteorite_sprite_sheet_fire.png-8f8bccaaa31081c28f1a36176452e330.ctex"]
 
 [params]
 

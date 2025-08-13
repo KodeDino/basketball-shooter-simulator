@@ -35,7 +35,7 @@ func setup() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	update_state()
 	
 	
@@ -100,6 +100,6 @@ func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
 	queue_free()
 
 
-func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event.is_action_pressed("drag") and _state == BasketballStates.Ready:
 		change_state(BasketballStates.Drag)

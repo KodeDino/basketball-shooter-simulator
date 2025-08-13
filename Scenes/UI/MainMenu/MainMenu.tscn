@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3 uid="uid://dabrcvdqw3sq8"]
+
+[ext_resource type="Texture2D" uid="uid://biilq70o24i7s" path="res://Assets/Buttons/button-Sheet.png" id="1_cdkru"]
+[ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/UI/MainMenu/MainMenu.gd" id="1_sg7ab"]
+[ext_resource type="Texture2D" uid="uid://cedjh3bko6txn" path="res://Assets/Background/Title.png" id="2_kpx3y"]
+[ext_resource type="AudioStream" uid="uid://huqjit2vn37u" path="res://Assets/Sounds/basketball_bounce.mp3" id="3_sg7ab"]
+
+[sub_resource type="SystemFont" id="SystemFont_sg7ab"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpx3y"]
+font = SubResource("SystemFont_sg7ab")
+font_size = 52
+font_color = Color(1, 0.957, 0.14, 1)
+outline_size = 10
+outline_color = Color(0.266667, 0.592157, 0.780392, 1)
+shadow_size = 20
+shadow_color = Color(0.156863, 0.156863, 0.286275, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7oo3"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 0, 210, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg7ab"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 170, 210, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpx3y"]
+atlas = ExtResource("1_cdkru")
+region = Rect2(0, 85, 210, 85)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sg7ab")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_kpx3y")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 23.0
+offset_top = 46.0
+offset_right = 579.0
+offset_bottom = 99.0
+grow_horizontal = 2
+scale = Vector2(0.3, 0.3)
+text = "Basketball Simulator"
+label_settings = SubResource("LabelSettings_kpx3y")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -39.0
+offset_right = 188.0
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.2, 0.2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_c7oo3")
+texture_pressed = SubResource("AtlasTexture_sg7ab")
+texture_hover = SubResource("AtlasTexture_kpx3y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_sg7ab")
+volume_db = 5.0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

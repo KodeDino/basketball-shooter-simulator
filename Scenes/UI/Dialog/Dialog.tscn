@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh7k5nevgoxhj"]
+
+[ext_resource type="Script" uid="uid://ddwthea1xkcbk" path="res://Scenes/UI/Dialog/Dialog.gd" id="1_k1bo4"]
+
+[sub_resource type="SystemFont" id="SystemFont_saise"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p5k3i"]
+
+[node name="Dialog" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k1bo4")
+
+[node name="PortraitRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.2, 0.2)
+stretch_mode = 5
+
+[node name="OpponentMarker" type="Marker2D" parent="."]
+position = Vector2(145, 10)
+
+[node name="MainCharacterMarker" type="Marker2D" parent="."]
+position = Vector2(0, 10)
+
+[node name="NamePanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.9
+anchor_right = 0.2
+anchor_bottom = 1.0
+offset_top = -46.8
+offset_bottom = -46.8
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="NamePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="NameLabel" type="RichTextLabel" parent="NamePanel/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+
+[node name="DialoguePanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="DialoguePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="DialogueLabel" type="RichTextLabel" parent="DialoguePanel/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+tab_size = 2
+
+[node name="Button" type="Button" parent="DialoguePanel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_hover_color = Color(0.368054, 0.803247, 0.458787, 1)
+theme_override_fonts/font = SubResource("SystemFont_saise")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p5k3i")
+text = "Next"
+flat = true
+
+[connection signal="pressed" from="DialoguePanel/MarginContainer/Button" to="." method="_on_button_pressed"]

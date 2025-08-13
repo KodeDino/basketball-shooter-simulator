@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkfa1svkrpuau"
-path="res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"
+uid="uid://dggax2aq73yk1"
+path="res://.godot/imported/basketball_25x25-Sheet.png-e66bced07ae95f5dccc998e1fff6284c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Background_01_Shanghai-2.png"
-dest_files=["res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"]
+source_file="res://Assets/Basketball/basketball_25x25-Sheet.png"
+dest_files=["res://.godot/imported/basketball_25x25-Sheet.png-e66bced07ae95f5dccc998e1fff6284c.ctex"]
 
 [params]
 

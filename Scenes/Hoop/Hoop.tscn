@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cs7kkatnq4wci"]
 
 [ext_resource type="Script" uid="uid://br4nq0jha0uca" path="res://Scenes/Hoop/Hoop.gd" id="1_mmhsj"]
-[ext_resource type="Texture2D" uid="uid://bekhow28k6h3m" path="res://assets/sprites/hoop/hoop_45x49-Sheet.png" id="2_3sd2y"]
+[ext_resource type="Texture2D" uid="uid://bekhow28k6h3m" path="res://Assets/Hoop/hoop_45x49-Sheet.png" id="2_3sd2y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6uspg"]
 atlas = ExtResource("2_3sd2y")

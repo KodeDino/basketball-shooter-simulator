@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkfa1svkrpuau"
-path="res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"
+uid="uid://bekhow28k6h3m"
+path="res://.godot/imported/hoop_45x49-Sheet.png-d3b7fb599eb57fddcdbd50a82d09fad0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Background_01_Shanghai-2.png"
-dest_files=["res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"]
+source_file="res://Assets/Hoop/hoop_45x49-Sheet.png"
+dest_files=["res://.godot/imported/hoop_45x49-Sheet.png-d3b7fb599eb57fddcdbd50a82d09fad0.ctex"]
 
 [params]
 

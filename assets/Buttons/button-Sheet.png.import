@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkfa1svkrpuau"
-path="res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"
+uid="uid://biilq70o24i7s"
+path="res://.godot/imported/button-Sheet.png-9d6a5c8a3aead2fe696d248bfce41324.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Background_01_Shanghai-2.png"
-dest_files=["res://.godot/imported/Background_01_Shanghai-2.png-b59790d3fbb78ffd57576a99abb52257.ctex"]
+source_file="res://Assets/Buttons/button-Sheet.png"
+dest_files=["res://.godot/imported/button-Sheet.png-9d6a5c8a3aead2fe696d248bfce41324.ctex"]
 
 [params]
 
