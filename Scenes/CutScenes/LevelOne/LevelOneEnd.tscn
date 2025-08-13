@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://baj46iw54g827"]
+[gd_scene load_steps=12 format=3 uid="uid://baj46iw54g827"]
 
-[ext_resource type="Script" uid="uid://dww7b3fqttkkr" path="res://Scenes/CutScenes/LevelOne/LevelOneEnd.gd" id="1_ko2o6"]
-[ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
-[ext_resource type="Texture2D" uid="uid://cfhr8xfj6muyr" path="res://assets/sprites/basketball/basketball_meteorite_sprite_sheet_ball.png" id="2_bfov8"]
-[ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://assets/Background/Background_01_Shanghai-2.png" id="3_ko2o6"]
-[ext_resource type="Script" uid="uid://drr50rjlcnjkq" path="res://Scenes/CutScenes/DialoguePanel.gd" id="5_f04yw"]
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneCutscene.gd" id="1_f04yw"]
+[ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
+[ext_resource type="Texture2D" uid="uid://cfhr8xfj6muyr" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_ball.png" id="2_bfov8"]
+[ext_resource type="Resource" uid="uid://luty4yhr3lmk" path="res://Resources/LevelOneEndDialogue.tres" id="2_rtbb3"]
+[ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://Assets/Background/Background_01_Shanghai-2.png" id="3_ko2o6"]
+[ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="5_ko2o6"]
 [ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="6_f04yw"]
 
 [sub_resource type="Animation" id="Animation_rtbb3"]
@@ -155,17 +156,12 @@ _data = {
 &"basketball_meteroite": SubResource("Animation_f04yw")
 }
 
-[sub_resource type="SystemFont" id="SystemFont_rtbb3"]
-font_names = PackedStringArray("04b 30")
-subpixel_positioning = 0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqe37"]
-
 [sub_resource type="QuadMesh" id="QuadMesh_f04yw"]
 size = Vector2(300, 200)
 
 [node name="LevelOneEnd" type="Node2D"]
-script = ExtResource("1_ko2o6")
+script = ExtResource("1_f04yw")
+dialogue_data = ExtResource("2_rtbb3")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(142, 80)
@@ -194,83 +190,9 @@ region_enabled = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
 
-[node name="PortraitRect" type="TextureRect" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(0.2, 0.2)
-stretch_mode = 5
-
-[node name="OpponentMarker" type="Marker2D" parent="CanvasLayer"]
-position = Vector2(145, 10)
-
-[node name="MainCharacterMarker" type="Marker2D" parent="CanvasLayer"]
-position = Vector2(0, 10)
-
-[node name="NamePanel" type="Panel" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_top = 0.9
-anchor_right = 0.2
-anchor_bottom = 1.0
-offset_top = -46.8
-offset_bottom = -46.8
-grow_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/NamePanel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_right = 8
-
-[node name="NameLabel" type="RichTextLabel" parent="CanvasLayer/NamePanel/MarginContainer"]
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 8
-
-[node name="DialoguePanel" type="Panel" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_top = 0.4
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 50.0
-grow_horizontal = 2
-grow_vertical = 0
-script = ExtResource("5_f04yw")
+[node name="Dialog" parent="CanvasLayer" instance=ExtResource("5_ko2o6")]
 next_scene = ExtResource("6_f04yw")
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/DialoguePanel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 8
-theme_override_constants/margin_bottom = 4
-
-[node name="DialogueLabel" type="RichTextLabel" parent="CanvasLayer/DialoguePanel/MarginContainer"]
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 8
-bbcode_enabled = true
-tab_size = 2
-
-[node name="Button" type="Button" parent="CanvasLayer/DialoguePanel/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-theme_override_colors/font_hover_color = Color(0.368054, 0.803247, 0.458787, 1)
-theme_override_fonts/font = SubResource("SystemFont_rtbb3")
-theme_override_font_sizes/font_size = 8
-theme_override_styles/focus = SubResource("StyleBoxEmpty_rqe37")
-text = "Next"
-flat = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 position = Vector2(143, 80)
 mesh = SubResource("QuadMesh_f04yw")
-
-[connection signal="pressed" from="CanvasLayer/DialoguePanel/MarginContainer/Button" to="CanvasLayer/DialoguePanel" method="_on_button_pressed"]

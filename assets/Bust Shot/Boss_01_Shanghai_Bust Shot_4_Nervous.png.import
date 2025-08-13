@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://70c8d4fcl2tx"
-path="res://.godot/imported/Boss_01_Shanghai_Bust Shot_4_Nervous.png-7c7a595190d53e962e27ceb145acb9a7.ctex"
+path="res://.godot/imported/Boss_01_Shanghai_Bust Shot_4_Nervous.png-f71b47ab6c44aae7daf8a7b1a9e070a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Bust Shot/Boss_01_Shanghai_Bust Shot_4_Nervous.png"
-dest_files=["res://.godot/imported/Boss_01_Shanghai_Bust Shot_4_Nervous.png-7c7a595190d53e962e27ceb145acb9a7.ctex"]
+source_file="res://Assets/Bust Shot/Boss_01_Shanghai_Bust Shot_4_Nervous.png"
+dest_files=["res://.godot/imported/Boss_01_Shanghai_Bust Shot_4_Nervous.png-f71b47ab6c44aae7daf8a7b1a9e070a6.ctex"]
 
 [params]
 

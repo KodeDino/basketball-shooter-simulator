@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7uqkm6oubc6j"
-path="res://.godot/imported/Boss_01_Shanghai - Sheet.png-45a4a3a599680b03f047a8058fadcb4e.ctex"
+path="res://.godot/imported/Boss_01_Shanghai - Sheet.png-822fdd4e312fd759efee59b0e253bb62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character/Boss_01_Shanghai - Sheet.png"
-dest_files=["res://.godot/imported/Boss_01_Shanghai - Sheet.png-45a4a3a599680b03f047a8058fadcb4e.ctex"]
+source_file="res://Assets/Character/Boss_01_Shanghai - Sheet.png"
+dest_files=["res://.godot/imported/Boss_01_Shanghai - Sheet.png-822fdd4e312fd759efee59b0e253bb62.ctex"]
 
 [params]
 
