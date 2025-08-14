@@ -1,3 +1,7 @@
 # Basketball shooter simulator
 
-This is a game that simulate the basketball shooting experience
+# Run locally
+
+- Pull the repository
+- Open Godot project manager
+- Open project and select basketball_shooter_simulator folder
