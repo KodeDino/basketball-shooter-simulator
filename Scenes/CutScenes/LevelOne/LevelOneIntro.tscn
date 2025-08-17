@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://jn6h77jwd8va"]
 
-[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneCutscene.gd" id="1_wf6bf"]
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_wf6bf"]
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://Assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
 [ext_resource type="Resource" uid="uid://2hpy7t4g0v1t" path="res://Resources/LevelOneIntroDialogue.tres" id="2_fs736"]
 [ext_resource type="Texture2D" uid="uid://ciw3nd47igehk" path="res://Assets/NPCs/npc-sprite-sheet.png" id="2_ncsn6"]
