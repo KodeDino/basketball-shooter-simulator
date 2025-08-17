@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://baj46iw54g827"]
 
-[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/LevelOne/LevelOneCutscene.gd" id="1_f04yw"]
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_f04yw"]
 [ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
 [ext_resource type="Texture2D" uid="uid://cfhr8xfj6muyr" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_ball.png" id="2_bfov8"]
 [ext_resource type="Resource" uid="uid://luty4yhr3lmk" path="res://Resources/LevelOneEndDialogue.tres" id="2_rtbb3"]
 [ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://Assets/Background/Background_01_Shanghai-2.png" id="3_ko2o6"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="5_ko2o6"]
-[ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="6_f04yw"]
+[ext_resource type="PackedScene" uid="uid://dsxq03xjfftna" path="res://Scenes/CutScenes/LevelTwo/LevelTwoIntro.tscn" id="7_rtbb3"]
 
 [sub_resource type="Animation" id="Animation_rtbb3"]
 length = 0.001
@@ -191,7 +191,7 @@ region_enabled = true
 visible = false
 
 [node name="Dialog" parent="CanvasLayer" instance=ExtResource("5_ko2o6")]
-next_scene = ExtResource("6_f04yw")
+next_scene = ExtResource("7_rtbb3")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 position = Vector2(143, 80)
