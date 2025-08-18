@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=5 format=3 uid="uid://ctiq7lsqn0ksc"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_5iwia"]
+[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="1_7il0l"]
+[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="2_tg7nb"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="3_fadi1"]
+
+[resource]
+script = ExtResource("1_5iwia")
+dialogue_sequence = Array[Dictionary]([{
+"character": "科迪",
+"line": "啊！",
+"texture": ExtResource("1_7il0l")
+}, {
+"character": "科迪",
+"line": "澡堂居然！可恶。。。",
+"texture": ExtResource("2_tg7nb")
+}, {
+"character": "科迪",
+"line": "谢老板没事吧。。。",
+"texture": ExtResource("3_fadi1")
+}, {
+"character": "科迪",
+"line": "谢老板！",
+"texture": ExtResource("1_7il0l")
+}, {
+"character": "谢老板",
+"line": "唔。。。唔唔",
+"texture": null
+}, {
+"character": "敌人",
+"line": "噢？哪来的不要命的？！",
+"texture": null
+}, {
+"character": "科迪",
+"line": "你们的目的不就是想找人投篮吗？我跟你比，如果我赢了你就放了谢老板！",
+"texture": ExtResource("2_tg7nb")
+}, {
+"character": "敌人",
+"line": "哟呵！居然知道规矩，看来你已经打败过我们的人了，不错嘛，那我可要看看你的能力了，只要你能赢，我就直接离开。",
+"texture": null
+}, {
+"character": "科迪",
+"line": "（这家伙好像更厉害点，我不能掉以轻心啊）",
+"texture": ExtResource("3_fadi1")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"
