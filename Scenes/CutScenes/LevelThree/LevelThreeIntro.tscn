@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://ct1uiw41hc1ff"]
+
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_scwmd"]
+[ext_resource type="Resource" uid="uid://ctiq7lsqn0ksc" path="res://Resources/LevelThreeIntroDialogue.tres" id="2_nk1u6"]
+[ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_j6lc1"]
+[ext_resource type="PackedScene" uid="uid://boppue0wwcj05" path="res://Scenes/Levels/LevelThree/LevelThree.tscn" id="4_dhmuu"]
+
+[sub_resource type="Animation" id="Animation_vv244"]
+resource_name = "level_three_intro"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"show_panel"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_klnao"]
+_data = {
+&"level_three_intro": SubResource("Animation_vv244")
+}
+
+[node name="LevelThreeIntro" type="Node2D"]
+script = ExtResource("1_scwmd")
+dialogue_data = ExtResource("2_nk1u6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_klnao")
+}
+autoplay = "level_three_intro"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_j6lc1")]
+next_scene = ExtResource("4_dhmuu")

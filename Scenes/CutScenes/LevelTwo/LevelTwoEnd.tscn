@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_1i0ek"]
 [ext_resource type="Resource" uid="uid://pt4vapxuxyc5" path="res://Resources/LevelTwoEndDialogue.tres" id="2_bw7se"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_ia8p4"]
-[ext_resource type="PackedScene" uid="uid://boppue0wwcj05" path="res://Scenes/Levels/LevelThree/LevelThree.tscn" id="4_o2qd5"]
+[ext_resource type="PackedScene" uid="uid://ct1uiw41hc1ff" path="res://Scenes/CutScenes/LevelThree/LevelThreeIntro.tscn" id="4_1i0ek"]
 
 [sub_resource type="Animation" id="Animation_1i0ek"]
 resource_name = "level_two_end"
@@ -42,4 +42,4 @@ autoplay = "level_two_end"
 visible = false
 
 [node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_ia8p4")]
-next_scene = ExtResource("4_o2qd5")
+next_scene = ExtResource("4_1i0ek")
