@@ -10,7 +10,6 @@ func get_current_dialogue_data() -> Dictionary:
 
 
 func start_dialogue(dialogue_resource: DialogueResource) -> void:	
-	print(dialogue_resource)
 	current_dialogue = dialogue_resource
 	current_line_index = 0
 	SignalManager.emit_on_dialogue_updated(get_current_dialogue_data())
