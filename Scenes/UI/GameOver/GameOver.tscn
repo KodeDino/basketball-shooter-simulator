@@ -1,0 +1,140 @@
+[gd_scene load_steps=14 format=3 uid="uid://b0riw3ets25ag"]
+
+[ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="1_sshtg"]
+[ext_resource type="Script" uid="uid://bsf2jffuljw0k" path="res://Scenes/UI/GameOver/GameOver.gd" id="1_tsk0b"]
+
+[sub_resource type="Animation" id="Animation_sshtg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOverLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kftdl"]
+resource_name = "game_over"
+loop_mode = 1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOverLabel:self_modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tsk0b"]
+_data = {
+&"RESET": SubResource("Animation_sshtg"),
+&"game_over": SubResource("Animation_kftdl")
+}
+
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_kftdl"]
+font = SubResource("SystemFont_iteex")
+font_size = 18
+font_color = Color(0.92, 0.851767, 0.1012, 1)
+shadow_color = Color(0.262528, 0.180261, 0.0617714, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsk0b"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(43, 0, 49, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jho6m"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(43, 34, 49, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5tak"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(43, 17, 49, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sshtg"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(139, 0, 71, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdutk"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(139, 34, 71, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqo5y"]
+atlas = ExtResource("1_sshtg")
+region = Rect2(139, 17, 71, 17)
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tsk0b")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_tsk0b")
+}
+autoplay = "game_over"
+
+[node name="GameOverLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 75.0
+offset_top = 24.0
+offset_right = 213.0
+offset_bottom = 43.0
+size_flags_horizontal = 4
+text = "Game Over"
+label_settings = SubResource("LabelSettings_kftdl")
+
+[node name="RetryButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -8.5
+offset_right = 24.5
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_tsk0b")
+texture_pressed = SubResource("AtlasTexture_jho6m")
+texture_hover = SubResource("AtlasTexture_f5tak")
+
+[node name="MainMenuButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.5
+offset_top = 16.0
+offset_right = 35.5
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_sshtg")
+texture_pressed = SubResource("AtlasTexture_fdutk")
+texture_hover = SubResource("AtlasTexture_sqo5y")
+
+[connection signal="pressed" from="RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="MainMenuButton" to="." method="_on_main_menu_button_pressed"]
