@@ -20,7 +20,6 @@ func _ready() -> void:
 
 func connect_signals() -> void:
 	SignalManager.on_basketball_removed.connect(_on_basketball_removed)
-	SignalManager.on_retry_button_clicked.connect(load_current_level)
 	SignalManager.on_main_menu_button_clicked.connect(load_main_menu)
 
 
@@ -39,10 +38,6 @@ func spawn_basketball() -> void:
 			SceneManager.load_next_scene(next_level_scene)
 		else:
 			game_over.show()
-			
-			
-func load_current_level() -> void:
-	get_tree().reload_current_scene()
 	
 
 func load_main_menu() -> void:
