@@ -24,9 +24,12 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 │   │   ├── LevelTwo/           # Second level
 │   │   └── LevelThree/         # Third level
 │   ├── UI/
+│   │   ├── BackButton/         # Reusable back navigation button
 │   │   ├── Dialog/             # Dialogue system UI
 │   │   ├── GameOver/           # Game over screen
 │   │   ├── Hud/                # In-game HUD
+│   │   ├── LevelButton/        # Reusable level selection button
+│   │   ├── LevelSelect/        # Level selection screen
 │   │   ├── MainMenu/           # Main menu screen (ENTRY POINT)
 │   │   ├── Pause/              # Pause menu system
 │   │   └── Transition/         # Scene transition effects
@@ -87,11 +90,32 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 - **Progression**: Automatic transition to next level on victory
 - **Basketball Spawning**: Automatic respawn after ball exits screen
 
+#### Level Selection System (`Scenes/UI/LevelSelect/`)
+- **LevelSelect Scene**: Grid-based level selection with 10 level buttons (2 rows of 5)
+- **LevelButton Component** (`Scenes/UI/LevelButton/LevelButton.gd`):
+  - Reusable button with configurable `target_scene` and `level` text
+  - Automatically sets level number display
+- **BackButton Component** (`Scenes/UI/BackButton/BackButton.gd`):
+  - Reusable navigation button with configurable `back_to_scene`
+- **Visual Features**: 
+  - Animated title with flashing effect
+  - Scoreboard background texture
+  - 10 level buttons (levels 1-3 have target scenes, 4-10 are placeholders)
+
+#### Transition System (`Scenes/UI/Transition/`)
+- **Enhanced Animations**: 
+  - `fade_to_black` - Fades screen to black (0.3s)
+  - `fade_to_normal` - Fades from black to normal (0.3s)
+- **Improved Flow**: Two-stage transition with scene switch in between fades
+
 ### Game Flow
 1. **Start**: MainMenu scene loads first
-2. **Navigation**: Main menu → Level One Intro → Level One → etc.
-3. **Progression**: Complete levels sequentially with cutscenes between
-4. **Reset**: Return to main menu via pause menu or game over
+2. **Navigation Options**:
+   - **Play Button**: Main menu → Level One Intro → Level One
+   - **Level Select Button**: Main menu → Level Select → Choose any level
+3. **Level Selection**: 10-level grid with direct access to available levels
+4. **Progression**: Complete levels sequentially with cutscenes between
+5. **Reset**: Return to main menu via pause menu, game over, or back button
 
 ## Input Controls
 - **Primary Action**: `drag` (Mouse Button 1)
@@ -124,6 +148,10 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 - **State Machine**: Basketball uses enum-based state management
 
 ## Recent Changes
+- Added level selection system (current branch)
+- Implemented reusable UI components (LevelButton, BackButton)
+- Enhanced transition system with improved fade animations
+- Updated main menu with level select option
 - Added pause functionality (PR #66)
 - Implemented pause button and menu system
 - Added game-over scene functionality

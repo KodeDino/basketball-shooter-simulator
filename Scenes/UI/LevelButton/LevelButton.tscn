@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://r17ofbci8erw"]
+
+[ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="1_vbg5g"]
+[ext_resource type="Script" uid="uid://dhgfqvnr1oumu" path="res://Scenes/UI/LevelButton/LevelButton.gd" id="2_0pg6v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk3vm"]
+atlas = ExtResource("1_vbg5g")
+region = Rect2(243, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pg6v"]
+atlas = ExtResource("1_vbg5g")
+region = Rect2(269, 0, 26, 26)
+
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_qqth7"]
+font = SubResource("SystemFont_iteex")
+font_size = 8
+shadow_color = Color(0.0384928, 0.0840365, 0.201788, 1)
+
+[node name="LevelButton" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_xk3vm")
+texture_hover = SubResource("AtlasTexture_0pg6v")
+script = ExtResource("2_0pg6v")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LevelLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "1"
+label_settings = SubResource("LabelSettings_qqth7")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
