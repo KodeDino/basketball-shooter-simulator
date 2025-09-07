@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://cexwntfgcswt6"]
+
+[ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="1_52pk6"]
+[ext_resource type="Script" uid="uid://dt0rnmnbg1fxk" path="res://Scenes/UI/BackButton/BackButton.gd" id="2_ngafk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngafk"]
+atlas = ExtResource("1_52pk6")
+region = Rect2(211, 2, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mfyh"]
+atlas = ExtResource("1_52pk6")
+region = Rect2(227, 36, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_280wd"]
+atlas = ExtResource("1_52pk6")
+region = Rect2(211, 19, 15, 15)
+
+[node name="BackButton" type="TextureButton"]
+offset_right = 15.0
+offset_bottom = 15.0
+texture_normal = SubResource("AtlasTexture_ngafk")
+texture_pressed = SubResource("AtlasTexture_8mfyh")
+texture_hover = SubResource("AtlasTexture_280wd")
+script = ExtResource("2_ngafk")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

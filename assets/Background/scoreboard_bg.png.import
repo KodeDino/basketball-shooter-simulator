@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wk60qughtfd4"
-path="res://.godot/imported/button.png-b33e2e53b1e8a0e9026fab03668d0012.ctex"
+uid="uid://fbkewdoderx0"
+path="res://.godot/imported/scoreboard_bg.png-8a0b80868be154ac26a5c9bcb319b0bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Buttons/button.png"
-dest_files=["res://.godot/imported/button.png-b33e2e53b1e8a0e9026fab03668d0012.ctex"]
+source_file="res://Assets/Background/scoreboard_bg.png"
+dest_files=["res://.godot/imported/scoreboard_bg.png-8a0b80868be154ac26a5c9bcb319b0bd.ctex"]
 
 [params]
 

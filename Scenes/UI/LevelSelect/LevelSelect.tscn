@@ -1,0 +1,173 @@
+[gd_scene load_steps=13 format=3 uid="uid://8iurao47qsbr"]
+
+[ext_resource type="PackedScene" uid="uid://r17ofbci8erw" path="res://Scenes/UI/LevelButton/LevelButton.tscn" id="1_e8gtt"]
+[ext_resource type="Texture2D" uid="uid://fbkewdoderx0" path="res://Assets/Background/scoreboard_bg.png" id="1_rx6fb"]
+[ext_resource type="PackedScene" uid="uid://jn6h77jwd8va" path="res://Scenes/CutScenes/LevelOne/LevelOneIntro.tscn" id="2_cjumm"]
+[ext_resource type="PackedScene" uid="uid://dsxq03xjfftna" path="res://Scenes/CutScenes/LevelTwo/LevelTwoIntro.tscn" id="3_q5epn"]
+[ext_resource type="PackedScene" uid="uid://ct1uiw41hc1ff" path="res://Scenes/CutScenes/LevelThree/LevelThreeIntro.tscn" id="4_rx6fb"]
+[ext_resource type="PackedScene" uid="uid://cexwntfgcswt6" path="res://Scenes/UI/BackButton/BackButton.tscn" id="5_cjumm"]
+[ext_resource type="PackedScene" uid="uid://dabrcvdqw3sq8" path="res://Scenes/UI/MainMenu/MainMenu.tscn" id="6_q5epn"]
+
+[sub_resource type="Animation" id="Animation_rx6fb"]
+resource_name = "title_flash"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer/TitleLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_jc0c2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer/TitleLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r76j1"]
+_data = {
+&"RESET": SubResource("Animation_jc0c2"),
+&"title_flash": SubResource("Animation_rx6fb")
+}
+
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_yilqa"]
+font = SubResource("SystemFont_iteex")
+font_size = 14
+font_color = Color(0.7744, 0.88, 0.82192, 1)
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_r76j1")
+}
+autoplay = "title_flash"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -9.0
+offset_right = 294.0
+offset_bottom = 171.0
+texture = ExtResource("1_rx6fb")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 28.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 13
+
+[node name="TitleLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Select Level"
+label_settings = SubResource("LabelSettings_yilqa")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -3.0
+offset_right = 85.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="LevelOneButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+target_scene = ExtResource("2_cjumm")
+level = "1"
+
+[node name="LevelTwoButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+target_scene = ExtResource("3_q5epn")
+level = "2"
+
+[node name="LevelThreeButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+target_scene = ExtResource("4_rx6fb")
+level = "3"
+
+[node name="LevelFourButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "4"
+
+[node name="LevelFiveButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "5"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="LevelSixButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "6"
+
+[node name="LevelSevenButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "7"
+
+[node name="LevelEightButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "8"
+
+[node name="LevelNineButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "9"
+
+[node name="LevelTenButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
+layout_mode = 2
+level = "10"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 19.0
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="BackButton" parent="MarginContainer2" instance=ExtResource("5_cjumm")]
+layout_mode = 2
+back_to_scene = ExtResource("6_q5epn")

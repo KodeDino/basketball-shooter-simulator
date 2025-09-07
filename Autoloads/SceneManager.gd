@@ -1,9 +1,7 @@
 extends Node
 
-const LEVEL_ONE = preload("res://Scenes/Levels/LevelOne/LevelOne.tscn")
-const MAIN_MENU = preload("res://Scenes/UI/MainMenu/MainMenu.tscn")
 const TRANSITION = preload("res://Scenes/UI/Transition/Transition.tscn")
-const LEVEL_ONE_INTRO = preload("res://Scenes/CutScenes/LevelOne/LevelOneIntro.tscn")
+
 
 var next_scene: PackedScene
 
@@ -14,8 +12,7 @@ func load_next_scene(newScene: PackedScene) -> void:
 
 
 func load_main_menu() -> void:
-	load_next_scene(MAIN_MENU)
-
+	load_next_scene(load("res://Scenes/UI/MainMenu/MainMenu.tscn"))
 
 func load_level_one_intro() -> void:
-	load_next_scene(LEVEL_ONE_INTRO)
+	load_next_scene(load("res://Scenes/CutScenes/LevelOne/LevelOneIntro.tscn"))
