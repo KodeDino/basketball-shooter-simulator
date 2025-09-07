@@ -22,7 +22,7 @@ dialogue_sequence = Array[Dictionary]([{
 "texture": null
 }, {
 "character": "",
-"line": "敌人离去"
+"line": "敌人打开地洞离去"
 }, {
 "character": "科迪",
 "line": "。。。谢老板你没事吧",
@@ -41,7 +41,7 @@ dialogue_sequence = Array[Dictionary]([{
 "texture": null
 }, {
 "character": "科迪",
-"line": "从他们那里得知了他们前来入侵地球的原因，如果不快点想办法找出他们剩下的同伴并一一击败的话后果会不堪设想",
+"line": "从他们那里得知了他们前来入侵地球的原因，如果不快点想办法找出他们剩下的同伴并一一击败的话后果会不堪设想，我要去追上刚刚那个家伙，这样一定能与他的同伴碰面",
 "texture": ExtResource("2_krglk")
 }, {
 "character": "谢老板",
