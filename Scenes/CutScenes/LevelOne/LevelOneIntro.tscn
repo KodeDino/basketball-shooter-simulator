@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://Assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
 [ext_resource type="Resource" uid="uid://2hpy7t4g0v1t" path="res://Resources/LevelOneIntroDialogue.tres" id="2_fs736"]
 [ext_resource type="Texture2D" uid="uid://ciw3nd47igehk" path="res://Assets/NPCs/npc-sprite-sheet.png" id="2_ncsn6"]
-[ext_resource type="Texture2D" uid="uid://bly4u3rqwg8kw" path="res://Assets/Character/Main Character_Stand_merge_duplicates.png" id="4_uqfph"]
 [ext_resource type="AudioStream" uid="uid://bdmycuhcpyagk" path="res://Assets/Sounds/crowded_basketball_court.mp3" id="5_3aagc"]
 [ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://Assets/Character/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
+[ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main Character_Stand_merge_duplicates-sheet.png" id="5_fs736"]
 [ext_resource type="PackedScene" uid="uid://cbbebvloop21" path="res://Scenes/Levels/LevelOne/LevelOne.tscn" id="7_2ayky"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="7_6sxgl"]
 
@@ -184,7 +184,7 @@ region_rect = Rect2(200, 0, 50, 100)
 
 [node name="MainCharacter" type="Sprite2D" parent="CharacterSprites"]
 position = Vector2(50, 111)
-texture = ExtResource("4_uqfph")
+texture = ExtResource("5_fs736")
 region_enabled = true
 region_rect = Rect2(0, 0, 50, 100)
 

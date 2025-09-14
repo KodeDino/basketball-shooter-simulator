@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyvkikx70yb72"
-path="res://.godot/imported/Main Character_Stand.png-ff8627e63632f6df1c0432245d508332.ctex"
+uid="uid://bg8au6vy3dvqa"
+path="res://.godot/imported/Background_02_Subway-4.png-4068c02081efa421c1edc363c67e74e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Main Character_Stand.png"
-dest_files=["res://.godot/imported/Main Character_Stand.png-ff8627e63632f6df1c0432245d508332.ctex"]
+source_file="res://Assets/Background/Background_02_Subway-4.png"
+dest_files=["res://.godot/imported/Background_02_Subway-4.png-4068c02081efa421c1edc363c67e74e3.ctex"]
 
 [params]
 

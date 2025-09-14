@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bncj5yvest86o"]
+
+[ext_resource type="Script" uid="uid://ucle2gmikydv" path="res://Scenes/Parallax/ParallaxBackground.gd" id="1_0i13p"]
+
+[node name="ParallaxBackground" type="Parallax2D"]
+script = ExtResource("1_0i13p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+centered = false
