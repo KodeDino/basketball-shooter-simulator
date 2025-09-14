@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=5 format=3 uid="uid://oy1j2hy3d20b"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=7 format=3 uid="uid://oy1j2hy3d20b"]
 
 [ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="1_cijjf"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_dy2bk"]
+[ext_resource type="Texture2D" uid="uid://hg1rqwj4oyxt" path="res://Assets/Bust Shot/Boss_02_Bus_Bust Shot_1_Normal.png" id="1_olve2"]
 [ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="2_olve2"]
+[ext_resource type="Texture2D" uid="uid://b6oq40bu8ebym" path="res://Assets/Bust Shot/Boss_02_Bus_Bust Shot_2_Proud.png" id="3_eu63w"]
 [ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="3_kgu0x"]
 
 [resource]
@@ -10,7 +12,7 @@ script = ExtResource("1_dy2bk")
 dialogue_sequence = Array[Dictionary]([{
 "character": "小队长",
 "line": "都给我趴下！小的们！按计划，把这里的人抓起来一个一个筛查！",
-"texture": null
+"texture": ExtResource("1_olve2")
 }, {
 "character": "科迪",
 "line": "你们到底是什么？！",
@@ -18,7 +20,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "小队长",
 "line": "你不需要知道因为你活不久了！",
-"texture": null
+"texture": ExtResource("3_eu63w")
 }, {
 "character": "科迪",
 "line": "[shake]！！！[/shake]",
@@ -26,7 +28,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "小队长",
 "line": "既然你这么迫不及待，那就从你先开始吧",
-"texture": null
+"texture": ExtResource("1_olve2")
 }, {
 "character": "科迪",
 "line": "你们要干什么？！",
@@ -34,7 +36,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "小队长",
 "line": "嘿嘿嘿，我要你跟我比赛投篮，如果输给我的话，你的小命可不保了",
-"texture": null
+"texture": ExtResource("3_eu63w")
 }, {
 "character": "科迪",
 "line": "（它看起来不像是在开玩笑，看来只有拼一把了）",

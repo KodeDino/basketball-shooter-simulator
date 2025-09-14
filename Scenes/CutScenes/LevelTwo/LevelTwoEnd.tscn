@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqvq6gmvxgr2y"]
+[gd_scene load_steps=9 format=3 uid="uid://bqvq6gmvxgr2y"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_1i0ek"]
 [ext_resource type="Resource" uid="uid://pt4vapxuxyc5" path="res://Resources/LevelTwoEndDialogue.tres" id="2_bw7se"]
+[ext_resource type="Texture2D" uid="uid://bg8au6vy3dvqa" path="res://Assets/Background/Background_02_Subway-4.png" id="3_bw7se"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_ia8p4"]
+[ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Background_02_Subway-Outside.png" id="3_o2qd5"]
 [ext_resource type="PackedScene" uid="uid://ct1uiw41hc1ff" path="res://Scenes/CutScenes/LevelThree/LevelThreeIntro.tscn" id="4_1i0ek"]
 
 [sub_resource type="Animation" id="Animation_1i0ek"]
@@ -30,6 +32,14 @@ _data = {
 [node name="LevelTwoEnd" type="Node2D"]
 script = ExtResource("1_1i0ek")
 dialogue_data = ExtResource("2_bw7se")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(150, 80)
+texture = ExtResource("3_o2qd5")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(150, 80)
+texture = ExtResource("3_bw7se")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../CanvasLayer")

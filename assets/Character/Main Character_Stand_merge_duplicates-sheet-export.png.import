@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bly4u3rqwg8kw"
-path="res://.godot/imported/Main Character_Stand_merge_duplicates.png-11a0d8da8a7256ea757cd01697890561.ctex"
+uid="uid://bvx2ctoxyatnj"
+path="res://.godot/imported/Main Character_Stand_merge_duplicates-sheet-export.png-8f4cafd2a08ea63dd15aa48934a479ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Main Character_Stand_merge_duplicates.png"
-dest_files=["res://.godot/imported/Main Character_Stand_merge_duplicates.png-11a0d8da8a7256ea757cd01697890561.ctex"]
+source_file="res://Assets/Character/Main Character_Stand_merge_duplicates-sheet-export.png"
+dest_files=["res://.godot/imported/Main Character_Stand_merge_duplicates-sheet-export.png-8f4cafd2a08ea63dd15aa48934a479ef.ctex"]
 
 [params]
 

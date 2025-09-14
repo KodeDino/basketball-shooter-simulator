@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu0qmdhx8yg82"
-path="res://.godot/imported/Boss_01_Shanghai.png-a4d8868a3a722dd0242d651b14ae0fa4.ctex"
+uid="uid://cll0hhxt0ldy6"
+path="res://.godot/imported/Background_02_Subway-2.png-5840d0c8690502ca168ea0d53b42e04f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Boss_01_Shanghai.png"
-dest_files=["res://.godot/imported/Boss_01_Shanghai.png-a4d8868a3a722dd0242d651b14ae0fa4.ctex"]
+source_file="res://Assets/Background/Background_02_Subway-2.png"
+dest_files=["res://.godot/imported/Background_02_Subway-2.png-5840d0c8690502ca168ea0d53b42e04f.ctex"]
 
 [params]
 
