@@ -12,7 +12,7 @@ config_version=5
 
 config/name="basketball_shooter_simulator"
 run/main_scene="uid://dabrcvdqw3sq8"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
