@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dsxq03xjfftna"]
+[gd_scene load_steps=14 format=3 uid="uid://dsxq03xjfftna"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_mc6u3"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="1_u0wa7"]
@@ -8,7 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Background_02_Subway-Outside.png" id="4_ee1co"]
 [ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="4_g6tib"]
 [ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main Character_Stand_merge_duplicates-sheet.png" id="4_w4dqn"]
-[ext_resource type="Texture2D" uid="uid://b085lrluutnrf" path="res://Assets/Character/level_2_boss.png" id="5_w4dqn"]
+[ext_resource type="Texture2D" uid="uid://bvvnlmwqsjj0d" path="res://Assets/Character/Boss_02_Subway_Soldier-Sheet.png" id="6_ee1co"]
+[ext_resource type="Texture2D" uid="uid://b008yuqgbt4el" path="res://Assets/Character/Boss_02_Subway-Sheet.png" id="7_uw8w6"]
 
 [sub_resource type="Animation" id="Animation_w4dqn"]
 length = 0.001
@@ -39,19 +40,31 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Boss:visible")
+tracks/2/path = NodePath("Boss:region_rect")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Soldier:region_rect")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_b0xxx"]
 resource_name = "level_two_intro"
-length = 4.3
+length = 4.7
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -59,7 +72,7 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(4.3),
+"times": PackedFloat32Array(4.7),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -73,10 +86,10 @@ tracks/1/path = NodePath("Character:region_rect")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6000001, 2.8000002, 3, 3.2, 3.6, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(350, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(500, 0, 50, 100)]
+"values": [Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(500, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(500, 0, 50, 100)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -85,36 +98,48 @@ tracks/2/path = NodePath("Background:region_rect")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 2.4, 2.7, 3.2, 3.8),
+"times": PackedFloat32Array(0, 1.8, 2.1, 2.5, 2.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [Rect2(0, 0, 325, 200), Rect2(0, 0, 325, 200), Rect2(325, 0, 325, 200), Rect2(650, 0, 325, 200), Rect2(975, 0, 325, 200)]
 }
-tracks/3/type = "value"
+tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Boss:visible")
+tracks/3/path = NodePath("ParallaxBackground")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 3.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/4/type = "method"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("ParallaxBackground")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(4.3),
+"times": PackedFloat32Array(4.7),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"stop_parallax"
 }]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Boss:region_rect")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2.9, 3.1000001, 3.3, 3.5000002, 3.7, 3.9, 4.1000004, 4.3, 4.5, 4.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 100, 114), Rect2(102, 0, 101, 114), Rect2(204, 0, 102, 114), Rect2(306, 0, 101, 114), Rect2(408, 0, 100, 114), Rect2(0, 0, 100, 114), Rect2(102, 0, 101, 114), Rect2(204, 0, 102, 114), Rect2(306, 0, 101, 114), Rect2(408, 0, 100, 114)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Soldier:region_rect")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.9, 3.3, 3.7, 4.1, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 49, 53), Rect2(50, 0, 50, 53), Rect2(0, 0, 49, 53), Rect2(50, 0, 50, 53), Rect2(0, 0, 49, 53)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6tib"]
@@ -143,6 +168,11 @@ libraries = {
 }
 autoplay = "level_two_intro"
 
+[node name="Soldier" type="Sprite2D" parent="."]
+position = Vector2(258, 132)
+texture = ExtResource("6_ee1co")
+region_enabled = true
+
 [node name="Character" type="Sprite2D" parent="."]
 position = Vector2(73, 88)
 scale = Vector2(1.4, 1.4)
@@ -150,9 +180,10 @@ texture = ExtResource("4_w4dqn")
 region_enabled = true
 
 [node name="Boss" type="Sprite2D" parent="."]
-position = Vector2(216, 90)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("5_w4dqn")
+position = Vector2(177, 97)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("7_uw8w6")
+region_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
