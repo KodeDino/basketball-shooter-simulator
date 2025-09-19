@@ -9,6 +9,7 @@
 [node name="LevelTwo" instance=ExtResource("1_pwu5e")]
 next_level_scene = ExtResource("2_33g33")
 enemy_score = 4
+current_level_number = 2
 
 [node name="Background2" type="Sprite2D" parent="." index="0"]
 position = Vector2(150, 80)
