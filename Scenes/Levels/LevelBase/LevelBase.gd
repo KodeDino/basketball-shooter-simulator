@@ -2,6 +2,8 @@ extends Node2D
 
 @export var next_level_scene: PackedScene
 @export var enemy_score: int = 3
+@export var current_level_number: int
+
 @onready var hud: Control = $CanvasLayer/Hud
 @onready var enemy_score_label: Label = $CanvasLayer/MarginContainer/EnemyScore
 @onready var game_over: Control = $CanvasLayer/GameOver
@@ -35,6 +37,8 @@ func spawn_basketball() -> void:
 		ScoreManager.reduce_change()
 	else:
 		if ScoreManager._score > enemy_score:
+			if current_level_number:
+				ScoreManager.complete_level(current_level_number)
 			SceneManager.load_next_scene(next_level_scene)
 		else:
 			game_over.show()

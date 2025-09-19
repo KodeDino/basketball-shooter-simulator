@@ -7,6 +7,7 @@
 [node name="LevelThree" instance=ExtResource("1_dqxtk")]
 next_level_scene = ExtResource("2_7upe8")
 enemy_score = 5
+current_level_number = 3
 
 [node name="Hoop" parent="." index="1" instance=ExtResource("2_6chg6")]
 position = Vector2(175, 50)
