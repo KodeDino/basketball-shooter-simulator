@@ -38,11 +38,7 @@ func spawn_basketball() -> void:
 	else:
 		if ScoreManager._score > enemy_score:
 			if current_level_number:
-				print("DEBUG: level complete with current_level_number: ", current_level_number)
 				ScoreManager.complete_level(current_level_number)
-			else:
-				#TODO remove later, temporary debug log
-				print('DEBUG: no current_level_number exported value')
 			SceneManager.load_next_scene(next_level_scene)
 		else:
 			game_over.show()
