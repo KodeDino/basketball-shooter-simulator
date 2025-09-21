@@ -21,9 +21,6 @@ dialogue_sequence = Array[Dictionary]([{
 "line": "哼哼哼，我们可是最受信用的种族，既然输了，那我也会遵守诺言，可是小子，你得小心了，比我厉害的还有8个呢，呵呵呵",
 "texture": null
 }, {
-"character": "",
-"line": "敌人打开地洞离去"
-}, {
 "character": "科迪",
 "line": "。。。谢老板你没事吧",
 "texture": ExtResource("2_krglk")
