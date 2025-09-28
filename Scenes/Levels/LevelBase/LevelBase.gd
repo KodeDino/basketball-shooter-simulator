@@ -41,6 +41,7 @@ func spawn_basketball() -> void:
 				ScoreManager.complete_level(current_level_number)
 			SceneManager.load_next_scene(next_level_scene)
 		else:
+			SignalManager.emit_on_game_over_show()
 			game_over.show()
 	
 

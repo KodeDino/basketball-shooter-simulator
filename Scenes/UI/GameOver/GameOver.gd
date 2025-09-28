@@ -5,6 +5,10 @@ extends Control
 @onready var button_container: Control = $ButtonContainer
 
 func _ready() -> void:
+	SignalManager.on_game_over_show.connect(_on_game_over_show)
+	
+func _on_game_over_show() -> void:
+	animation_player.play("background_popup")
 	await animation_player.animation_finished
 	game_over_label.show()
 	animation_player.play("game_over")

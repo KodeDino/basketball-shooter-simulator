@@ -5,6 +5,10 @@ signal on_basketball_removed
 signal on_dialogue_updated(data: Dictionary)
 signal on_dialogue_finished
 signal on_main_menu_button_clicked
+signal on_game_over_show
+
+func emit_on_game_over_show() -> void:
+	on_game_over_show.emit()
 
 func emit_on_basketball_score() -> void:
 	on_basketball_score.emit()
