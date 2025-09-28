@@ -8,7 +8,7 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 
 ### Core Configuration
 
-- **Engine**: Godot 4.4 (Forward Plus rendering)
+- **Engine**: Godot 4.5 (Forward Plus rendering)
 - **Resolution**: 288x162 (scaled to 1152x648)
 - **Main Scene**: `res://Scenes/UI/MainMenu/MainMenu.tscn` (game always starts at main menu)
 - **Project Name**: `basketball_shooter_simulator`
