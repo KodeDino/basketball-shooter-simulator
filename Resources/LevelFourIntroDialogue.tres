@@ -1,8 +1,6 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=5 format=3 uid="uid://bm4g5n7h8qaq1"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://bm4g5n7h8qaq1"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_abc01"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_def02"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="3_ghi03"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="4_jkl04"]
 
 [resource]
@@ -10,22 +8,22 @@ script = ExtResource("1_abc01")
 dialogue_sequence = Array[Dictionary]([{
 "character": "科迪",
 "line": "（想法：呃...这些都是...人骨！！）",
-"texture": ExtResource("2_def02")
+"texture": ExtResource("4_jkl04")
 }, {
 "character": "科迪",
 "line": "你是谁！",
-"texture": ExtResource("3_ghi03")
+"texture": ExtResource("4_jkl04")
 }, {
 "character": "外星人",
 "line": "刚刚我的队友跟我说你打败了他，看来你小子挺厉害",
-"texture": Object()
+"texture": null
 }, {
 "character": "科迪",
 "line": "哼，没想到这么快又遇到一个",
-"texture": ExtResource("2_def02")
+"texture": ExtResource("4_jkl04")
 }, {
 "character": "外星人",
 "line": "什么都不用说了，来PK吧！",
-"texture": Object()
+"texture": null
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"
