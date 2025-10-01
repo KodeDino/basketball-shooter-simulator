@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=4 format=3 uid="uid://cm5h6n8kak0l2"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_end01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_end02"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="3_end03"]
+
+[resource]
+script = ExtResource("1_end01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "外星人",
+"line": "呼，呼，呼",
+"texture": Object()
+}, {
+"character": "科迪",
+"line": "...（小喘，凝重看着喘着粗气的对手）",
+"texture": ExtResource("2_end02")
+}, {
+"character": "外星人",
+"line": "可恶，居然被你打败了，那我就没理由拦你了",
+"texture": Object()
+}, {
+"character": "科迪",
+"line": "你剩下的同伴都在哪？",
+"texture": ExtResource("2_end02")
+}, {
+"character": "外星人",
+"line": "我的同伴已经去到世界各地了，想要打败我们可没这么容易，呵呵呵",
+"texture": Object()
+}, {
+"character": "科迪",
+"line": "可恶，我得加快脚步了",
+"texture": ExtResource("2_end02")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"
