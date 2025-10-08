@@ -42,7 +42,8 @@ func setup() -> void:
 	_arrow_scale_x = arrow_sprite.scale.x
 	arrow_sprite.hide()
 	_gravity = ProjectSettings.get_setting("physics/2d/default_gravity", 980.0)
-	setup_trajectory_arrows()
+	# TODO uncomment when special case is applied
+	#setup_trajectory_arrows()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -62,9 +63,11 @@ func handle_dragging() -> void:
 	_dragged_vector = new_dragged_vector
 	position = _start_position + _dragged_vector
 
-	# TODO needs to have a condition for special levels
 	update_arrow_scale()
-	update_trajectory_preview()
+	
+	# TODO needs to have a condition for special levels
+	# TODO uncomment when skill is used
+	#update_trajectory_preview()
 	
 	
 func update_arrow_scale() -> void:
@@ -77,7 +80,8 @@ func update_arrow_scale() -> void:
 func start_releasing() -> void:
 	freeze = false
 	arrow_sprite.hide()
-	hide_trajectory_arrows()
+	# TODO uncomment when special case is applied
+	#hide_trajectory_arrows()
 	var impulse = calculate_impulse()
 	apply_central_impulse(impulse)
 	
