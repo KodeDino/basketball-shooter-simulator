@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://de7nqvmlrbsey"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_qi3w3"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_qbk0f"]
+
+[node name="LevelSix" instance=ExtResource("1_qi3w3")]
+enemy_score = 7
+current_level_number = 6
+
+[node name="BasketballSpawnSpot" parent="." index="0"]
+position = Vector2(52, 95)
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_qbk0f")]
+position = Vector2(250, 74)
