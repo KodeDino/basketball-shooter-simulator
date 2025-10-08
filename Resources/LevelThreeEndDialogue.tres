@@ -1,17 +1,21 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://cxlfp3gdn3ov6"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://cxlfp3gdn3ov6"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_7c084"]
+[ext_resource type="Texture2D" uid="uid://cqvk4g2tnklhg" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_4_Exhausted.png" id="1_r7ag7"]
 [ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="1_wrtoh"]
 [ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="2_krglk"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="3_0ovxv"]
+[ext_resource type="Texture2D" uid="uid://g1bfft2obf72" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_5_Boasting.png" id="3_2ogr1"]
 [ext_resource type="Texture2D" uid="uid://b4txomu62ybeo" path="res://Assets/Bust Shot/Main Character_Bust Shot_2_Hehe.png" id="4_ebffo"]
+[ext_resource type="Texture2D" uid="uid://cv7uuvspcvy25" path="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_2_Relieved.png" id="5_icecp"]
+[ext_resource type="Texture2D" uid="uid://dare3w2bd12ef" path="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_3_Concerned.png" id="7_1omek"]
 
 [resource]
 script = ExtResource("1_7c084")
 dialogue_sequence = Array[Dictionary]([{
 "character": "敌人",
 "line": "哼，小子挺厉害啊",
-"texture": null
+"texture": ExtResource("1_r7ag7")
 }, {
 "character": "科迪",
 "line": "你要说话算话",
@@ -19,7 +23,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "敌人",
 "line": "哼哼哼，我们可是最受信用的种族，既然输了，那我也会遵守诺言，可是小子，你得小心了，比我厉害的还有8个呢，呵呵呵",
-"texture": null
+"texture": ExtResource("3_2ogr1")
 }, {
 "character": "科迪",
 "line": "。。。谢老板你没事吧",
@@ -27,7 +31,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "谢老板",
 "line": "真是谢谢你啊，要不是你我的小命难保啊",
-"texture": null
+"texture": ExtResource("5_icecp")
 }, {
 "character": "科迪",
 "line": "谢老板，你要多加小心啊，我先走一步了",
@@ -35,7 +39,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "谢老板",
 "line": "科迪，你准备去哪里？",
-"texture": null
+"texture": ExtResource("7_1omek")
 }, {
 "character": "科迪",
 "line": "从他们那里得知了他们前来入侵地球的原因，如果不快点想办法找出他们剩下的同伴并一一击败的话后果会不堪设想，我要去追上刚刚那个家伙，这样一定能与他的同伴碰面",
@@ -43,7 +47,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "谢老板",
 "line": "虽然让你一个人前去很危险，但是我也帮不上什么忙，我能做的只有完全相信你，你一定要注意安全，平安回来啊",
-"texture": null
+"texture": ExtResource("7_1omek")
 }, {
 "character": "科迪",
 "line": "你放心吧谢老板！",
