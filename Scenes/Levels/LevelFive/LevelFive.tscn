@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_xjc66"]
 
 [node name="LevelFive" instance=ExtResource("1_gjx6k")]
-enemy_score = 7
+enemy_score = 6
 current_level_number = 5
 
 [node name="BasketballSpawnSpot" parent="." index="0"]
