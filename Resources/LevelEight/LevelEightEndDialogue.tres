@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://ck5t8r3w6mqj4"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_end01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_end02"]
+
+[resource]
+script = ExtResource("1_end01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "外星人",
+"line": "哎呀，小帅哥，技术不错嘛",
+"texture": null
+}, {
+"character": "军方",
+"line": "快抓住她！",
+"texture": null
+}, {
+"character": "外星人",
+"line": "看来不能跟小帅哥多聊两句了，那我们有缘再见吧",
+"texture": null
+}, {
+"character": "军方",
+"line": "哎呀！飞走了！第三部队追！",
+"texture": null
+}, {
+"character": "科迪",
+"line": "时间紧迫剩下的我们去下一个地方吧！",
+"texture": ExtResource("2_end02")
+}, {
+"character": "军方",
+"line": "我们在南极发现了一艘坠毁的篮球星太空船，很可能他们的总部就在那艘船上，我们赶紧赶过去吧",
+"texture": null
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

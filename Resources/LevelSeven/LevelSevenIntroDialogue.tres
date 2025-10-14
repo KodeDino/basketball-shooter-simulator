@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://dp3q7n4k8wxr2"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+
+[resource]
+script = ExtResource("1_intro01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "外星人",
+"line": "这个星球的篮球好奇怪啊，又小，又软，还没什么气，颜色还挺新奇",
+"texture": null
+}, {
+"character": "科迪",
+"line": "找到了！！！",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "外星人",
+"line": "！！！",
+"texture": null
+}, {
+"character": "军方",
+"line": "放下那颗足球！",
+"texture": null
+}, {
+"character": "外星人",
+"line": "足球？难道这不是篮球吗？",
+"texture": null
+}, {
+"character": "军方",
+"line": "哼，你们原来足球和篮球分不清啊，真傻",
+"texture": null
+}, {
+"character": "外星人",
+"line": "呃。。居然嘲笑我，我要把你们统统干掉！",
+"texture": null
+}, {
+"character": "科迪",
+"line": "等下！！你的对手在这里，跟他们没有关系",
+"texture": ExtResource("2_intro02")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"
