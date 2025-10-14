@@ -29,6 +29,7 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 │   ├── UI/
 │   │   ├── BackButton/         # Reusable back navigation button
 │   │   ├── Dialog/             # Dialogue system UI
+│   │   ├── Gadget/             # Gadget UI button and counter
 │   │   ├── GameOver/           # Game over screen
 │   │   ├── Hud/                # In-game HUD
 │   │   ├── LevelButton/        # Reusable level selection button
@@ -60,13 +61,20 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
    - `load_main_menu()` - Return to main menu
    - `load_level_one_intro()` - Start game sequence
 
-3. **ScoreManager** - Game state management
+3. **ScoreManager** - Game state management and gadget system
 
    - `_score: int` - Current player score
    - `_chance: int` - Remaining attempts (starts at 10)
+   - `_available_gadgets: int` - Number of gadgets available to player
+   - `_completed_special_levels: Array[int]` - Track which special levels were won
+   - `_gadget_active_this_shot: bool` - Whether gadget is active for current shot
    - `increment_score()` - Add to score
    - `reduce_change()` - Remove attempt
    - `reset()` - Reset for new level
+   - `mark_special_level_won(level_number)` - Award gadgets for special level completion
+   - `use_gadget()` - Activate gadget for current shot
+   - `reset_gadget_shot()` - Reset gadget flag after shot completes
+   - `save_progress()` / `load_progress()` - Persist gadget data and special level completion
 
 4. **DialogueManager** - Handles cutscene dialogue system
 
@@ -78,11 +86,17 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 - **States**: Ready, Drag, Release
 - **Physics**: Impulse-based launching with visual aim indicator
 - **Input**: Mouse drag to aim and release to shoot
+- **Trajectory Preview**: Shows predicted ball path when gadget is active
+  - 12 arrow sprites showing trajectory points
+  - Only visible when `_gadget_active` is true
+  - Activated dynamically when dragging starts
 - **Constants**:
   - `MIN_CLAMP: Vector2(-20, 0)` - Minimum drag distance
   - `MAX_CLAMP: Vector2(0, 20)` - Maximum drag distance
   - `IMPULSE_MULTIPLIER: 25` - Shot power multiplier
   - `IMPULSE_MAX: 1500` - Maximum shot power
+  - `TRAJECTORY_POINTS: 12` - Number of trajectory preview arrows
+  - `TRAJECTORY_TIME_STEP: 0.05` - Time between trajectory points
 
 #### Hoop (`Scenes/Hoop/Hoop.gd`)
 
@@ -99,6 +113,12 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 - **Failure Condition**: Run out of chances (0 remaining)
 - **Progression**: Automatic transition to next level on victory
 - **Basketball Spawning**: Automatic respawn after ball exits screen
+- **Special Levels**: Levels 4, 8, and 12 award gadgets on victory
+  - Level 4: Awards 1 gadget
+  - Level 8: Awards 2 gadgets
+  - Level 12: Awards 3 gadgets
+  - Players can progress even on loss, but don't receive gadget rewards
+  - `is_special_level: bool` - Export flag to mark special levels
 
 #### Level Selection System (`Scenes/UI/LevelSelect/`)
 
@@ -112,6 +132,20 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
   - Animated title with flashing effect
   - Scoreboard background texture
   - 10 level buttons (levels 1-3 have target scenes, 4-10 are placeholders)
+
+#### Gadget System (`Scenes/UI/Gadget/`)
+
+- **Gadget UI Component** (`Scenes/UI/Gadget/Gadget.gd`):
+  - Class name: `Gadget` (extends `Control`)
+  - TextureButton for activating gadget
+  - Label showing available gadget count ("x#")
+  - Automatically hides when no gadgets available
+  - Button disables when gadget is active or count is 0
+  - Refreshes display after each basketball spawn
+- **Functionality**:
+  - Click button to activate trajectory preview for next shot
+  - Single-use per activation (consumed after shot completes)
+  - Integrated into LevelBase for all levels
 
 #### Transition System (`Scenes/UI/Transition/`)
 
@@ -167,8 +201,15 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 
 ## Recent Changes
 
-- Added level selection system (current branch)
-- Implemented reusable UI components (LevelButton, BackButton)
+- **Gadget System Implementation** (current)
+  - Added special level system (levels 4, 8, 12)
+  - Implemented gadget reward system with progressive awards
+  - Created trajectory preview feature for basketball shots
+  - Built Gadget UI component with button and counter
+  - Integrated save/load system for gadget persistence
+  - Dynamic gadget activation on drag start for immediate feedback
+- Added level selection system
+- Implemented reusable UI components (LevelButton, BackButton, Gadget)
 - Enhanced transition system with improved fade animations
 - Updated main menu with level select option
 - Added pause functionality (PR #66)

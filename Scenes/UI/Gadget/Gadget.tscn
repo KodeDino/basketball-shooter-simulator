@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=3 uid="uid://dq0jcap0ni6b3"]
+
+[ext_resource type="Script" uid="uid://dwd55spdv3uxa" path="res://Scenes/UI/Gadget/Gadget.gd" id="1_mxibv"]
+[ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="1_qck37"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxibv"]
+atlas = ExtResource("1_qck37")
+region = Rect2(243, 27, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl6f8"]
+atlas = ExtResource("1_qck37")
+region = Rect2(352, 27, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17reo"]
+atlas = ExtResource("1_qck37")
+region = Rect2(277, 27, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqpw8"]
+atlas = ExtResource("1_qck37")
+region = Rect2(260, 27, 17, 17)
+
+[sub_resource type="SystemFont" id="SystemFont_iteex"]
+font_names = PackedStringArray("04b 30")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_qck37"]
+font = SubResource("SystemFont_iteex")
+font_size = 7
+shadow_color = Color(0.145098, 0.0745098, 0, 1)
+
+[node name="Gadget" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_mxibv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = SubResource("AtlasTexture_mxibv")
+texture_pressed = SubResource("AtlasTexture_bl6f8")
+texture_hover = SubResource("AtlasTexture_17reo")
+texture_disabled = SubResource("AtlasTexture_iqpw8")
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="HBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 10
+text = "x1"
+label_settings = SubResource("LabelSettings_qck37")
+
+[connection signal="pressed" from="HBoxContainer/MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]

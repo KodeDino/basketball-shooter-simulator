@@ -13,9 +13,12 @@ extends Node2D
 
 const BASKETBALL = preload("res://Scenes/Basketball/Basketball.tscn")
 
+var gadget: Gadget
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	ScoreManager.reset()
+	gadget = get_node("CanvasLayer/Gadget")
 	hud.update_display()
 	spawn_basketball()
 	connect_signals()
@@ -43,15 +46,18 @@ func spawn_basketball() -> void:
 		basketball.position = basketball_spawn_spot.position
 		add_child(basketball)
 		ScoreManager.reduce_change()
+		gadget.update_display()
 	else:
 		if ScoreManager._score > enemy_score:
+			if is_special_level:
+				ScoreManager.mark_special_level_won(current_level_number)
 			save_level_and_proceed_scene()
 		else:
 			if !is_special_level:
 				SignalManager.emit_on_game_over_show()
 				game_over.show()
 			else:
-				save_level_and_proceed_scene()			
+				save_level_and_proceed_scene()
 
 			
 func save_level_and_proceed_scene() -> void:

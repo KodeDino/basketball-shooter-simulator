@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnc8vwtc5d7d7"]
+[gd_scene load_steps=7 format=3 uid="uid://cnc8vwtc5d7d7"]
 
 [ext_resource type="Script" uid="uid://fwoe0ky7pfxy" path="res://Scenes/Levels/LevelBase/LevelBase.gd" id="1_ami44"]
+[ext_resource type="PackedScene" uid="uid://dq0jcap0ni6b3" path="res://Scenes/UI/Gadget/Gadget.tscn" id="2_kp3ay"]
 [ext_resource type="LabelSettings" uid="uid://1r0kyx63wesf" path="res://Assets/LabelSettings/hud_label_setting.tres" id="3_7t6so"]
 [ext_resource type="PackedScene" uid="uid://c0vgtiiioprbo" path="res://Scenes/UI/Hud/Hud.tscn" id="3_63row"]
 [ext_resource type="PackedScene" uid="uid://b0riw3ets25ag" path="res://Scenes/UI/GameOver/GameOver.tscn" id="4_jnqtw"]
@@ -38,3 +39,5 @@ label_settings = ExtResource("3_7t6so")
 visible = false
 
 [node name="Pause" parent="CanvasLayer" instance=ExtResource("5_mgty3")]
+
+[node name="Gadget" parent="CanvasLayer" instance=ExtResource("2_kp3ay")]

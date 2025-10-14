@@ -30,6 +30,7 @@ var _arrow_scale_x: float = 0.0
 # Trajectory preview variables
 var _trajectory_arrows: Array[Sprite2D] = []
 var _gravity: float
+var _gadget_active: bool
 
 
 # Called when the node enters the scene tree for the first time.
@@ -42,8 +43,6 @@ func setup() -> void:
 	_arrow_scale_x = arrow_sprite.scale.x
 	arrow_sprite.hide()
 	_gravity = ProjectSettings.get_setting("physics/2d/default_gravity", 980.0)
-	# TODO uncomment when special case is applied
-	#setup_trajectory_arrows()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -52,8 +51,12 @@ func _physics_process(_delta: float) -> void:
 	
 	
 func start_dragging() -> void:
+	_gadget_active = ScoreManager._gadget_active_this_shot
 	_drag_start = get_global_mouse_position()
-	arrow_sprite.show()
+	if _gadget_active:
+		setup_trajectory_arrows()
+	else:
+		arrow_sprite.show()
 	
 	
 func handle_dragging() -> void:
@@ -65,9 +68,8 @@ func handle_dragging() -> void:
 
 	update_arrow_scale()
 	
-	# TODO needs to have a condition for special levels
-	# TODO uncomment when skill is used
-	#update_trajectory_preview()
+	if _gadget_active:
+		update_trajectory_preview()
 	
 	
 func update_arrow_scale() -> void:
@@ -80,8 +82,8 @@ func update_arrow_scale() -> void:
 func start_releasing() -> void:
 	freeze = false
 	arrow_sprite.hide()
-	# TODO uncomment when special case is applied
-	#hide_trajectory_arrows()
+	if _gadget_active:
+		hide_trajectory_arrows()
 	var impulse = calculate_impulse()
 	apply_central_impulse(impulse)
 	
@@ -154,6 +156,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
+	ScoreManager.reset_gadget_shot()
 	SignalManager.emit_on_basketball_removed()
 	queue_free()
 
