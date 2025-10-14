@@ -6,6 +6,10 @@ signal on_dialogue_updated(data: Dictionary)
 signal on_dialogue_finished
 signal on_main_menu_button_clicked
 signal on_game_over_show
+signal on_instruction_next_button_pressed
+
+func emit_on_instruction_next_button_pressed() -> void:
+	on_instruction_next_button_pressed.emit()
 
 func emit_on_game_over_show() -> void:
 	on_game_over_show.emit()

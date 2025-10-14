@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bqvq6gmvxgr2y"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_1i0ek"]
-[ext_resource type="Resource" uid="uid://pt4vapxuxyc5" path="res://Resources/LevelTwoEndDialogue.tres" id="2_bw7se"]
+[ext_resource type="Resource" uid="uid://pt4vapxuxyc5" path="res://Resources/LevelTwo/LevelTwoEndDialogue.tres" id="2_bw7se"]
 [ext_resource type="Texture2D" uid="uid://bg8au6vy3dvqa" path="res://Assets/Background/Background_02_Subway-4.png" id="3_bw7se"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_ia8p4"]
 [ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Background_02_Subway-Outside.png" id="3_o2qd5"]

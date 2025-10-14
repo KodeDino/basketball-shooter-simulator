@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b8aecn7bl37ql" path="res://Scenes/CutScenes/LevelThree/LevelThreeEnd.gd" id="1_fngv2"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="2_fngv2"]
-[ext_resource type="Resource" uid="uid://cxlfp3gdn3ov6" path="res://Resources/LevelThreeEndDialogue.tres" id="2_p2t6u"]
+[ext_resource type="Resource" uid="uid://cxlfp3gdn3ov6" path="res://Resources/LevelThree/LevelThreeEndDialogue.tres" id="2_p2t6u"]
 [ext_resource type="Texture2D" uid="uid://ccnf2vpl7jefe" path="res://Assets/Background/Background_03_Bathhouse-3_Hole-1.png" id="3_253f0"]
 [ext_resource type="Texture2D" uid="uid://iu10wdjktmi4" path="res://Assets/Background/Background_03_Bathhouse-2_Inside.png" id="3_c4nrw"]
 [ext_resource type="Texture2D" uid="uid://caoegfdirnp7f" path="res://Assets/Background/Background_03_Bathhouse-3_Hole-2.png" id="4_c4nrw"]

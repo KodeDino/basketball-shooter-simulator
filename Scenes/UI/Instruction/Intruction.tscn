@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://cilli5pr356sg"]
+
+[ext_resource type="Script" uid="uid://begg0ietvuxj6" path="res://Scenes/UI/Instruction/Intruction.gd" id="1_r0avx"]
+[ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="2_etduj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srsvd"]
+atlas = ExtResource("2_etduj")
+region = Rect2(95, 23, 42, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l068"]
+atlas = ExtResource("2_etduj")
+region = Rect2(95, 40, 42, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwlmo"]
+atlas = ExtResource("2_etduj")
+region = Rect2(95, 6, 42, 10)
+
+[node name="Intruction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r0avx")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -42.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="TextureButton" type="TextureButton" parent="Panel/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+texture_normal = SubResource("AtlasTexture_srsvd")
+texture_pressed = SubResource("AtlasTexture_1l068")
+texture_hover = SubResource("AtlasTexture_dwlmo")
+
+[connection signal="pressed" from="Panel/MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]

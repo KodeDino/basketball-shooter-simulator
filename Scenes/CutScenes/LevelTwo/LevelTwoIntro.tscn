@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_mc6u3"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="1_u0wa7"]
-[ext_resource type="Resource" uid="uid://oy1j2hy3d20b" path="res://Resources/LevelTwoIntroDialogue.tres" id="2_b0xxx"]
+[ext_resource type="Resource" uid="uid://oy1j2hy3d20b" path="res://Resources/LevelTwo/LevelTwoIntroDialogue.tres" id="2_b0xxx"]
 [ext_resource type="Texture2D" uid="uid://bwgkatjly1d1" path="res://Assets/Background/Background_Subway_sheet.png" id="3_uh6n3"]
 [ext_resource type="PackedScene" uid="uid://bncj5yvest86o" path="res://Scenes/Parallax/ParallaxBackground.tscn" id="3_uw8w6"]
 [ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Background_02_Subway-Outside.png" id="4_ee1co"]
