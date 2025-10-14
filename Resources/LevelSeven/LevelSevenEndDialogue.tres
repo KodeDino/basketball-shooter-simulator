@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://c8jm2p5n9tvy3"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_end01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_end02"]
+
+[resource]
+script = ExtResource("1_end01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "外星人",
+"line": "居然有这么厉害的人类，情况不妙，赶紧撤退",
+"texture": null
+}, {
+"character": "军方",
+"line": "别跑！",
+"texture": null
+}, {
+"character": "科迪",
+"line": "可恶！让他跑了！",
+"texture": ExtResource("2_end02")
+}, {
+"character": "军方",
+"line": "派几个人！追！剩下的人保护科迪去下一个目标",
+"texture": null
+}, {
+"character": "科迪",
+"line": "下一个在哪？",
+"texture": ExtResource("2_end02")
+}, {
+"character": "军方",
+"line": "刚刚总部传来消息，下一个在冰岛",
+"texture": null
+}, {
+"character": "科迪",
+"line": "好，走吧",
+"texture": ExtResource("2_end02")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

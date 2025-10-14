@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://bw4x9v2m7nsp6"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+
+[resource]
+script = ExtResource("1_intro01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "外星人",
+"line": "这个星球上居然还有这么可爱的生物",
+"texture": null
+}, {
+"character": "军方",
+"line": "放开那个狐狸和那匹马！",
+"texture": null
+}, {
+"character": "外星人",
+"line": "哈？",
+"texture": null
+}, {
+"character": "科迪",
+"line": "来跟我决斗吧！",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "外星人",
+"line": "吐艳（讨厌），这么着急干吗嘛，又不是不会跟你比，先让我补补妆",
+"texture": null
+}, {
+"character": "科迪",
+"line": "额。。。。",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "外星人",
+"line": "好了来吧",
+"texture": null
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"
