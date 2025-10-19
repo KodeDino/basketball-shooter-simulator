@@ -21,14 +21,14 @@ end_position = Vector2(230, 124)
 special_level = true
 hoop_speed = 4.5
 
-[node name="Intruction" parent="CanvasLayer" index="0" instance=ExtResource("4_785pr")]
+[node name="Hud" parent="CanvasLayer" index="0"]
+visible = false
+
+[node name="MarginContainer" parent="CanvasLayer" index="1"]
+visible = false
+
+[node name="Intruction" parent="CanvasLayer" index="5" instance=ExtResource("4_785pr")]
 instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具，输了可以继续通关但是没有道具"
-
-[node name="Hud" parent="CanvasLayer" index="1"]
-visible = false
-
-[node name="MarginContainer" parent="CanvasLayer" index="2"]
-visible = false
 
 [node name="HoopStart" type="Marker2D" parent="." index="3"]
 position = Vector2(141, 124)

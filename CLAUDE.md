@@ -192,6 +192,52 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 - **Add Dialogue**: Create new `DialogueResource` in `/Resources/`
 - **UI Changes**: Modify scenes in `/Scenes/UI/`
 
+#### Creating Dialogue Resources
+
+Dialogue resources for level cutscenes follow a standardized format. The source of truth for dialogue content is `Assets/ToDo.txt`.
+
+**Workflow:**
+1. Read dialogue content from `Assets/ToDo.txt` for the target level
+2. Create folder: `Resources/Level{Name}/` (e.g., `LevelSix`, `LevelSeven`)
+3. Create two `.tres` files:
+   - `Level{Name}IntroDialogue.tres` - Opening cutscene dialogue
+   - `Level{Name}EndDialogue.tres` - Closing cutscene dialogue
+
+**File Structure Template:**
+```gdscript
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://[unique_id]"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+
+[resource]
+script = ExtResource("1_intro01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "科迪",
+"line": "dialogue text here",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "军方",
+"line": "dialogue text here",
+"texture": null
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"
+```
+
+**Key Points:**
+- Each dialogue entry has three fields: `character`, `line`, `texture`
+- Main character (科迪) uses texture reference: `ExtResource("2_intro02")`
+- Other characters (军方, 外星人, etc.) use `texture: null`
+- UIDs should be unique for each file (generate random alphanumeric strings)
+- Follow exact dialogue text from `Assets/ToDo.txt` without modifications
+- Preserve Chinese characters and punctuation exactly as specified
+
+**Example Levels Created:**
+- Level 6 (Australia): Kangaroo protection scene
+- Level 7 (Brazil): Soccer ball confusion scene
+- Level 8 (Iceland): Female alien makeup scene
+- Level 9 (Aircraft Carrier): Interception scene
+
 ### Architecture Patterns
 
 - **Singleton Pattern**: Global managers via autoloads
@@ -201,7 +247,13 @@ A Godot 4.4 basketball shooting simulator game with multiple levels, dialogue sy
 
 ## Recent Changes
 
-- **Gadget System Implementation** (current)
+- **Dialogue Resources for Levels 6-9** (PR #95)
+  - Created dialogue resources for Level 6 (Australia/Kangaroo scene)
+  - Created dialogue resources for Level 7 (Brazil/Soccer ball scene)
+  - Created dialogue resources for Level 8 (Iceland/Makeup scene)
+  - Created dialogue resources for Level 9 (Aircraft Carrier)
+  - All dialogue content sourced from `Assets/ToDo.txt`
+- **Gadget System Implementation**
   - Added special level system (levels 4, 8, 12)
   - Implemented gadget reward system with progressive awards
   - Created trajectory preview feature for basketball shots

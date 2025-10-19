@@ -106,7 +106,7 @@ func setup_trajectory_arrows() -> void:
 func calculate_trajectory_point(initial_velocity: Vector2, time: float, start_pos: Vector2) -> Vector2:
 	var x = initial_velocity.x * time
 	var y = initial_velocity.y * time + 0.5 * _gravity * time * time
-	return start_pos + Vector2(x - 10, y + 25)  # Offset arrows down by 8 pixels
+	return start_pos + Vector2(x - 10, y + 25)
 
 
 func update_trajectory_preview() -> void:

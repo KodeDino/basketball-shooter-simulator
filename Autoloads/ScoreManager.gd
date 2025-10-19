@@ -42,6 +42,7 @@ func save_progress() -> void:
 		file.close()
 
 func load_progress() -> void:
+	print(OS.get_data_dir())
 	var file: FileAccess = FileAccess.open(SAVE_PATH, FileAccess.READ)
 	if file:
 		if file.get_length() > 0:
@@ -75,6 +76,7 @@ func use_gadget() -> void:
 	if _available_gadgets > 0:
 		_available_gadgets -= 1
 		_gadget_active_this_shot = true
+		save_progress()
 
 func reset_gadget_shot() -> void:
 	_gadget_active_this_shot = false

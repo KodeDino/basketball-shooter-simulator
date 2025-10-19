@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://8iurao47qsbr"]
+[gd_scene load_steps=16 format=3 uid="uid://8iurao47qsbr"]
 
 [ext_resource type="PackedScene" uid="uid://r17ofbci8erw" path="res://Scenes/UI/LevelButton/LevelButton.tscn" id="1_e8gtt"]
 [ext_resource type="Texture2D" uid="uid://fbkewdoderx0" path="res://Assets/Background/scoreboard_bg.png" id="1_rx6fb"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ct1uiw41hc1ff" path="res://Scenes/CutScenes/LevelThree/LevelThreeIntro.tscn" id="4_rx6fb"]
 [ext_resource type="PackedScene" uid="uid://cexwntfgcswt6" path="res://Scenes/UI/BackButton/BackButton.tscn" id="5_cjumm"]
 [ext_resource type="PackedScene" uid="uid://dabrcvdqw3sq8" path="res://Scenes/UI/MainMenu/MainMenu.tscn" id="6_q5epn"]
+[ext_resource type="PackedScene" uid="uid://d2xh6bwxwytmb" path="res://Scenes/Levels/LevelFour/LevelFour.tscn" id="6_r76j1"]
+[ext_resource type="PackedScene" uid="uid://04ogvtjjdp8q" path="res://Scenes/Levels/LevelFive/LevelFive.tscn" id="7_vbgge"]
+[ext_resource type="PackedScene" uid="uid://de7nqvmlrbsey" path="res://Scenes/Levels/LevelSix/LevelSix.tscn" id="8_vbgge"]
 
 [sub_resource type="Animation" id="Animation_jc0c2"]
 length = 0.001
@@ -127,10 +130,12 @@ level = "3"
 
 [node name="LevelFourButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
 layout_mode = 2
+target_scene = ExtResource("6_r76j1")
 level = "4"
 
 [node name="LevelFiveButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_e8gtt")]
 layout_mode = 2
+target_scene = ExtResource("7_vbgge")
 level = "5"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
@@ -139,6 +144,7 @@ theme_override_constants/separation = 15
 
 [node name="LevelSixButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
 layout_mode = 2
+target_scene = ExtResource("8_vbgge")
 level = "6"
 
 [node name="LevelSevenButton" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_e8gtt")]
