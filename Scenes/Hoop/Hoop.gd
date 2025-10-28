@@ -3,12 +3,15 @@ extends Node2D
 @onready var net: Area2D = $Net
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var score_area: Area2D = $ScoreArea
+@onready var timer_node: Timer = $Timer
 
 @export var net_drag: float = 0.0
 @export var start_position: Vector2
 @export var end_position: Vector2
 @export var special_level: bool
 @export var hoop_speed:= 2.0
+@export var timeout_second: float = 0.0
+@export var should_hoop_move: bool = false
 
 var bodies_in_top_trigger: Array = []
 var tween: Tween
@@ -16,7 +19,9 @@ var tween: Tween
 
 func _ready() -> void:
 	SignalManager.on_instruction_next_button_pressed.connect(_on_instruction_next_button_pressed)
-		
+	timer_node.timeout.connect(_on_timer_timeout)
+	if should_hoop_move:
+		move_hoop()
 
 func _physics_process(_delta: float) -> void:
 	for body in net.get_overlapping_bodies():
@@ -26,7 +31,16 @@ func _physics_process(_delta: float) -> void:
 
 func _on_instruction_next_button_pressed() -> void:
 	if special_level:
-		move_hoop()
+		if timeout_second != 0.0:
+			# Start the timer and wait for it to timeout before moving
+			timer_node.start(timeout_second)
+		else:
+			# No delay, start moving immediately
+			move_hoop()
+
+
+func _on_timer_timeout() -> void:
+	move_hoop()
 
 
 func _on_net_body_entered(body: Node2D) -> void:

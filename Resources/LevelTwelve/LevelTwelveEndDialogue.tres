@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://b8ry6k3nawqp5"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://bk8p6m4n9xwq7"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
@@ -6,24 +6,20 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
+"character": "女王",
+"line": "唔啊啊啊",
+"texture": null
+}, {
 "character": "科迪",
-"line": "在那里！",
+"line": "（满身粘液）终于能呼吸到新鲜空气了",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "军方",
-"line": "保护袋鼠！",
-"texture": null
-}, {
-"character": "外星人",
-"line": "你们是？",
-"texture": null
-}, {
-"character": "军方",
-"line": "放开那个袋鼠！",
+"character": "女王",
+"line": "居然又被你打败了！啊啊啊啊啊！（气晕）",
 "texture": null
 }, {
 "character": "科迪",
-"line": "你的对手是我！来跟我比一场投篮吧！",
+"line": "不好，这个母船估计要撑不住了，我得赶紧跑",
 "texture": ExtResource("2_intro02")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqugtsh120mdv"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_eroba"]
+[ext_resource type="PackedScene" uid="uid://c6qak7m5nxwq5" path="res://Scenes/CutScenes/LevelNine/LevelNineEnd.tscn" id="2_end"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+
+[node name="LevelNine" instance=ExtResource("1_eroba")]
+next_level_scene = ExtResource("2_end")
+enemy_score = 7
+current_level_number = 9
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
+position = Vector2(180, 115)
+start_position = Vector2(180, 115)
+end_position = Vector2(180, 50)
+hoop_speed = 5.5
+should_hoop_move = true

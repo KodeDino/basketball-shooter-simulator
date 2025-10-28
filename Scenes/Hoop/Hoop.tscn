@@ -97,6 +97,9 @@ polygon = PackedVector2Array(15.7, 0.5, 16.5, 0.5, 16.5, -1.5, 20.9, -1.5, 20.9,
 position = Vector2(-22, -1.5)
 shape = SubResource("RectangleShape2D_tvs0s")
 
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="body_entered" from="HoopTriggerArea" to="." method="_on_hoop_trigger_area_body_entered"]
 [connection signal="body_exited" from="HoopTriggerArea" to="." method="_on_hoop_trigger_area_body_exited"]
 [connection signal="body_entered" from="ScoreArea" to="." method="_on_score_area_body_entered"]

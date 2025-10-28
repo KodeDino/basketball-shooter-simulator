@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckb45v7dew0aw"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_jsf31"]
+[ext_resource type="PackedScene" uid="uid://c3p6k8nanxwq6" path="res://Scenes/CutScenes/LevelTen/LevelTenEnd.tscn" id="2_end"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+
+[node name="LevelTen" instance=ExtResource("1_jsf31")]
+next_level_scene = ExtResource("2_end")
+enemy_score = 7
+current_level_number = 10
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
+position = Vector2(135, 110)
+start_position = Vector2(135, 110)
+end_position = Vector2(108, 50)
+hoop_speed = 5.5
+should_hoop_move = true

@@ -1,9 +1,15 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=5 format=3 uid="uid://cm5h6n8kak0l2"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=11 format=3 uid="uid://cm5h6n8kak0l2"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_end01"]
 [ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="1_tmp6j"]
 [ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="2_1bkn5"]
 [ext_resource type="Texture2D" uid="uid://bp57i5w7d8w4t" path="res://Assets/Bust Shot/Main Character_Bust Shot_9_CSerious.png" id="3_mo6fx"]
+[ext_resource type="Texture2D" uid="uid://c4g26kc0rel6l" path="res://Assets/Bust Shot/Main Character_Bust Shot_8_Concerned.png" id="4_235c2"]
+[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="5_4la4b"]
+[ext_resource type="Texture2D" uid="uid://d076oi64a536g" path="res://Assets/Bust Shot/Main Character_Bust Shot_6_Determined.png" id="6_fvsxd"]
+[ext_resource type="Texture2D" uid="uid://birn3ykl86eax" path="res://Assets/Bust Shot/Soldier_Bust Shot_2_FREES!.png" id="7_iu7nw"]
+[ext_resource type="Texture2D" uid="uid://b2n0pw2wlvb4x" path="res://Assets/Bust Shot/Main Character_Bust Shot_7_Stunned.png" id="8_oohbe"]
+[ext_resource type="Texture2D" uid="uid://ht76hukxmht7" path="res://Assets/Bust Shot/Soldier_Bust Shot_1_Normal.png" id="9_4r66j"]
 
 [resource]
 script = ExtResource("1_end01")
@@ -25,11 +31,59 @@ dialogue_sequence = Array[Dictionary]([{
 "texture": ExtResource("2_1bkn5")
 }, {
 "character": "外星人",
-"line": "我的同伴已经去到世界各地了，想要打败我们可没这么容易，呵呵呵",
+"line": "我的同伴已经去到世界各地了，想要打败我们可没这么容易，呵呵呵哈哈哈哈哈哈哈哈哈哈哈哈哈哈",
 "texture": null
 }, {
 "character": "科迪",
 "line": "可恶，我得加快脚步了",
 "texture": ExtResource("3_mo6fx")
+}, {
+"character": "科迪",
+"line": "!!!!!!!!",
+"texture": ExtResource("4_235c2")
+}, {
+"character": "科迪",
+"line": "这。。。这里是！！",
+"texture": ExtResource("5_4la4b")
+}, {
+"character": "科迪",
+"line": "巴黎？？？！！！",
+"texture": ExtResource("6_fvsxd")
+}, {
+"character": "军方队长",
+"line": "你！不准动",
+"texture": ExtResource("7_iu7nw")
+}, {
+"character": "科迪",
+"line": "！！！！！！！",
+"texture": ExtResource("8_oohbe")
+}, {
+"character": "投篮好手1",
+"line": "蓝色头发，背心短裤。。。你是科迪吧？",
+"texture": null
+}, {
+"character": "科迪",
+"line": "你是怎么知道的？",
+"texture": ExtResource("5_4la4b")
+}, {
+"character": "篮球好手1",
+"line": "你很出名啊兄弟，听说你已经干掉3个敌人了",
+"texture": null
+}, {
+"character": "长官",
+"line": "我们是地球保卫队，根据调查，在近期的外星人入侵事件中，你们已经出力打倒个别他们的人，我们需要你们的协助",
+"texture": ExtResource("9_4r66j")
+}, {
+"character": "长官",
+"line": "我们会给予你们最大的帮助让你们去把敌人一一打败",
+"texture": ExtResource("9_4r66j")
+}, {
+"character": "科迪",
+"line": "可是他们已经去到世界各地了，我不知道他们现在在哪里",
+"texture": ExtResource("3_mo6fx")
+}, {
+"character": "长官",
+"line": "不用担心，这一方面我们会负责调查，根据最新报告，其中一个称号为（外星人称号）的篮球星人在纽约，我们现在就带你过去",
+"texture": ExtResource("9_4r66j")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

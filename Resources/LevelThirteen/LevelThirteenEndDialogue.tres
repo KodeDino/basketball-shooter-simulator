@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://c9x4k7m5pwq8n"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+
+[resource]
+script = ExtResource("1_intro01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "阿强",
+"line": "可恶！！！我都这么努力了！居然还赢不了！",
+"texture": null
+}, {
+"character": "阿强",
+"line": "哎，我的人生已经没有意义了，你走吧，就让我自生自灭吧",
+"texture": null
+}, {
+"character": "科迪",
+"line": "阿强。。。我没想到你的内心居然是这种想法",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "科迪",
+"line": "其实从小到大我都并没有把你当作是竞争对手，而是把你当一个一起成长的伙伴",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "科迪",
+"line": "对我来说，你是这个世界上最理解我的人，也是我不可或缺的好队友，更是我一生的挚友",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "科迪",
+"line": "我并不介意你做的这一切，我也要向你道歉，这么久以来没有注意到你的情绪",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "科迪",
+"line": "来，我们一起回去，然后再像以前那样一起打篮球",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "阿强",
+"line": "（眼泪汪汪）科迪。。。",
+"texture": null
+}, {
+"character": "阿强",
+"line": "谢谢你",
+"texture": null
+}, {
+"character": "科迪",
+"line": "阿强！！！！！！！！！！",
+"texture": ExtResource("2_intro02")
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://d9m5k7p3nxwq6"]
+
+[ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+
+[resource]
+script = ExtResource("1_intro01")
+dialogue_sequence = Array[Dictionary]([{
+"character": "女王",
+"line": "果然，真的很厉害",
+"texture": null
+}, {
+"character": "科迪",
+"line": "你到底是谁？为什么会知道我",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "女王",
+"line": "我是统领外星人的女王，也是他们的母亲，你应该已经知道我们的目的了，但是看样子我们是失败了",
+"texture": null
+}, {
+"character": "科迪",
+"line": "既然失败了，那就收拾东西滚回你们的星球",
+"texture": ExtResource("2_intro02")
+}, {
+"character": "外星人",
+"line": "哼哼哼哈哈哈哈哈哈哈，我的孩子们虽然都很天真老实，可是我可不一样，既然知道了有比我厉害的人，我就不能放你走！",
+"texture": null
+}, {
+"character": "外星人",
+"line": "（一口吞下科迪）",
+"texture": null
+}])
+metadata/_custom_type_script = "uid://1jg5kmdowv5h"

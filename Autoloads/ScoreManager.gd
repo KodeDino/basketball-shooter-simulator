@@ -42,7 +42,6 @@ func save_progress() -> void:
 		file.close()
 
 func load_progress() -> void:
-	print(OS.get_data_dir())
 	var file: FileAccess = FileAccess.open(SAVE_PATH, FileAccess.READ)
 	if file:
 		if file.get_length() > 0:

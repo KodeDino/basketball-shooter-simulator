@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://8bfege4punnb"]
+
+[ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_7eoja"]
+[ext_resource type="Resource" uid="uid://cm5h6n8kak0l2" path="res://Resources/LevelFour/LevelFourEndDialogue.tres" id="2_8umkt"]
+[ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="2_w414q"]
+[ext_resource type="PackedScene" uid="uid://c8ry5k2nawpq7" path="res://Scenes/CutScenes/LevelFive/LevelFiveIntro.tscn" id="4_8umkt"]
+
+[sub_resource type="Animation" id="Animation_8umkt"]
+resource_name = "level_four_end"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"show_panel"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fypn6"]
+_data = {
+&"level_four_end": SubResource("Animation_8umkt")
+}
+
+[node name="LevelFourEnd" type="Node2D"]
+script = ExtResource("1_7eoja")
+dialogue_data = ExtResource("2_8umkt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_fypn6")
+}
+autoplay = "level_four_end"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Dialog" parent="CanvasLayer" instance=ExtResource("2_w414q")]
+next_scene = ExtResource("4_8umkt")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://t022uopldvsj"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_ipxqa"]
+[ext_resource type="PackedScene" uid="uid://c8p6lam5nxwq8" path="res://Scenes/CutScenes/LevelTwelve/LevelTwelveEnd.tscn" id="2_end"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+
+[node name="LevelTwelve" instance=ExtResource("1_ipxqa")]
+next_level_scene = ExtResource("2_end")
+enemy_score = 8
+current_level_number = 12
+is_special_level = true
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
+position = Vector2(168, 52)
+special_level = true
+hoop_speed = 5.0
+timeout_second = 5.0

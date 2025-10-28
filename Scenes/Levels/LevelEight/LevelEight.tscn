@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://csyoc1mjypgoj"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_b1llx"]
+[ext_resource type="PackedScene" uid="uid://c5p8lam6nxwq4" path="res://Scenes/CutScenes/LevelEight/LevelEightEnd.tscn" id="2_end"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+[ext_resource type="PackedScene" uid="uid://cilli5pr356sg" path="res://Scenes/UI/Instruction/Intruction.tscn" id="4_oftvn"]
+
+[node name="LevelEight" instance=ExtResource("1_b1llx")]
+next_level_scene = ExtResource("2_end")
+enemy_score = 6
+current_level_number = 8
+is_special_level = true
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
+position = Vector2(182, 79)
+start_position = Vector2(150, 79)
+end_position = Vector2(250, 79)
+special_level = true
+hoop_speed = 5.5
+timeout_second = 10.0
+
+[node name="Intruction" parent="CanvasLayer" index="5" instance=ExtResource("4_oftvn")]

@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://d2xh6bwxwytmb"]
 
 [ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_qk1xc"]
-[ext_resource type="PackedScene" uid="uid://04ogvtjjdp8q" path="res://Scenes/Levels/LevelFive/LevelFive.tscn" id="2_25dih"]
+[ext_resource type="PackedScene" uid="uid://8bfege4punnb" path="res://Scenes/CutScenes/LevelFour/LevelFourEnd.tscn" id="2_785pr"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_l28o5"]
 [ext_resource type="PackedScene" uid="uid://cilli5pr356sg" path="res://Scenes/UI/Instruction/Intruction.tscn" id="4_785pr"]
 
 [node name="LevelFour" instance=ExtResource("1_qk1xc")]
-next_level_scene = ExtResource("2_25dih")
+next_level_scene = ExtResource("2_785pr")
 enemy_score = 5
 current_level_number = 4
 is_special_level = true
@@ -19,7 +19,7 @@ position = Vector2(186, 125)
 start_position = Vector2(141, 124)
 end_position = Vector2(230, 124)
 special_level = true
-hoop_speed = 4.5
+hoop_speed = 6.0
 
 [node name="Hud" parent="CanvasLayer" index="0"]
 visible = false
@@ -28,10 +28,4 @@ visible = false
 visible = false
 
 [node name="Intruction" parent="CanvasLayer" index="5" instance=ExtResource("4_785pr")]
-instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具，输了可以继续通关但是没有道具"
-
-[node name="HoopStart" type="Marker2D" parent="." index="3"]
-position = Vector2(141, 124)
-
-[node name="HoopEnd" type="Marker2D" parent="." index="4"]
-position = Vector2(230, 124)
+instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具"

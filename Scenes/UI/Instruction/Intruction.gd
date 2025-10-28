@@ -2,7 +2,7 @@ extends Control
 
 @export var instruction: String
 
-@onready var rich_text_label: RichTextLabel = $Panel/RichTextLabel
+@onready var rich_text_label: RichTextLabel = $Panel/MarginContainer2/RichTextLabel
 
 
 # Called when the node enters the scene tree for the first time.

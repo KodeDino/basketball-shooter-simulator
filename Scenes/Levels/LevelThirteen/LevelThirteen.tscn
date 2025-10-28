@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxywl05a15m4j"]
+
+[ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_cpnwh"]
+[ext_resource type="PackedScene" uid="uid://c9p7k6m8nxwq9" path="res://Scenes/CutScenes/LevelThirteen/LevelThirteenEnd.tscn" id="2_end"]
+[ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+
+[node name="LevelThirteen" instance=ExtResource("1_cpnwh")]
+next_level_scene = ExtResource("2_end")
+
+[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
+position = Vector2(168, 52)
