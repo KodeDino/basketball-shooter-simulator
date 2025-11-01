@@ -13,5 +13,5 @@ current_level_number = 10
 position = Vector2(135, 110)
 start_position = Vector2(135, 110)
 end_position = Vector2(108, 50)
-hoop_speed = 5.5
+hoop_speed = 6.0
 should_hoop_move = true
