@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bltm5fpgls51m"
-path="res://.godot/imported/basketball_score.wav-19d6be3718d80f3cc7975757d87f8058.sample"
+path="res://.godot/imported/basketball_score.wav-b5ebdee30fa745f7296938dcc4bf5f86.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/basketball_score.wav"
-dest_files=["res://.godot/imported/basketball_score.wav-19d6be3718d80f3cc7975757d87f8058.sample"]
+source_file="res://assets/Sounds/basketball_score.wav"
+dest_files=["res://.godot/imported/basketball_score.wav-b5ebdee30fa745f7296938dcc4bf5f86.sample"]
 
 [params]
 

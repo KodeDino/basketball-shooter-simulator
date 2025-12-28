@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfnosdsamcwv6"
-path="res://.godot/imported/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png-c742b949688c2537383cf528e704c57e.ctex"
+path="res://.godot/imported/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png-5a3837551423fa0b552e48c5ffdb6c21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png"
-dest_files=["res://.godot/imported/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png-c742b949688c2537383cf528e704c57e.ctex"]
+source_file="res://assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png"
+dest_files=["res://.godot/imported/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png-5a3837551423fa0b552e48c5ffdb6c21.ctex"]
 
 [params]
 

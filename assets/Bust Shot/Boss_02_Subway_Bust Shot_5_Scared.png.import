@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4qf12jcrqrqq"
-path="res://.godot/imported/Boss_02_Subway_Bust Shot_5_Scared.png-6b78e70b0780b0cd6d3e79573d1a6002.ctex"
+path="res://.godot/imported/Boss_02_Subway_Bust Shot_5_Scared.png-f2430393c029755d3bca730970c253fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_5_Scared.png"
-dest_files=["res://.godot/imported/Boss_02_Subway_Bust Shot_5_Scared.png-6b78e70b0780b0cd6d3e79573d1a6002.ctex"]
+source_file="res://assets/Bust Shot/Boss_02_Subway_Bust Shot_5_Scared.png"
+dest_files=["res://.godot/imported/Boss_02_Subway_Bust Shot_5_Scared.png-f2430393c029755d3bca730970c253fa.ctex"]
 
 [params]
 

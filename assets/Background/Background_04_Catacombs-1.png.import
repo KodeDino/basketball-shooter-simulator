@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqwlflffmyu3g"
-path="res://.godot/imported/Background_04_Catacombs-1.png-f8facc22d46e91344cf85e219e860bc7.ctex"
+path="res://.godot/imported/Background_04_Catacombs-1.png-7ac19c5f7c8115fa6f3576ddb17dfa73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Background_04_Catacombs-1.png"
-dest_files=["res://.godot/imported/Background_04_Catacombs-1.png-f8facc22d46e91344cf85e219e860bc7.ctex"]
+source_file="res://assets/Background/Background_04_Catacombs-1.png"
+dest_files=["res://.godot/imported/Background_04_Catacombs-1.png-7ac19c5f7c8115fa6f3576ddb17dfa73.ctex"]
 
 [params]
 

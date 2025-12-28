@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://birn3ykl86eax"
-path="res://.godot/imported/Soldier_Bust Shot_2_FREES!.png-9ecdcf8a84773ef1cf29b741604a6545.ctex"
+path="res://.godot/imported/Soldier_Bust Shot_2_FREES!.png-a207c460ba0ef39565c96039c782f665.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bust Shot/Soldier_Bust Shot_2_FREES!.png"
-dest_files=["res://.godot/imported/Soldier_Bust Shot_2_FREES!.png-9ecdcf8a84773ef1cf29b741604a6545.ctex"]
+source_file="res://assets/Bust Shot/Soldier_Bust Shot_2_FREES!.png"
+dest_files=["res://.godot/imported/Soldier_Bust Shot_2_FREES!.png-a207c460ba0ef39565c96039c782f665.ctex"]
 
 [params]
 
