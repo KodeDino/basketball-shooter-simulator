@@ -3,13 +3,13 @@
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_mc6u3"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="1_u0wa7"]
 [ext_resource type="Resource" uid="uid://oy1j2hy3d20b" path="res://Resources/LevelTwo/LevelTwoIntroDialogue.tres" id="2_b0xxx"]
-[ext_resource type="Texture2D" uid="uid://bwgkatjly1d1" path="res://Assets/Background/Background_Subway_sheet.png" id="3_uh6n3"]
+[ext_resource type="Texture2D" uid="uid://bwgkatjly1d1" path="res://Assets/Background/Misc/Background_Subway_sheet.png" id="3_uh6n3"]
 [ext_resource type="PackedScene" uid="uid://bncj5yvest86o" path="res://Scenes/Parallax/ParallaxBackground.tscn" id="3_uw8w6"]
-[ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Background_02_Subway-Outside.png" id="4_ee1co"]
+[ext_resource type="Texture2D" uid="uid://q1uokefj3lp8" path="res://Assets/Background/Level_02/Background_02_Subway-Outside.png" id="4_ee1co"]
 [ext_resource type="PackedScene" uid="uid://b8e4oqdwtwhkv" path="res://Scenes/Levels/LevelTwo/LevelTwo.tscn" id="4_g6tib"]
-[ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main Character_Stand_merge_duplicates-sheet.png" id="4_w4dqn"]
-[ext_resource type="Texture2D" uid="uid://bvvnlmwqsjj0d" path="res://Assets/Character/Boss_02_Subway_Soldier-Sheet.png" id="6_ee1co"]
-[ext_resource type="Texture2D" uid="uid://b008yuqgbt4el" path="res://Assets/Character/Boss_02_Subway-Sheet.png" id="7_uw8w6"]
+[ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main_Character/Main Character_Stand_merge_duplicates-sheet.png" id="4_w4dqn"]
+[ext_resource type="Texture2D" uid="uid://bvvnlmwqsjj0d" path="res://Assets/Character/Boss_02/Boss_02_Subway_Soldier-Sheet.png" id="6_ee1co"]
+[ext_resource type="Texture2D" uid="uid://b008yuqgbt4el" path="res://Assets/Character/Boss_02/Boss_02_Subway-Sheet.png" id="7_uw8w6"]
 
 [sub_resource type="Animation" id="Animation_w4dqn"]
 length = 0.001

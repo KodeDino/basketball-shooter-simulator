@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://cxlfp3gdn3ov6"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_7c084"]
-[ext_resource type="Texture2D" uid="uid://cqvk4g2tnklhg" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_4_Exhausted.png" id="1_r7ag7"]
-[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="1_wrtoh"]
-[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="2_krglk"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main Character_Bust Shot_1_Normal.png" id="3_0ovxv"]
-[ext_resource type="Texture2D" uid="uid://g1bfft2obf72" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_5_Boasting.png" id="3_2ogr1"]
-[ext_resource type="Texture2D" uid="uid://b4txomu62ybeo" path="res://Assets/Bust Shot/Main Character_Bust Shot_2_Hehe.png" id="4_ebffo"]
-[ext_resource type="Texture2D" uid="uid://cv7uuvspcvy25" path="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_2_Relieved.png" id="5_icecp"]
-[ext_resource type="Texture2D" uid="uid://dare3w2bd12ef" path="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_3_Concerned.png" id="7_1omek"]
+[ext_resource type="Texture2D" uid="uid://cqvk4g2tnklhg" path="res://Assets/Bust Shot/Boss_03/Boss_03-1_Bathhouse_Bust Shot_4_Exhausted.png" id="1_r7ag7"]
+[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_5_Pissed off.png" id="1_wrtoh"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_4_Nervous.png" id="2_krglk"]
+[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="3_0ovxv"]
+[ext_resource type="Texture2D" uid="uid://g1bfft2obf72" path="res://Assets/Bust Shot/Boss_03/Boss_03-1_Bathhouse_Bust Shot_5_Boasting.png" id="3_2ogr1"]
+[ext_resource type="Texture2D" uid="uid://b4txomu62ybeo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_2_Hehe.png" id="4_ebffo"]
+[ext_resource type="Texture2D" uid="uid://cv7uuvspcvy25" path="res://Assets/Bust Shot/Boss_03/Boss_03-2_Bathhouse_Bust Shot_2_Relieved.png" id="5_icecp"]
+[ext_resource type="Texture2D" uid="uid://dare3w2bd12ef" path="res://Assets/Bust Shot/Boss_03/Boss_03-2_Bathhouse_Bust Shot_3_Concerned.png" id="7_1omek"]
 
 [resource]
 script = ExtResource("1_7c084")

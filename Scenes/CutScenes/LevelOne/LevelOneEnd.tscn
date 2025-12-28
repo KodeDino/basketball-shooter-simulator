@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bbn88ac3a37ev" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_fire.png" id="1_sm7ws"]
 [ext_resource type="Texture2D" uid="uid://cfhr8xfj6muyr" path="res://Assets/Basketball/basketball_meteorite_sprite_sheet_ball.png" id="2_bfov8"]
 [ext_resource type="Resource" uid="uid://luty4yhr3lmk" path="res://Resources/LevelOne/LevelOneEndDialogue.tres" id="2_rtbb3"]
-[ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://Assets/Background/Background_01_Shanghai-2.png" id="3_ko2o6"]
+[ext_resource type="Texture2D" uid="uid://bkfa1svkrpuau" path="res://Assets/Background/Level_01/Background_01_Shanghai-2.png" id="3_ko2o6"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="5_ko2o6"]
 [ext_resource type="PackedScene" uid="uid://dsxq03xjfftna" path="res://Scenes/CutScenes/LevelTwo/LevelTwoIntro.tscn" id="7_rtbb3"]
 

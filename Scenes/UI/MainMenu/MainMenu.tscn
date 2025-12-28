@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dabrcvdqw3sq8"]
 
 [ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/UI/MainMenu/MainMenu.gd" id="1_sg7ab"]
-[ext_resource type="Texture2D" uid="uid://cedjh3bko6txn" path="res://Assets/Background/Title.png" id="2_kpx3y"]
+[ext_resource type="Texture2D" uid="uid://cedjh3bko6txn" path="res://Assets/Background/Misc/Title.png" id="2_kpx3y"]
 [ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="3_gwdte"]
 [ext_resource type="AudioStream" uid="uid://huqjit2vn37u" path="res://Assets/Sounds/basketball_bounce.mp3" id="3_sg7ab"]
 

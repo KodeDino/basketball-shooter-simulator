@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://bm4g5n7h8qaq1"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_abc01"]
-[ext_resource type="Texture2D" uid="uid://c4g26kc0rel6l" path="res://Assets/Bust Shot/Main Character_Bust Shot_8_Concerned.png" id="1_t5k58"]
-[ext_resource type="Texture2D" uid="uid://bp57i5w7d8w4t" path="res://Assets/Bust Shot/Main Character_Bust Shot_9_CSerious.png" id="2_lknfc"]
-[ext_resource type="Texture2D" uid="uid://d076oi64a536g" path="res://Assets/Bust Shot/Main Character_Bust Shot_6_Determined.png" id="3_bf3mv"]
-[ext_resource type="Texture2D" uid="uid://lddvfsdcnsfc" path="res://Assets/Bust Shot/Boss_04_Catacombs_Bust Shot_1_Normal.png" id="3_lknfc"]
+[ext_resource type="Texture2D" uid="uid://c4g26kc0rel6l" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_8_Concerned.png" id="1_t5k58"]
+[ext_resource type="Texture2D" uid="uid://bp57i5w7d8w4t" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_9_CSerious.png" id="2_lknfc"]
+[ext_resource type="Texture2D" uid="uid://d076oi64a536g" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_6_Determined.png" id="3_bf3mv"]
+[ext_resource type="Texture2D" uid="uid://lddvfsdcnsfc" path="res://Assets/Bust Shot/Boss_04/Boss_04_Catacombs_Bust Shot_1_Normal.png" id="3_lknfc"]
 
 [resource]
 script = ExtResource("1_abc01")
