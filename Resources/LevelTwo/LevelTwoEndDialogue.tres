@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://pt4vapxuxyc5"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_d88ib"]
-[ext_resource type="Texture2D" uid="uid://drjsbq15oeru2" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_7_Exhausted.png" id="1_j5krc"]
-[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="2_d1hed"]
-[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="3_chxj4"]
-[ext_resource type="Texture2D" uid="uid://cr0d114fu6hre" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_4_Frustrated.png" id="4_5p6cj"]
-[ext_resource type="Texture2D" uid="uid://cc4ydj550himt" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_8_Annoyed.png" id="5_4qgt0"]
-[ext_resource type="Texture2D" uid="uid://esyi0ucppwkf" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_2_Proud.png" id="6_uk42e"]
-[ext_resource type="Texture2D" uid="uid://ddagetutqibg6" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_3_Shocked.png" id="7_jh6dq"]
-[ext_resource type="Texture2D" uid="uid://yxudwbx150lf" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_1_Normal.png" id="8_rn6bn"]
+[ext_resource type="Texture2D" uid="uid://drjsbq15oeru2" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_7_Exhausted.png" id="1_j5krc"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_4_Nervous.png" id="2_d1hed"]
+[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_5_Pissed off.png" id="3_chxj4"]
+[ext_resource type="Texture2D" uid="uid://cr0d114fu6hre" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_4_Frustrated.png" id="4_5p6cj"]
+[ext_resource type="Texture2D" uid="uid://cc4ydj550himt" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_8_Annoyed.png" id="5_4qgt0"]
+[ext_resource type="Texture2D" uid="uid://esyi0ucppwkf" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_2_Proud.png" id="6_uk42e"]
+[ext_resource type="Texture2D" uid="uid://ddagetutqibg6" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_3_Shocked.png" id="7_jh6dq"]
+[ext_resource type="Texture2D" uid="uid://yxudwbx150lf" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_1_Normal.png" id="8_rn6bn"]
 
 [resource]
 script = ExtResource("1_d88ib")

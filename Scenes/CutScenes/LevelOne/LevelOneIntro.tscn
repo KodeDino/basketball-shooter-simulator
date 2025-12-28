@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://jn6h77jwd8va"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_wf6bf"]
-[ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://Assets/Background/Background_01_Shanghai.png" id="1_xmfa3"]
+[ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://Assets/Background/Level_01/Background_01_Shanghai.png" id="1_xmfa3"]
 [ext_resource type="Resource" uid="uid://2hpy7t4g0v1t" path="res://Resources/LevelOne/LevelOneIntroDialogue.tres" id="2_fs736"]
 [ext_resource type="Texture2D" uid="uid://ciw3nd47igehk" path="res://Assets/NPCs/npc-sprite-sheet.png" id="2_ncsn6"]
 [ext_resource type="AudioStream" uid="uid://bdmycuhcpyagk" path="res://Assets/Sounds/crowded_basketball_court.mp3" id="5_3aagc"]
-[ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://Assets/Character/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
-[ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main Character_Stand_merge_duplicates-sheet.png" id="5_fs736"]
+[ext_resource type="Texture2D" uid="uid://d7tpq5qq1qp3" path="res://Assets/Character/Boss_01/Boss_01_Shanghai - Sheet_merge_duplicates.png" id="5_6sxgl"]
+[ext_resource type="Texture2D" uid="uid://i0givuhqxlfy" path="res://Assets/Character/Main_Character/Main Character_Stand_merge_duplicates-sheet.png" id="5_fs736"]
 [ext_resource type="PackedScene" uid="uid://cbbebvloop21" path="res://Scenes/Levels/LevelOne/LevelOne.tscn" id="7_2ayky"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="7_6sxgl"]
 

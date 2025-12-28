@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c7de284fwbcc2" path="res://Assets/Buttons/buttons.png" id="1_sshtg"]
 [ext_resource type="Script" uid="uid://bsf2jffuljw0k" path="res://Scenes/UI/GameOver/GameOver.gd" id="1_tsk0b"]
-[ext_resource type="Texture2D" uid="uid://fq2kf1wuaarb" path="res://Assets/Background/Game Over.png" id="2_jho6m"]
+[ext_resource type="Texture2D" uid="uid://fq2kf1wuaarb" path="res://Assets/Background/Misc/Game Over.png" id="2_jho6m"]
 
 [sub_resource type="Animation" id="Animation_sshtg"]
 length = 0.001

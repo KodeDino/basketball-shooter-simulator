@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://huqjit2vn37u"
-path="res://.godot/imported/basketball_bounce.mp3-1a2bd18a6868eb0ebb5d6f4aaaf5bf7b.mp3str"
+path="res://.godot/imported/basketball_bounce.mp3-bd8248a426d9f215f554bb8f3c9e4c25.mp3str"
 
 [deps]
 
-source_file="res://assets/Sounds/basketball_bounce.mp3"
-dest_files=["res://.godot/imported/basketball_bounce.mp3-1a2bd18a6868eb0ebb5d6f4aaaf5bf7b.mp3str"]
+source_file="res://Assets/Sounds/basketball_bounce.mp3"
+dest_files=["res://.godot/imported/basketball_bounce.mp3-bd8248a426d9f215f554bb8f3c9e4c25.mp3str"]
 
 [params]
 

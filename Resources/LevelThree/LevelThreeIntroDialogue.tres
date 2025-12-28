@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=8 format=3 uid="uid://ctiq7lsqn0ksc"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_5iwia"]
-[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="1_7il0l"]
-[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="2_tg7nb"]
-[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="3_fadi1"]
-[ext_resource type="Texture2D" uid="uid://bl3skjeud3o35" path="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png" id="4_5kxdx"]
-[ext_resource type="Texture2D" uid="uid://cfnosdsamcwv6" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png" id="5_4dj72"]
-[ext_resource type="Texture2D" uid="uid://be3itfwuroox1" path="res://Assets/Bust Shot/Boss_03-1_Bathhouse_Bust Shot_2_Aggressive.png" id="6_7jsc5"]
+[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_3_Shocked.png" id="1_7il0l"]
+[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_5_Pissed off.png" id="2_tg7nb"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_4_Nervous.png" id="3_fadi1"]
+[ext_resource type="Texture2D" uid="uid://bl3skjeud3o35" path="res://Assets/Bust Shot/Boss_03/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png" id="4_5kxdx"]
+[ext_resource type="Texture2D" uid="uid://cfnosdsamcwv6" path="res://Assets/Bust Shot/Boss_03/Boss_03-1_Bathhouse_Bust Shot_1_Normal.png" id="5_4dj72"]
+[ext_resource type="Texture2D" uid="uid://be3itfwuroox1" path="res://Assets/Bust Shot/Boss_03/Boss_03-1_Bathhouse_Bust Shot_2_Aggressive.png" id="6_7jsc5"]
 
 [resource]
 script = ExtResource("1_5iwia")

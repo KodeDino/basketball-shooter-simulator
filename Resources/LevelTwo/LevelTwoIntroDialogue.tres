@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=8 format=3 uid="uid://oy1j2hy3d20b"]
 
-[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main Character_Bust Shot_5_Pissed off.png" id="1_cijjf"]
+[ext_resource type="Texture2D" uid="uid://cso6ed1wvmpen" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_5_Pissed off.png" id="1_cijjf"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_dy2bk"]
-[ext_resource type="Texture2D" uid="uid://cerl4rnau5oby" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_6_Serious.png" id="1_kgu0x"]
-[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main Character_Bust Shot_3_Shocked.png" id="2_olve2"]
-[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main Character_Bust Shot_4_Nervous.png" id="3_kgu0x"]
-[ext_resource type="Texture2D" uid="uid://yxudwbx150lf" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_1_Normal.png" id="4_eu63w"]
-[ext_resource type="Texture2D" uid="uid://esyi0ucppwkf" path="res://Assets/Bust Shot/Boss_02_Subway_Bust Shot_2_Proud.png" id="6_qsvo7"]
+[ext_resource type="Texture2D" uid="uid://cerl4rnau5oby" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_6_Serious.png" id="1_kgu0x"]
+[ext_resource type="Texture2D" uid="uid://cftsv4fkl57nm" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_3_Shocked.png" id="2_olve2"]
+[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_4_Nervous.png" id="3_kgu0x"]
+[ext_resource type="Texture2D" uid="uid://yxudwbx150lf" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_1_Normal.png" id="4_eu63w"]
+[ext_resource type="Texture2D" uid="uid://esyi0ucppwkf" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_2_Proud.png" id="6_qsvo7"]
 
 [resource]
 script = ExtResource("1_dy2bk")

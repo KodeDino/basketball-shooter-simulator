@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://8iurao47qsbr"]
 
 [ext_resource type="PackedScene" uid="uid://r17ofbci8erw" path="res://Scenes/UI/LevelButton/LevelButton.tscn" id="1_e8gtt"]
-[ext_resource type="Texture2D" uid="uid://fbkewdoderx0" path="res://Assets/Background/scoreboard_bg.png" id="1_rx6fb"]
+[ext_resource type="Texture2D" uid="uid://fbkewdoderx0" path="res://Assets/Background/Misc/scoreboard_bg.png" id="1_rx6fb"]
 [ext_resource type="PackedScene" uid="uid://jn6h77jwd8va" path="res://Scenes/CutScenes/LevelOne/LevelOneIntro.tscn" id="2_cjumm"]
 [ext_resource type="PackedScene" uid="uid://dsxq03xjfftna" path="res://Scenes/CutScenes/LevelTwo/LevelTwoIntro.tscn" id="3_q5epn"]
 [ext_resource type="PackedScene" uid="uid://ct1uiw41hc1ff" path="res://Scenes/CutScenes/LevelThree/LevelThreeIntro.tscn" id="4_rx6fb"]
