@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl3l2tj5rhopd"
-path="res://.godot/imported/Main Character_Bust Shot_10_Confident.png-68ae67aae59b7b5124d0705a40c85fb5.ctex"
+path="res://.godot/imported/Main Character_Bust Shot_10_Confident.png-f2345ba86b41daf9ed8050916c64671c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bust Shot/Main Character_Bust Shot_10_Confident.png"
-dest_files=["res://.godot/imported/Main Character_Bust Shot_10_Confident.png-68ae67aae59b7b5124d0705a40c85fb5.ctex"]
+source_file="res://assets/Bust Shot/Main Character_Bust Shot_10_Confident.png"
+dest_files=["res://.godot/imported/Main Character_Bust Shot_10_Confident.png-f2345ba86b41daf9ed8050916c64671c.ctex"]
 
 [params]
 

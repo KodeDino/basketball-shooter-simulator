@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl3skjeud3o35"
-path="res://.godot/imported/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png-f0bd3534b32d32fb78bddf71858b5284.ctex"
+path="res://.godot/imported/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png-ca483da7c1c821bda3602ff66b52fb0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png"
-dest_files=["res://.godot/imported/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png-f0bd3534b32d32fb78bddf71858b5284.ctex"]
+source_file="res://assets/Bust Shot/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png"
+dest_files=["res://.godot/imported/Boss_03-2_Bathhouse_Bust Shot_1_Kidnap.png-ca483da7c1c821bda3602ff66b52fb0a.ctex"]
 
 [params]
 

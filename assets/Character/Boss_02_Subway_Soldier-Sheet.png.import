@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvvnlmwqsjj0d"
-path="res://.godot/imported/Boss_02_Subway_Soldier-Sheet.png-3d9959a8ce2a5654abdec00470a53e96.ctex"
+path="res://.godot/imported/Boss_02_Subway_Soldier-Sheet.png-9353df9268397a5c2b50ff43cd34cb9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Boss_02_Subway_Soldier-Sheet.png"
-dest_files=["res://.godot/imported/Boss_02_Subway_Soldier-Sheet.png-3d9959a8ce2a5654abdec00470a53e96.ctex"]
+source_file="res://assets/Character/Boss_02_Subway_Soldier-Sheet.png"
+dest_files=["res://.godot/imported/Boss_02_Subway_Soldier-Sheet.png-9353df9268397a5c2b50ff43cd34cb9d.ctex"]
 
 [params]
 

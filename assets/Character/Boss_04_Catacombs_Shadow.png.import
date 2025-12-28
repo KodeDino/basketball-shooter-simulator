@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcw8yh13dgmky"
-path="res://.godot/imported/Boss_04_Catacombs_Shadow.png-e1ecfe4c3d21e18a74316d5fe99e1a05.ctex"
+path="res://.godot/imported/Boss_04_Catacombs_Shadow.png-3c1ef23a158d376438a22f71d20582b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Boss_04_Catacombs_Shadow.png"
-dest_files=["res://.godot/imported/Boss_04_Catacombs_Shadow.png-e1ecfe4c3d21e18a74316d5fe99e1a05.ctex"]
+source_file="res://assets/Character/Boss_04_Catacombs_Shadow.png"
+dest_files=["res://.godot/imported/Boss_04_Catacombs_Shadow.png-3c1ef23a158d376438a22f71d20582b7.ctex"]
 
 [params]
 

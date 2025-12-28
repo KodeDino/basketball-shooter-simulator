@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da51ottomnuwq"
-path="res://.godot/imported/Boss_03_Bathhouse-Sheet.png-e88e8be0c0e20861bb9081f0197a8866.ctex"
+path="res://.godot/imported/Boss_03_Bathhouse-Sheet.png-d9fd45b259a5418512820964ddcd57bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Boss_03_Bathhouse-Sheet.png"
-dest_files=["res://.godot/imported/Boss_03_Bathhouse-Sheet.png-e88e8be0c0e20861bb9081f0197a8866.ctex"]
+source_file="res://assets/Character/Boss_03_Bathhouse-Sheet.png"
+dest_files=["res://.godot/imported/Boss_03_Bathhouse-Sheet.png-d9fd45b259a5418512820964ddcd57bf.ctex"]
 
 [params]
 
