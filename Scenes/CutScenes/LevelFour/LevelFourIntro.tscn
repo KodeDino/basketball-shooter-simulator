@@ -1,44 +1,47 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpafisoqwi58h"]
+[gd_scene format=3 uid="uid://dpafisoqwi58h"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_5ww2y"]
 [ext_resource type="Resource" uid="uid://bm4g5n7h8qaq1" path="res://Resources/LevelFour/LevelFourIntroDialogue.tres" id="2_n76uj"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_r33oh"]
 [ext_resource type="PackedScene" uid="uid://d2xh6bwxwytmb" path="res://Scenes/Levels/LevelFour/LevelFour.tscn" id="4_8h0ue"]
+[ext_resource type="Texture2D" uid="uid://bqwlflffmyu3g" path="res://Assets/Background/Level_04/Background_04_Catacombs-1.png" id="5_a7m3q"]
+[ext_resource type="Texture2D" uid="uid://bkojhox2an3u7" path="res://Assets/Background/Level_04/Background_04_Catacombs-2.png" id="6_oy70n"]
+[ext_resource type="Texture2D" uid="uid://caiil33nmi46w" path="res://Assets/Background/Level_04/Background_04_Catacombs-3.png" id="7_ky75c"]
+[ext_resource type="Texture2D" uid="uid://bylynvcpjoyyk" path="res://Assets/Background/Level_04/Background_04_Catacombs-4.png" id="8_cprmr"]
 
-[sub_resource type="Animation" id="Animation_5ww2y"]
-resource_name = "level_four_animation"
-tracks/0/type = "method"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"show_panel"
+[sub_resource type="SpriteFrames" id="SpriteFrames_3k5yp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_a7m3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oy70n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ky75c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_cprmr")
+}],
+"loop": false,
+"name": &"default",
+"speed": 2.0
 }]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_n76uj"]
-_data = {
-&"level_four_animation": SubResource("Animation_5ww2y")
-}
-
-[node name="LevelFourIntro" type="Node2D"]
+[node name="LevelFourIntro" type="Node2D" unique_id=995017493]
 script = ExtResource("1_5ww2y")
 dialogue_data = ExtResource("2_n76uj")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_n76uj")
-}
-autoplay = "level_four_animation"
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=134659027]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_r33oh")]
+[node name="Dialog" parent="CanvasLayer" unique_id=1750553320 instance=ExtResource("3_r33oh")]
 next_scene = ExtResource("4_8h0ue")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=468937095]
+position = Vector2(146, 90)
+sprite_frames = SubResource("SpriteFrames_3k5yp")
+autoplay = "default"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

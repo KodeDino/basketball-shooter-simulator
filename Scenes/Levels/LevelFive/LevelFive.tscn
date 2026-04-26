@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://04ogvtjjdp8q"]
+[gd_scene format=3 uid="uid://04ogvtjjdp8q"]
 
 [ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_gjx6k"]
 [ext_resource type="PackedScene" uid="uid://b3m7k8n4pwxra" path="res://Scenes/CutScenes/LevelFive/LevelFiveEnd.tscn" id="2_j7t5h"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_xjc66"]
+[ext_resource type="Texture2D" uid="uid://bgj1jleohu0o7" path="res://Assets/Background/Level_05/Background_05-2_Statue.png" id="4_yrm0t"]
 
-[node name="LevelFive" instance=ExtResource("1_gjx6k")]
+[node name="LevelFive" unique_id=1393602808 instance=ExtResource("1_gjx6k")]
 next_level_scene = ExtResource("2_j7t5h")
 enemy_score = 6
 current_level_number = 5
@@ -12,5 +13,14 @@ current_level_number = 5
 [node name="BasketballSpawnSpot" parent="." index="0"]
 position = Vector2(45, 122)
 
-[node name="Hoop" parent="." index="1" instance=ExtResource("2_xjc66")]
+[node name="Hoop" parent="." index="1" unique_id=466645226 instance=ExtResource("2_xjc66")]
 position = Vector2(168, 52)
+
+[node name="Background" type="Sprite2D" parent="." index="3" unique_id=278624110]
+position = Vector2(140, 81)
+texture = ExtResource("4_yrm0t")
+
+[node name="ColorRect" type="ColorRect" parent="." index="4" unique_id=1834652870]
+offset_right = 288.0
+offset_bottom = 162.0
+color = Color(1, 1, 1, 0.45882353)

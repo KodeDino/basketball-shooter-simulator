@@ -20,3 +20,7 @@ func show_panel() -> void:
 
 func hide_panel() -> void:
 	canvas_layer.hide()
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	show_panel()

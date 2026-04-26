@@ -245,34 +245,9 @@ metadata/_custom_type_script = "uid://1jg5kmdowv5h"
 - **Template Method**: `LevelBase` provides structure for all levels
 - **State Machine**: Basketball uses enum-based state management
 
-## Recent Changes
-
-- **Dialogue Resources for Levels 6-9** (PR #95)
-  - Created dialogue resources for Level 6 (Australia/Kangaroo scene)
-  - Created dialogue resources for Level 7 (Brazil/Soccer ball scene)
-  - Created dialogue resources for Level 8 (Iceland/Makeup scene)
-  - Created dialogue resources for Level 9 (Aircraft Carrier)
-  - All dialogue content sourced from `Assets/ToDo.txt`
-- **Gadget System Implementation**
-  - Added special level system (levels 4, 8, 12)
-  - Implemented gadget reward system with progressive awards
-  - Created trajectory preview feature for basketball shots
-  - Built Gadget UI component with button and counter
-  - Integrated save/load system for gadget persistence
-  - Dynamic gadget activation on drag start for immediate feedback
-- Added level selection system
-- Implemented reusable UI components (LevelButton, BackButton, Gadget)
-- Enhanced transition system with improved fade animations
-- Updated main menu with level select option
-- Added pause functionality (PR #66)
-- Implemented pause button and menu system
-- Added game-over scene functionality
-
 ## Git Workflow
 
 - **Main Branch**: `main`
-- **Current Status**: Clean working directory
-- **Recent**: Pause system implementation completed
 
 ### Commit Message Conventions
 

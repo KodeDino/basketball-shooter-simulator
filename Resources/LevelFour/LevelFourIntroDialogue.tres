@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://bm4g5n7h8qaq1"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://bm4g5n7h8qaq1"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_abc01"]
 [ext_resource type="Texture2D" uid="uid://c4g26kc0rel6l" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_8_Concerned.png" id="1_t5k58"]

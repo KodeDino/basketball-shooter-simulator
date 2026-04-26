@@ -1,4 +1,4 @@
-[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://1r0kyx63wesf"]
+[gd_resource type="LabelSettings" format=3 uid="uid://1r0kyx63wesf"]
 
 [sub_resource type="SystemFont" id="SystemFont_iteex"]
 font_names = PackedStringArray("04b 30")
