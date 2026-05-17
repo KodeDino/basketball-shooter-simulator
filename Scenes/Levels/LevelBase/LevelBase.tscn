@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnc8vwtc5d7d7"]
+[gd_scene format=3 uid="uid://cnc8vwtc5d7d7"]
 
 [ext_resource type="Script" uid="uid://fwoe0ky7pfxy" path="res://Scenes/Levels/LevelBase/LevelBase.gd" id="1_ami44"]
 [ext_resource type="PackedScene" uid="uid://dq0jcap0ni6b3" path="res://Scenes/UI/Gadget/Gadget.tscn" id="2_kp3ay"]
@@ -7,17 +7,17 @@
 [ext_resource type="PackedScene" uid="uid://b0riw3ets25ag" path="res://Scenes/UI/GameOver/GameOver.tscn" id="4_jnqtw"]
 [ext_resource type="PackedScene" uid="uid://0mv2p28emvac" path="res://Scenes/UI/Pause/Pause.tscn" id="5_mgty3"]
 
-[node name="LevelBase" type="Node2D"]
+[node name="LevelBase" type="Node2D" unique_id=827902477]
 script = ExtResource("1_ami44")
 
-[node name="BasketballSpawnSpot" type="Marker2D" parent="."]
+[node name="BasketballSpawnSpot" type="Marker2D" parent="." unique_id=1875982852]
 position = Vector2(53, 103)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1287074844]
 
-[node name="Hud" parent="CanvasLayer" instance=ExtResource("3_63row")]
+[node name="Hud" parent="CanvasLayer" unique_id=873600622 instance=ExtResource("3_63row")]
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1846728688]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -28,16 +28,21 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="EnemyScore" type="Label" parent="CanvasLayer/MarginContainer"]
+[node name="EnemyScore" type="Label" parent="CanvasLayer/MarginContainer" unique_id=476578024]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "Opponent Score: 00"
 label_settings = ExtResource("3_7t6so")
 
-[node name="GameOver" parent="CanvasLayer" instance=ExtResource("4_jnqtw")]
+[node name="GameOver" parent="CanvasLayer" unique_id=638009717 instance=ExtResource("4_jnqtw")]
 visible = false
 
-[node name="Pause" parent="CanvasLayer" instance=ExtResource("5_mgty3")]
+[node name="Pause" parent="CanvasLayer" unique_id=1733372760 instance=ExtResource("5_mgty3")]
 
-[node name="Gadget" parent="CanvasLayer" instance=ExtResource("2_kp3ay")]
+[node name="Gadget" parent="CanvasLayer" unique_id=1150048253 instance=ExtResource("2_kp3ay")]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2034293193]
+offset_right = 288.0
+offset_bottom = 162.0
+color = Color(1, 1, 1, 0.45882353)
