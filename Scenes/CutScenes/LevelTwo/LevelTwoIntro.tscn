@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dsxq03xjfftna"]
+[gd_scene format=3 uid="uid://dsxq03xjfftna"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_mc6u3"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="1_u0wa7"]
@@ -89,7 +89,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6000001, 2.8000002, 3, 3.2, 3.6, 4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(450, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(500, 0, 50, 100), Rect2(400, 0, 50, 100), Rect2(500, 0, 50, 100)]
+"values": [Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(250, 0, 50, 101), Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(400, 0, 50, 101), Rect2(450, 0, 50, 101), Rect2(400, 0, 50, 101), Rect2(450, 0, 50, 101), Rect2(400, 0, 50, 101), Rect2(500, 0, 50, 101), Rect2(400, 0, 50, 101), Rect2(500, 0, 50, 101)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -127,7 +127,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(2.9, 3.1000001, 3.3, 3.5000002, 3.7, 3.9, 4.1000004, 4.3, 4.5, 4.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 100, 114), Rect2(102, 0, 101, 114), Rect2(204, 0, 102, 114), Rect2(306, 0, 101, 114), Rect2(408, 0, 100, 114), Rect2(0, 0, 100, 114), Rect2(102, 0, 101, 114), Rect2(204, 0, 102, 114), Rect2(306, 0, 101, 114), Rect2(408, 0, 100, 114)]
+"values": [Rect2(0, 0, 100, 115), Rect2(102, 0, 101, 115), Rect2(204, 0, 102, 115), Rect2(306, 0, 101, 115), Rect2(408, 0, 100, 115), Rect2(0, 0, 100, 115), Rect2(102, 0, 101, 115), Rect2(204, 0, 102, 115), Rect2(306, 0, 101, 115), Rect2(408, 0, 100, 115)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -139,7 +139,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(2.9, 3.3, 3.7, 4.1, 4.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 49, 53), Rect2(50, 0, 50, 53), Rect2(0, 0, 49, 53), Rect2(50, 0, 50, 53), Rect2(0, 0, 49, 53)]
+"values": [Rect2(0, 0, 49, 54), Rect2(50, 0, 50, 54), Rect2(0, 0, 49, 54), Rect2(50, 0, 50, 54), Rect2(0, 0, 49, 54)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6tib"]
@@ -148,45 +148,43 @@ _data = {
 &"level_two_intro": SubResource("Animation_b0xxx")
 }
 
-[node name="LevelTwoIntro" type="Node2D"]
+[node name="LevelTwoIntro" type="Node2D" unique_id=1082343258]
 script = ExtResource("1_mc6u3")
 dialogue_data = ExtResource("2_b0xxx")
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("3_uw8w6")]
+[node name="ParallaxBackground" parent="." unique_id=439248667 instance=ExtResource("3_uw8w6")]
 scroll_scale = Vector2(1, 0)
 parallax2DTexture = ExtResource("4_ee1co")
 autoScrollSpeed = -400.0
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=735700490]
 position = Vector2(150, 80)
 texture = ExtResource("3_uh6n3")
 region_enabled = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_g6tib")
-}
-autoplay = "level_two_intro"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=5004089]
+libraries/ = SubResource("AnimationLibrary_g6tib")
+autoplay = &"level_two_intro"
 
-[node name="Soldier" type="Sprite2D" parent="."]
+[node name="Soldier" type="Sprite2D" parent="." unique_id=378177009]
 position = Vector2(258, 132)
 texture = ExtResource("6_ee1co")
 region_enabled = true
 
-[node name="Character" type="Sprite2D" parent="."]
+[node name="Character" type="Sprite2D" parent="." unique_id=1671143685]
 position = Vector2(73, 88)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("4_w4dqn")
 region_enabled = true
 
-[node name="Boss" type="Sprite2D" parent="."]
+[node name="Boss" type="Sprite2D" parent="." unique_id=1137834634]
 position = Vector2(177, 97)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("7_uw8w6")
 region_enabled = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1328463275]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("1_u0wa7")]
+[node name="Dialog" parent="CanvasLayer" unique_id=83740912 instance=ExtResource("1_u0wa7")]
 next_scene = ExtResource("4_g6tib")

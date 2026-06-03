@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6k8m7n4xwpq5"]
+[gd_scene format=3 uid="uid://b6k8m7n4xwpq5"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_intro01"]
 [ext_resource type="Resource" uid="uid://dp3q7n4k8wxr2" path="res://Resources/LevelSeven/LevelSevenIntroDialogue.tres" id="2_intro02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_intro03"]
 [ext_resource type="PackedScene" uid="uid://4k7u2gyx2fgx" path="res://Scenes/Levels/LevelSeven/LevelSeven.tscn" id="4_intro04"]
+[ext_resource type="Texture2D" uid="uid://bq8vu3k8s5qf2" path="res://Assets/Background/Level_07/Background_07_Rio.png" id="5_rq066"]
 
 [sub_resource type="Animation" id="Animation_intro01"]
 resource_name = "level_seven_animation"
@@ -27,18 +28,20 @@ _data = {
 &"level_seven_animation": SubResource("Animation_intro01")
 }
 
-[node name="LevelSevenIntro" type="Node2D"]
+[node name="LevelSevenIntro" type="Node2D" unique_id=1805756391]
 script = ExtResource("1_intro01")
 dialogue_data = ExtResource("2_intro02")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_intro01")
-}
-autoplay = "level_seven_animation"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=130482366]
+libraries/ = SubResource("AnimationLibrary_intro01")
+autoplay = &"level_seven_animation"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1525320639]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_intro03")]
+[node name="Dialog" parent="CanvasLayer" unique_id=1863638819 instance=ExtResource("3_intro03")]
 next_scene = ExtResource("4_intro04")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1107089468]
+position = Vector2(139, 81)
+texture = ExtResource("5_rq066")

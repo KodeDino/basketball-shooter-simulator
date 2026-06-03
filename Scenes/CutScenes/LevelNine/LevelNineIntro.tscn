@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b9k6m8n7xwpq7"]
+[gd_scene format=3 uid="uid://cak6m8n7xwpq7"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_intro01"]
 [ext_resource type="Resource" uid="uid://cy7w5x3kakrn8" path="res://Resources/LevelNine/LevelNineIntroDialogue.tres" id="2_intro02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_intro03"]
 [ext_resource type="PackedScene" uid="uid://cqugtsh120mdv" path="res://Scenes/Levels/LevelNine/LevelNine.tscn" id="4_intro04"]
+[ext_resource type="Texture2D" uid="uid://dbpiwsm5kfwpc" path="res://Assets/Background/Level_09/Background_09_Aircraft Carrier.png" id="5_mr7my"]
 
 [sub_resource type="Animation" id="Animation_intro01"]
 resource_name = "level_nine_animation"
@@ -27,18 +28,20 @@ _data = {
 &"level_nine_animation": SubResource("Animation_intro01")
 }
 
-[node name="LevelNineIntro" type="Node2D"]
+[node name="LevelNineIntro" type="Node2D" unique_id=1401610465]
 script = ExtResource("1_intro01")
 dialogue_data = ExtResource("2_intro02")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_intro01")
-}
-autoplay = "level_nine_animation"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1362694137]
+libraries/ = SubResource("AnimationLibrary_intro01")
+autoplay = &"level_nine_animation"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1451257899]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_intro03")]
+[node name="Dialog" parent="CanvasLayer" unique_id=1905446438 instance=ExtResource("3_intro03")]
 next_scene = ExtResource("4_intro04")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=124637436]
+position = Vector2(140, 80)
+texture = ExtResource("5_mr7my")

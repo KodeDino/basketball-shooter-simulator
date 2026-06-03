@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7p9k6m8nxwq3"]
+[gd_scene format=3 uid="uid://c7qak6m8nxwq3"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_end01"]
 [ext_resource type="Resource" uid="uid://c8jm2p5oatvy3" path="res://Resources/LevelSeven/LevelSevenEndDialogue.tres" id="2_end02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_end03"]
-[ext_resource type="PackedScene" uid="uid://d8k7m9n5xwpq6" path="res://Scenes/CutScenes/LevelEight/LevelEightIntro.tscn" id="4_end04"]
+[ext_resource type="PackedScene" uid="uid://d6c17qwept0f" path="res://Scenes/CutScenes/LevelEight/LevelEightIntro.tscn" id="4_end04"]
+[ext_resource type="Texture2D" uid="uid://bq8vu3k8s5qf2" path="res://Assets/Background/Level_07/Background_07_Rio.png" id="5_dtg5y"]
 
 [sub_resource type="Animation" id="Animation_end01"]
 resource_name = "level_seven_end"
@@ -27,18 +28,20 @@ _data = {
 &"level_seven_end": SubResource("Animation_end01")
 }
 
-[node name="LevelSevenEnd" type="Node2D"]
+[node name="LevelSevenEnd" type="Node2D" unique_id=1371826678]
 script = ExtResource("1_end01")
 dialogue_data = ExtResource("2_end02")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_end01")
-}
-autoplay = "level_seven_end"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=296047028]
+libraries/ = SubResource("AnimationLibrary_end01")
+autoplay = &"level_seven_end"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1107291425]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_end03")]
+[node name="Dialog" parent="CanvasLayer" unique_id=1920573640 instance=ExtResource("3_end03")]
 next_scene = ExtResource("4_end04")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1032189035]
+position = Vector2(139, 81)
+texture = ExtResource("5_dtg5y")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3p6k8m9nxwq6"]
+[gd_scene format=3 uid="uid://c3p6k8nanxwq6"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_end01"]
-[ext_resource type="Resource" uid="uid://c5p8m3k9vwxq2" path="res://Resources/LevelTen/LevelTenEndDialogue.tres" id="2_end02"]
+[ext_resource type="Resource" uid="uid://c5p8m3lavwxq2" path="res://Resources/LevelTen/LevelTenEndDialogue.tres" id="2_end02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_end03"]
-[ext_resource type="PackedScene" uid="uid://b4k9m6n8xwpq9" path="res://Scenes/CutScenes/LevelEleven/LevelElevenIntro.tscn" id="4_end04"]
+[ext_resource type="PackedScene" uid="uid://b4lam6n8xwpra" path="res://Scenes/CutScenes/LevelEleven/LevelElevenIntro.tscn" id="4_end04"]
+[ext_resource type="Texture2D" uid="uid://cutohxf4ncrrf" path="res://Assets/Background/Level_10/Background_10_Military Base.png" id="5_bjnrk"]
 
 [sub_resource type="Animation" id="Animation_end01"]
 resource_name = "level_ten_end"
@@ -27,18 +28,20 @@ _data = {
 &"level_ten_end": SubResource("Animation_end01")
 }
 
-[node name="LevelTenEnd" type="Node2D"]
+[node name="LevelTenEnd" type="Node2D" unique_id=1612270694]
 script = ExtResource("1_end01")
 dialogue_data = ExtResource("2_end02")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_end01")
-}
-autoplay = "level_ten_end"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=358969161]
+libraries/ = SubResource("AnimationLibrary_end01")
+autoplay = &"level_ten_end"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2048976151]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_end03")]
+[node name="Dialog" parent="CanvasLayer" unique_id=2100863861 instance=ExtResource("3_end03")]
 next_scene = ExtResource("4_end04")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1910970400]
+position = Vector2(140, 80)
+texture = ExtResource("5_bjnrk")

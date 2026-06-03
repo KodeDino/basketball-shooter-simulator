@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5p8k9m6nxwq4"]
+[gd_scene format=3 uid="uid://c5p8lam6nxwq4"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_end01"]
 [ext_resource type="Resource" uid="uid://ck5t8r3w6mqj4" path="res://Resources/LevelEight/LevelEightEndDialogue.tres" id="2_end02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_end03"]
-[ext_resource type="PackedScene" uid="uid://b9k6m8n7xwpq7" path="res://Scenes/CutScenes/LevelNine/LevelNineIntro.tscn" id="4_end04"]
+[ext_resource type="PackedScene" uid="uid://cak6m8n7xwpq7" path="res://Scenes/CutScenes/LevelNine/LevelNineIntro.tscn" id="4_end04"]
+[ext_resource type="Texture2D" uid="uid://dm8aipg0cd0ue" path="res://Assets/Background/Level_08/Background_08_Iceland.png" id="5_wqgax"]
 
 [sub_resource type="Animation" id="Animation_end01"]
 resource_name = "level_eight_end"
@@ -27,18 +28,20 @@ _data = {
 &"level_eight_end": SubResource("Animation_end01")
 }
 
-[node name="LevelEightEnd" type="Node2D"]
+[node name="LevelEightEnd" type="Node2D" unique_id=1486500654]
 script = ExtResource("1_end01")
 dialogue_data = ExtResource("2_end02")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_end01")
-}
-autoplay = "level_eight_end"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1040465234]
+libraries/ = SubResource("AnimationLibrary_end01")
+autoplay = &"level_eight_end"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1644548562]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("3_end03")]
+[node name="Dialog" parent="CanvasLayer" unique_id=986477879 instance=ExtResource("3_end03")]
 next_scene = ExtResource("4_end04")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429540663]
+position = Vector2(140, 80)
+texture = ExtResource("5_wqgax")

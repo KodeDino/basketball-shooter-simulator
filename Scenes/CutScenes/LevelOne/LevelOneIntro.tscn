@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://jn6h77jwd8va"]
+[gd_scene format=3 uid="uid://jn6h77jwd8va"]
 
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_wf6bf"]
 [ext_resource type="Texture2D" uid="uid://dspn7rml36sm7" path="res://Assets/Background/Level_01/Background_01_Shanghai.png" id="1_xmfa3"]
@@ -24,7 +24,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.70296, 0.76, 1.21, 1.41, 1.69296, 1.75, 2.21, 2.41, 2.81296, 2.87),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 100, 50, 100), Rect2(0, 0, 50, 100), Rect2(0, 200, 50, 100), Rect2(0, 0, 50, 100)]
+"values": [Rect2(0, 1, 50, 101), Rect2(0, 101, 50, 101), Rect2(0, 1, 50, 101), Rect2(0, 201, 50, 101), Rect2(0, 1, 50, 101), Rect2(0, 101, 50, 101), Rect2(0, 1, 50, 101), Rect2(0, 201, 50, 101), Rect2(0, 1, 50, 101), Rect2(0, 101, 50, 101), Rect2(0, 1, 50, 101), Rect2(0, 201, 50, 101), Rect2(0, 1, 50, 101)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -36,7 +36,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.31, 0.51, 0.99, 1.04, 1.8, 2, 2.48, 2.53),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(250, 0, 50, 100), Rect2(250, 200, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 100, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 200, 50, 100), Rect2(250, 0, 50, 100), Rect2(250, 100, 50, 100), Rect2(250, 0, 50, 100)]
+"values": [Rect2(250, 1, 50, 101), Rect2(250, 201, 50, 101), Rect2(250, 1, 50, 101), Rect2(250, 101, 50, 101), Rect2(250, 1, 50, 101), Rect2(250, 201, 50, 101), Rect2(250, 1, 50, 101), Rect2(250, 101, 50, 101), Rect2(250, 1, 50, 101)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -45,10 +45,10 @@ tracks/2/path = NodePath("CharacterSprites/NPCBrown:region_rect")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.48, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.67918, 1.8, 2, 2.2, 2.4, 2.6, 2.8),
+"times": PackedFloat32Array(0, 0.2, 0.41, 0.48, 0.6, 0.81, 1, 1.2, 1.4, 1.6, 1.67918, 1.81, 2, 2.2, 2.4, 2.6, 2.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 300, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100), Rect2(150, 0, 50, 100), Rect2(150, 100, 50, 100), Rect2(150, 200, 50, 100)]
+"values": [Rect2(150, 1, 50, 101), Rect2(150, 101, 50, 101), Rect2(150, 201, 50, 101), Rect2(150, 301, 50, 101), Rect2(150, 1, 50, 101), Rect2(150, 101, 50, 101), Rect2(150, 201, 50, 101), Rect2(150, 1, 50, 101), Rect2(150, 101, 50, 101), Rect2(150, 201, 50, 101), Rect2(150, 301, 50, 101), Rect2(150, 1, 50, 101), Rect2(150, 101, 50, 101), Rect2(150, 201, 50, 101), Rect2(150, 1, 50, 101), Rect2(150, 101, 50, 101), Rect2(150, 201, 50, 101)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -60,7 +60,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.44, 0.8, 1, 1.28, 1.32, 1.8, 2),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(50, 0, 50, 100), Rect2(50, 200, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 100, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 200, 50, 100), Rect2(50, 0, 50, 100), Rect2(50, 300, 50, 100), Rect2(50, 400, 50, 100)]
+"values": [Rect2(50, 1, 50, 101), Rect2(50, 201, 50, 101), Rect2(50, 1, 50, 101), Rect2(50, 101, 50, 101), Rect2(50, 1, 50, 101), Rect2(50, 201, 50, 101), Rect2(50, 1, 50, 101), Rect2(50, 301, 50, 101), Rect2(50, 401, 50, 101)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -72,7 +72,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.603906, 0.670416, 1.91, 1.96),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(100, 0, 50, 100), Rect2(100, 100, 50, 100), Rect2(100, 0, 50, 100), Rect2(100, 100, 50, 100), Rect2(100, 0, 50, 100)]
+"values": [Rect2(100, 1, 50, 101), Rect2(100, 101, 50, 101), Rect2(100, 1, 50, 101), Rect2(100, 101, 50, 101), Rect2(100, 1, 50, 101)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -84,7 +84,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 1, 1.1, 2, 2.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(200, 0, 50, 100), Rect2(200, 100, 50, 100), Rect2(200, 0, 50, 100), Rect2(200, 100, 50, 100), Rect2(200, 0, 50, 100)]
+"values": [Rect2(200, 1, 50, 101), Rect2(200, 101, 50, 101), Rect2(200, 1, 50, 101), Rect2(200, 101, 50, 101), Rect2(200, 1, 50, 101)]
 }
 tracks/6/type = "method"
 tracks/6/imported = false
@@ -110,7 +110,7 @@ tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100), Rect2(0, 0, 50, 100), Rect2(50, 0, 50, 100), Rect2(100, 0, 50, 100), Rect2(150, 0, 50, 100), Rect2(200, 0, 50, 100), Rect2(250, 0, 50, 100)]
+"values": [Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(250, 0, 50, 101), Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(250, 0, 50, 101), Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(250, 0, 50, 101), Rect2(0, 0, 50, 101), Rect2(50, 0, 50, 101), Rect2(100, 0, 50, 101), Rect2(150, 0, 50, 101), Rect2(200, 0, 50, 101), Rect2(250, 0, 50, 101)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -122,7 +122,7 @@ tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.5, 0.7, 0.95, 1.2, 1.45, 1.5, 1.7, 1.95, 2.2, 2.45, 2.5, 2.7, 2.95),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(0, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(180, 0, 60, 100), Rect2(60, 0, 60, 100), Rect2(120, 0, 60, 100), Rect2(60, 0, 60, 100)]
+"values": [Rect2(0, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(180, 0, 60, 101), Rect2(60, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(60, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(180, 0, 60, 101), Rect2(60, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(60, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(180, 0, 60, 101), Rect2(60, 0, 60, 101), Rect2(120, 0, 60, 101), Rect2(60, 0, 60, 101)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3aagc"]
@@ -130,76 +130,74 @@ _data = {
 &"npc_animation": SubResource("Animation_wf6bf")
 }
 
-[node name="LevelOneIntro" type="Node2D"]
+[node name="LevelOneIntro" type="Node2D" unique_id=2023732196]
 script = ExtResource("1_wf6bf")
 dialogue_data = ExtResource("2_fs736")
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=1316149118]
 position = Vector2(142, 80)
 texture = ExtResource("1_xmfa3")
 
-[node name="NPCAnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_3aagc")
-}
-autoplay = "npc_animation"
+[node name="NPCAnimationPlayer" type="AnimationPlayer" parent="." unique_id=909279474]
+libraries/ = SubResource("AnimationLibrary_3aagc")
+autoplay = &"npc_animation"
 
-[node name="CharacterSprites" type="Node" parent="."]
+[node name="CharacterSprites" type="Node" parent="." unique_id=1525378211]
 
-[node name="NPCRed" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCRed" type="Sprite2D" parent="CharacterSprites" unique_id=1223518603]
 position = Vector2(26.2479, 100.673)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(0, 0, 50, 100)
+region_rect = Rect2(0, 1, 50, 101)
 
-[node name="NPCWhite" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCWhite" type="Sprite2D" parent="CharacterSprites" unique_id=1551798157]
 position = Vector2(267.358, 100.723)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(250, 0, 50, 100)
+region_rect = Rect2(250, 1, 50, 101)
 
-[node name="NPCBrown" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCBrown" type="Sprite2D" parent="CharacterSprites" unique_id=321541122]
 position = Vector2(166.151, 99.6977)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(150, 0, 50, 100)
+region_rect = Rect2(150, 1, 50, 101)
 
-[node name="NPCYellow" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCYellow" type="Sprite2D" parent="CharacterSprites" unique_id=1443279720]
 position = Vector2(68.9303, 100.61)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(50, 0, 50, 100)
+region_rect = Rect2(50, 1, 50, 101)
 
-[node name="NPCGreen" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCGreen" type="Sprite2D" parent="CharacterSprites" unique_id=1848221582]
 position = Vector2(115.039, 100.543)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(100, 0, 50, 100)
+region_rect = Rect2(100, 1, 50, 101)
 
-[node name="NPCGray" type="Sprite2D" parent="CharacterSprites"]
+[node name="NPCGray" type="Sprite2D" parent="CharacterSprites" unique_id=1676728149]
 position = Vector2(216.413, 99.5161)
 texture = ExtResource("2_ncsn6")
 region_enabled = true
-region_rect = Rect2(200, 0, 50, 100)
+region_rect = Rect2(200, 1, 50, 101)
 
-[node name="MainCharacter" type="Sprite2D" parent="CharacterSprites"]
+[node name="MainCharacter" type="Sprite2D" parent="CharacterSprites" unique_id=209763288]
 position = Vector2(50, 111)
 texture = ExtResource("5_fs736")
 region_enabled = true
-region_rect = Rect2(0, 0, 50, 100)
+region_rect = Rect2(0, 0, 50, 101)
 
-[node name="Boss" type="Sprite2D" parent="CharacterSprites"]
+[node name="Boss" type="Sprite2D" parent="CharacterSprites" unique_id=426939665]
 position = Vector2(237, 111)
 texture = ExtResource("5_6sxgl")
 region_enabled = true
-region_rect = Rect2(0, 0, 60, 100)
+region_rect = Rect2(0, 0, 60, 101)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=704679883]
 stream = ExtResource("5_3aagc")
 autoplay = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1816467780]
 visible = false
 
-[node name="Dialog" parent="CanvasLayer" instance=ExtResource("7_6sxgl")]
+[node name="Dialog" parent="CanvasLayer" unique_id=585602857 instance=ExtResource("7_6sxgl")]
 next_scene = ExtResource("7_2ayky")
