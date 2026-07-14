@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://bx7q4n8m2kwqa"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://bx7q4n8m2kwqa"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
@@ -6,24 +6,24 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "女王",
-"line": "你终于来了，科迪",
+"character": "CHAR_QUEEN",
+"line": "L11_INTRO_1",
 "texture": null
 }, {
-"character": "科迪",
-"line": "你们是怎么知道我的名字的？！",
+"character": "CHAR_CODY",
+"line": "L11_INTRO_2",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "女王",
-"line": "他跟我说你投篮很厉害，我一直很期待你的到来",
+"character": "CHAR_QUEEN",
+"line": "L11_INTRO_3",
 "texture": null
 }, {
-"character": "科迪",
-"line": "他？",
+"character": "CHAR_CODY",
+"line": "L11_INTRO_4",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "女王",
-"line": "你不用知道的这么多，来吧，让我看看你的实力吧！",
+"character": "CHAR_QUEEN",
+"line": "L11_INTRO_5",
 "texture": null
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -2,6 +2,11 @@ extends Control
 
 @onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
 
+
+func _ready() -> void:
+	TranslationServer.set_locale("en")
+
+
 func _on_texture_button_pressed() -> void:
 	audio_stream_player.play()
 	await audio_stream_player.finished

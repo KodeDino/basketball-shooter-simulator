@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://pt4vapxuxyc5"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://pt4vapxuxyc5"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_d88ib"]
 [ext_resource type="Texture2D" uid="uid://drjsbq15oeru2" path="res://Assets/Bust Shot/Boss_02/Boss_02_Subway_Bust Shot_7_Exhausted.png" id="1_j5krc"]
@@ -13,60 +13,60 @@
 [resource]
 script = ExtResource("1_d88ib")
 dialogue_sequence = Array[Dictionary]([{
-"character": "小队长",
-"line": "哼，很厉害嘛",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_1",
 "texture": ExtResource("1_j5krc")
 }, {
-"character": "科迪",
-"line": "你说好如果我赢了会放了我的",
+"character": "CHAR_CODY",
+"line": "L2_END_2",
 "texture": ExtResource("2_d1hed")
 }, {
-"character": "小队长",
-"line": "好吧好吧，我们篮球星人是最守信用的物种了，你可以走了，但是别让我再见到你",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_3",
 "texture": ExtResource("1_j5krc")
 }, {
-"character": "科迪",
-"line": "（它看上去好像不会随便乱来，我应该借此机会问一些有用的信息）",
+"character": "CHAR_CODY",
+"line": "L2_END_4",
 "texture": ExtResource("2_d1hed")
 }, {
-"character": "科迪",
-"line": "呵，你看上去并没有这么凶狠，你能告诉我现在到底什么情况吗？",
+"character": "CHAR_CODY",
+"line": "L2_END_5",
 "texture": ExtResource("2_d1hed")
 }, {
-"character": "科迪",
-"line": "你们到底是从哪里来的？",
+"character": "CHAR_CODY",
+"line": "L2_END_6",
 "texture": ExtResource("3_chxj4")
 }, {
-"character": "科迪",
-"line": "还有那个从天而降的火球，到底是什么？",
+"character": "CHAR_CODY",
+"line": "L2_END_7",
 "texture": ExtResource("2_d1hed")
 }, {
-"character": "小队长",
-"line": "停！",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_8",
 "texture": ExtResource("4_5p6cj")
 }, {
-"character": "小队长",
-"line": "你太烦人了！我告诉你就是了你别再吵了",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_9",
 "texture": ExtResource("5_4qgt0")
 }, {
-"character": "小队长",
-"line": "我们是篮球星人，是从遥远的篮球之星来的。我们以投篮为生。",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_10",
 "texture": ExtResource("6_uk42e")
 }, {
-"character": "小队长",
-"line": "但是因为我们星球非常小，星球上的每个绝杀者都对彼此的投篮水平了如指掌了，所以我们发现在自己的星球上已经没有对手了。",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_11",
 "texture": ExtResource("4_5p6cj")
 }, {
-"character": "小队长",
-"line": "有一天，我们得知了地球上也有很会投篮的人类，所以我们决定来到这个星球找出会投篮的人。",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_12",
 "texture": ExtResource("7_jh6dq")
 }, {
-"character": "小队长",
-"line": "为此我们一一筛查，如果遇到不会投篮的，或是输给我们的，就统统杀掉，只有强者能活下来",
+"character": "CHAR_SQUAD_LEADER",
+"line": "L2_END_13",
 "texture": ExtResource("8_rn6bn")
 }, {
-"character": "科迪",
-"line": "（这样下去不行，我得赶紧回家）",
+"character": "CHAR_CODY",
+"line": "L2_END_14",
 "texture": ExtResource("2_d1hed")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

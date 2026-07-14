@@ -23,7 +23,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r0avx")
-instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具。一定时间内篮筐将会开始移动，趁着固定篮筐赶紧进球吧！"
+instruction = "INSTRUCTION_ILLUSION_FULL"
 
 [node name="Panel" type="Panel" parent="."]
 custom_minimum_size = Vector2(200, 100)

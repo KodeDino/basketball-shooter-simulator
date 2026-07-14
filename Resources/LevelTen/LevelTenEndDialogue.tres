@@ -7,32 +7,32 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "外星人",
-"line": "哼，果然很厉害，你就是母亲在找的人类，跟我来吧",
+"character": "CHAR_ALIEN",
+"line": "L10_END_1",
 "texture": null
 }, {
-"character": "军方",
-"line": "我们走！",
+"character": "CHAR_MILITARY",
+"line": "L10_END_2",
 "texture": null
 }, {
-"character": "外星人",
-"line": "只有科迪可以跟我来，其他人禁止入内",
+"character": "CHAR_ALIEN",
+"line": "L10_END_3",
 "texture": null
 }, {
-"character": "军方",
-"line": "我不同意！保护科迪是我们的责任！",
+"character": "CHAR_MILITARY",
+"line": "L10_END_4",
 "texture": null
 }, {
-"character": "科迪",
-"line": "队长，没有关系，我已经了解这个种族的个性了，只要我赢了，他们就不会对我怎么样，你放心吧",
+"character": "CHAR_CODY",
+"line": "L10_END_5",
 "texture": ExtResource("1_n2y38")
 }, {
-"character": "军方",
-"line": "可恶！那你一定要平安回来啊！",
+"character": "CHAR_MILITARY",
+"line": "L10_END_6",
 "texture": null
 }, {
-"character": "科迪",
-"line": "放心吧！",
+"character": "CHAR_CODY",
+"line": "L10_END_7",
 "texture": ExtResource("2_fkp7m")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

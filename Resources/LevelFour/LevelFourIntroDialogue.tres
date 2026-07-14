@@ -9,24 +9,24 @@
 [resource]
 script = ExtResource("1_abc01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "科迪",
-"line": "（呃...这些都是...人骨！！）",
+"character": "CHAR_CODY",
+"line": "L4_INTRO_1",
 "texture": ExtResource("1_t5k58")
 }, {
-"character": "科迪",
-"line": "你是谁！",
+"character": "CHAR_CODY",
+"line": "L4_INTRO_2",
 "texture": ExtResource("2_lknfc")
 }, {
-"character": "外星人",
-"line": "刚刚我的队友跟我说你打败了他，看来你小子挺厉害",
+"character": "CHAR_ALIEN",
+"line": "L4_INTRO_3",
 "texture": ExtResource("3_lknfc")
 }, {
-"character": "科迪",
-"line": "哼，没想到这么快又遇到一个",
+"character": "CHAR_CODY",
+"line": "L4_INTRO_4",
 "texture": ExtResource("3_bf3mv")
 }, {
-"character": "外星人",
-"line": "什么都不用说了，来PK吧！",
+"character": "CHAR_ALIEN",
+"line": "L4_INTRO_5",
 "texture": ExtResource("3_lknfc")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

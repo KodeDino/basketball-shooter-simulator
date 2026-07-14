@@ -10,28 +10,28 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "外星人",
-"line": "袋鼠真是可爱啊，你好啊小袋袋，还是你喜欢我叫你小鼠鼠呢，讨厌",
+"character": "CHAR_ALIEN",
+"line": "L6_INTRO_1",
 "texture": ExtResource("1_ck6k2")
 }, {
-"character": "科迪",
-"line": "在那里！",
+"character": "CHAR_CODY",
+"line": "L6_INTRO_2",
 "texture": ExtResource("1_ko11f")
 }, {
-"character": "军方",
-"line": "保护袋鼠！",
+"character": "CHAR_MILITARY",
+"line": "L6_INTRO_3",
 "texture": ExtResource("2_45m0c")
 }, {
-"character": "外星人",
-"line": "你们是？",
+"character": "CHAR_ALIEN",
+"line": "L6_INTRO_4",
 "texture": ExtResource("3_ko11f")
 }, {
-"character": "军方",
-"line": "放开那个袋鼠！",
+"character": "CHAR_MILITARY",
+"line": "L6_INTRO_5",
 "texture": ExtResource("2_45m0c")
 }, {
-"character": "科迪",
-"line": "你的对手是我！来跟我比一场投篮吧！",
+"character": "CHAR_CODY",
+"line": "L6_INTRO_6",
 "texture": ExtResource("4_ck6k2")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

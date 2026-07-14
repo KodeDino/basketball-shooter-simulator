@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dabrcvdqw3sq8"]
+[gd_scene format=3 uid="uid://dabrcvdqw3sq8"]
 
 [ext_resource type="Script" uid="uid://b07xb3xmfhp3x" path="res://Scenes/UI/MainMenu/MainMenu.gd" id="1_sg7ab"]
 [ext_resource type="Texture2D" uid="uid://cedjh3bko6txn" path="res://Assets/Background/Misc/Title.png" id="2_kpx3y"]
@@ -43,7 +43,7 @@ region = Rect2(296, 34, 54, 17)
 atlas = ExtResource("3_gwdte")
 region = Rect2(296, 17, 54, 17)
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=1031352314]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -52,7 +52,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sg7ab")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1912957243]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,7 +62,7 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("2_kpx3y")
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=567150917]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -75,11 +75,11 @@ scale = Vector2(0.3, 0.3)
 text = "Basketball Simulator"
 label_settings = SubResource("LabelSettings_kpx3y")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=908299560]
 stream = ExtResource("3_sg7ab")
 volume_db = 5.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1828761439]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -94,7 +94,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 10
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=447957981]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -103,7 +103,7 @@ texture_normal = SubResource("AtlasTexture_7nukq")
 texture_pressed = SubResource("AtlasTexture_tc2ed")
 texture_hover = SubResource("AtlasTexture_67d64")
 
-[node name="LevelButton" type="TextureButton" parent="VBoxContainer"]
+[node name="LevelButton" type="TextureButton" parent="VBoxContainer" unique_id=153863653]
 layout_mode = 2
 toggle_mode = true
 texture_normal = SubResource("AtlasTexture_gwdte")

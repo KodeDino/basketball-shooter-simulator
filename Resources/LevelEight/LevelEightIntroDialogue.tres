@@ -7,32 +7,32 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "外星人",
-"line": "这个星球上居然还有这么可爱的生物",
+"character": "CHAR_ALIEN",
+"line": "L8_INTRO_1",
 "texture": null
 }, {
-"character": "军方",
-"line": "放开那个狐狸和那匹马！",
+"character": "CHAR_MILITARY",
+"line": "L8_INTRO_2",
 "texture": null
 }, {
-"character": "外星人",
-"line": "哈？",
+"character": "CHAR_ALIEN",
+"line": "L8_INTRO_3",
 "texture": null
 }, {
-"character": "科迪",
-"line": "来跟我决斗吧！",
+"character": "CHAR_CODY",
+"line": "L8_INTRO_4",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "外星人",
-"line": "吐艳（讨厌），这么着急干吗嘛，又不是不会跟你比，先让我补补妆",
+"character": "CHAR_ALIEN",
+"line": "L8_INTRO_5",
 "texture": null
 }, {
-"character": "科迪",
-"line": "额。。。。",
+"character": "CHAR_CODY",
+"line": "L8_INTRO_6",
 "texture": ExtResource("2_nj57u")
 }, {
-"character": "外星人",
-"line": "好了来吧",
+"character": "CHAR_ALIEN",
+"line": "L8_INTRO_7",
 "texture": null
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

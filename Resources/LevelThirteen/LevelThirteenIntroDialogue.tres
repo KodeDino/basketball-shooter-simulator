@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://dda17ny3q1yc"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://dda17ny3q1yc"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
@@ -6,68 +6,68 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "？？？",
-"line": "站住！",
+"character": "CHAR_UNKNOWN",
+"line": "L13_INTRO_1",
 "texture": null
 }, {
-"character": "科迪",
-"line": "谁？！",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_2",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "科迪",
-"line": "阿强？？？？！！",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_3",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "科迪",
-"line": "阿强！你也被绑来了吗？",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_4",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "阿强",
-"line": "哼！你是真傻还是装傻？",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_5",
 "texture": null
 }, {
-"character": "科迪",
-"line": "什么？",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_6",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "阿强",
-"line": "世界第一的射手也不过如此",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_7",
 "texture": null
 }, {
-"character": "科迪",
-"line": "。。。难道。。。",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_8",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "阿强",
-"line": "你终于反应过来了，没错，就是我向女王通风报信的",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_9",
 "texture": null
 }, {
-"character": "科迪",
-"line": "你为什么要这样做？",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_10",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "阿强",
-"line": "哼！从小到大，每次比赛都是你赢，你长得又好看，投篮又厉害，女生都围着你转",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_11",
 "texture": null
 }, {
-"character": "阿强",
-"line": "可是我呢！为什么我就要成为笑柄？！",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_12",
 "texture": null
 }, {
-"character": "阿强",
-"line": "所以我不甘心，我跟篮球星人达成协议，我帮他们找来厉害的篮球投手，而他们就必须要教我技巧，让我成为最强",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_13",
 "texture": null
 }, {
-"character": "阿强",
-"line": "可是没想到你居然连女王都打败了，还好，除了篮球星人教我的技巧，我自己也对自己进行了高强度训练",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_14",
 "texture": null
 }, {
-"character": "阿强",
-"line": "来吧，现在的我是不可能输给你的！",
+"character": "CHAR_AQIANG",
+"line": "L13_INTRO_15",
 "texture": null
 }, {
-"character": "科迪",
-"line": "你为了打败我，居然出卖全人类！我今天必须要跟你做个了断！",
+"character": "CHAR_CODY",
+"line": "L13_INTRO_16",
 "texture": ExtResource("2_intro02")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://bk8p6m4oaxwq7"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://bk8p6m4oaxwq7"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
 [ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
@@ -6,20 +6,20 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "女王",
-"line": "唔啊啊啊",
+"character": "CHAR_QUEEN",
+"line": "L12_END_1",
 "texture": null
 }, {
-"character": "科迪",
-"line": "（满身粘液）终于能呼吸到新鲜空气了",
+"character": "CHAR_CODY",
+"line": "L12_END_2",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "女王",
-"line": "居然又被你打败了！啊啊啊啊啊！（气晕）",
+"character": "CHAR_QUEEN",
+"line": "L12_END_3",
 "texture": null
 }, {
-"character": "科迪",
-"line": "不好，这个母船估计要撑不住了，我得赶紧跑",
+"character": "CHAR_CODY",
+"line": "L12_END_4",
 "texture": ExtResource("2_intro02")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

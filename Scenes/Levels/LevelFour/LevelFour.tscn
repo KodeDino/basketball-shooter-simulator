@@ -29,7 +29,7 @@ visible = false
 visible = false
 
 [node name="Intruction" parent="CanvasLayer" parent_id_path=PackedInt32Array(1287074844) index="5" unique_id=1599139351 instance=ExtResource("4_785pr")]
-instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具"
+instruction = "INSTRUCTION_ILLUSION_SHORT"
 
 [node name="Background" parent="." index="3" unique_id=12398632]
 texture = ExtResource("5_6uqh5")

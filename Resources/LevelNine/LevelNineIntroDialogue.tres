@@ -7,28 +7,28 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "外星人",
-"line": "蓝发投手给我出来！",
+"character": "CHAR_ALIEN",
+"line": "L9_INTRO_1",
 "texture": null
 }, {
-"character": "科迪",
-"line": "在找我吗？",
+"character": "CHAR_CODY",
+"line": "L9_INTRO_2",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "外星人",
-"line": "外星人2已经跟我通过信说你把他打败了",
+"character": "CHAR_ALIEN",
+"line": "L9_INTRO_3",
 "texture": null
 }, {
-"character": "科迪",
-"line": "那又如何",
+"character": "CHAR_CODY",
+"line": "L9_INTRO_4",
 "texture": ExtResource("2_qpnk7")
 }, {
-"character": "外星人",
-"line": "臭小子挺能耐，就让我看看你还能笑多久吧",
+"character": "CHAR_ALIEN",
+"line": "L9_INTRO_5",
 "texture": null
 }, {
-"character": "科迪",
-"line": "随时奉陪",
+"character": "CHAR_CODY",
+"line": "L9_INTRO_6",
 "texture": ExtResource("2_intro02")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

@@ -23,8 +23,8 @@ func _ready() -> void:
 
 func set_text(dialogue_data: Dictionary) -> void:
 	_anim_timer.stop()
-	name_label.text = dialogue_data['character']
-	dialogue_label.text = dialogue_data['line']
+	name_label.text = tr(dialogue_data['character'])
+	dialogue_label.text = tr(dialogue_data['line'])
 	if dialogue_data.has("textures"):
 		_anim_textures = dialogue_data["textures"]
 		_anim_index = 0
@@ -37,7 +37,7 @@ func set_text(dialogue_data: Dictionary) -> void:
 
 
 func _set_portrait_position(current_character: String) -> void:
-	if current_character != "科迪":
+	if current_character != "CHAR_CODY":
 		portrait_rect.position = opponent_marker.position
 	else:
 		portrait_rect.position = main_character_marker.position

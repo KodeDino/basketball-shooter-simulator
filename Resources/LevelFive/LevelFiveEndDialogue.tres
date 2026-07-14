@@ -8,28 +8,28 @@
 [resource]
 script = ExtResource("1_end01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "军方",
-"line": "既然你输了，我们现在需要逮捕你，不过你放心，只要事情结束你们离开地球我们就会放你走",
+"character": "CHAR_MILITARY",
+"line": "L5_END_1",
 "texture": ExtResource("1_uqk7x")
 }, {
-"character": "外星人",
-"line": "既然都已经输了，那我也没啥用处了，就跟你们走吧",
+"character": "CHAR_ALIEN",
+"line": "L5_END_2",
 "texture": ExtResource("2_jishi")
 }, {
-"character": "军方",
-"line": "科迪，你还好吧，喝点水，歇一会",
+"character": "CHAR_MILITARY",
+"line": "L5_END_3",
 "texture": ExtResource("1_uqk7x")
 }, {
-"character": "科迪",
-"line": "谢谢，下一个目标在哪里",
+"character": "CHAR_CODY",
+"line": "L5_END_4",
 "texture": ExtResource("2_end02")
 }, {
-"character": "军方",
-"line": "目前根据报告显示，下一个在澳洲，等你休息好了我们就可以上路了",
+"character": "CHAR_MILITARY",
+"line": "L5_END_5",
 "texture": ExtResource("1_uqk7x")
 }, {
-"character": "科迪",
-"line": "我没事，我们走吧",
+"character": "CHAR_CODY",
+"line": "L5_END_6",
 "texture": ExtResource("2_end02")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

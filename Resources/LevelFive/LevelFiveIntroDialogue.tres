@@ -8,23 +8,23 @@
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
-"character": "军方",
-"line": "他在那里，我们快过去吧"
+"character": "CHAR_MILITARY",
+"line": "L5_INTRO_1"
 }, {
-"character": "科迪",
-"line": "你就是XXX（外星人称号）吧！",
+"character": "CHAR_CODY",
+"line": "L5_INTRO_2",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "外星人",
-"line": "你是谁？",
+"character": "CHAR_ALIEN",
+"line": "L5_INTRO_3",
 "texture": ExtResource("2_bhptt")
 }, {
-"character": "科迪",
-"line": "我是来打败你的人",
+"character": "CHAR_CODY",
+"line": "L5_INTRO_4",
 "texture": ExtResource("2_intro02")
 }, {
-"character": "外星人",
-"line": "哼！口气不小，来吧！",
+"character": "CHAR_ALIEN",
+"line": "L5_INTRO_5",
 "texture": ExtResource("3_8xpr4")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

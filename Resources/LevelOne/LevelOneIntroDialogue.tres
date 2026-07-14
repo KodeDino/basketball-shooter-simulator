@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://2hpy7t4g0v1t"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://2hpy7t4g0v1t"]
 
 [ext_resource type="Texture2D" uid="uid://cpthadq77feoy" path="res://Assets/Bust Shot/Boss_01/Boss_01_Shanghai_Bust Shot_1_Normal.png" id="1_teufc"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="2_qkvl5"]
@@ -9,20 +9,20 @@
 [resource]
 script = ExtResource("2_qkvl5")
 dialogue_sequence = Array[Dictionary]([{
-"character": "阿强",
-"line": "哟！！！科迪！好球啊，还是这么准啊！",
+"character": "CHAR_AQIANG",
+"line": "L1_INTRO_1",
 "texture": ExtResource("1_teufc")
 }, {
-"character": "科迪",
-"line": "嘿嘿",
+"character": "CHAR_CODY",
+"line": "L1_INTRO_2",
 "texture": ExtResource("2_vvthe")
 }, {
-"character": "阿强",
-"line": "如何？来比一场吧，看谁进的多？",
+"character": "CHAR_AQIANG",
+"line": "L1_INTRO_3",
 "texture": ExtResource("3_7xjxm")
 }, {
-"character": "科迪",
-"line": "来！",
+"character": "CHAR_CODY",
+"line": "L1_INTRO_4",
 "texture": ExtResource("4_wk5ea")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"
