@@ -1,17 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://t022uopldvsj"]
+[gd_scene format=3 uid="uid://t022uopldvsj"]
 
 [ext_resource type="PackedScene" uid="uid://cnc8vwtc5d7d7" path="res://Scenes/Levels/LevelBase/LevelBase.tscn" id="1_ipxqa"]
 [ext_resource type="PackedScene" uid="uid://c8p6lam5nxwq8" path="res://Scenes/CutScenes/LevelTwelve/LevelTwelveEnd.tscn" id="2_end"]
 [ext_resource type="PackedScene" uid="uid://cs7kkatnq4wci" path="res://Scenes/Hoop/Hoop.tscn" id="2_hoop"]
+[ext_resource type="PackedScene" uid="uid://bd7dy2eybkj0r" path="res://Scenes/Widgets/Tentacle/Tentacle.tscn" id="6_snj2x"]
 
-[node name="LevelTwelve" instance=ExtResource("1_ipxqa")]
+[node name="LevelTwelve" unique_id=1762317412 instance=ExtResource("1_ipxqa")]
 next_level_scene = ExtResource("2_end")
 enemy_score = 8
 current_level_number = 12
 is_special_level = true
 
-[node name="Hoop" parent="." index="1" instance=ExtResource("2_hoop")]
-position = Vector2(168, 52)
+[node name="Hoop" parent="." index="1" unique_id=53550680 instance=ExtResource("2_hoop")]
+position = Vector2(206, 55)
 special_level = true
 hoop_speed = 5.0
 timeout_second = 5.0
+
+[node name="Tentacle2" parent="." index="5" unique_id=2025997591 instance=ExtResource("6_snj2x")]
+position = Vector2(150, 50)
+start_position = Vector2(150, 50)
+end_position = Vector2(150, 112)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ofljkb1x0r3d"]
+[gd_scene format=3 uid="uid://ofljkb1x0r3d"]
 
 [ext_resource type="Script" uid="uid://v74dvo2uaeds" path="res://Scenes/Basketball/Basketball.gd" id="1_grtfd"]
 [ext_resource type="Texture2D" uid="uid://dggax2aq73yk1" path="res://Assets/Basketball/basketball_25x25-Sheet.png" id="2_m0tx6"]
@@ -66,7 +66,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_sixnf")
 }],
-"loop": false,
+"loop": 0,
 "name": &"basketball_rotate",
 "speed": 8.33
 }]
@@ -115,30 +115,28 @@ _data = {
 &"basketball_rotate": SubResource("Animation_m0tx6")
 }
 
-[node name="Basketball" type="RigidBody2D"]
+[node name="Basketball" type="RigidBody2D" unique_id=1080192134]
 input_pickable = true
 physics_material_override = SubResource("PhysicsMaterial_grtfd")
 freeze = true
 contact_monitor = true
 script = ExtResource("1_grtfd")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=29163773]
 sprite_frames = SubResource("SpriteFrames_sixnf")
 animation = &"basketball_rotate"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2067236742]
 shape = SubResource("CircleShape2D_hsyyo")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_vwac8")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1521126993]
+libraries/ = SubResource("AnimationLibrary_vwac8")
 
-[node name="ArrowSprite" type="Sprite2D" parent="."]
+[node name="ArrowSprite" type="Sprite2D" parent="." unique_id=964454762]
 texture = ExtResource("3_m0tx6")
 offset = Vector2(30, 0)
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=15090163]
 position = Vector2(-4.8, -4.8)
 scale = Vector2(0.32, 0.32)
 rect = Rect2(-10, -10, 50, 50)

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bd7dy2eybkj0r"]
+
+[ext_resource type="Texture2D" uid="uid://b5b031cjo8ym5" path="res://Assets/Tentacle/enermy_arm.png" id="1_0hvuu"]
+[ext_resource type="Script" uid="uid://bdi5brbvpvqof" path="res://Scenes/Widgets/Tentacle/Tentacle.gd" id="1_ge13d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge13d"]
+atlas = ExtResource("1_0hvuu")
+region = Rect2(0, 0, 39, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdm1e"]
+atlas = ExtResource("1_0hvuu")
+region = Rect2(39, 0, 39, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtpgl"]
+atlas = ExtResource("1_0hvuu")
+region = Rect2(78, 0, 39, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dhrd0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ge13d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdm1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtpgl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dhrd0"]
+radius = 9.0
+height = 92.0
+
+[node name="Tentacle" type="AnimatableBody2D" unique_id=616386499]
+script = ExtResource("1_ge13d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=437473725]
+sprite_frames = SubResource("SpriteFrames_dhrd0")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1536300362]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_dhrd0")
