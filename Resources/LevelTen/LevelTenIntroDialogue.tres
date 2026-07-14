@@ -1,14 +1,15 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=3 format=3 uid="uid://dm4lax2n7pwq8"]
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://dm4lax2n7pwq8"]
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+[ext_resource type="Texture2D" uid="uid://cdd41tskq52wl" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_2_Sigh.png" id="1_yhhjx"]
+[ext_resource type="Texture2D" uid="uid://dtkbvobfop2fo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_3_Serious.png" id="2_0gvmi"]
 
 [resource]
 script = ExtResource("1_intro01")
 dialogue_sequence = Array[Dictionary]([{
 "character": "科迪",
 "line": "冷死了",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("1_yhhjx")
 }, {
 "character": "军队研究人员",
 "line": "报告！",
@@ -28,7 +29,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "科迪",
 "line": "我就是！",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("2_0gvmi")
 }, {
 "character": "外星人",
 "line": "蓝头发蓝眼睛，我的族人告诉我你就是我们在找的射手，我现在需要把你带到母船内跟母亲来一场比试",
