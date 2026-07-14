@@ -16,6 +16,5 @@ position = Vector2(52, 95)
 [node name="Hoop" parent="." index="1" unique_id=1303860091 instance=ExtResource("2_qbk0f")]
 position = Vector2(250, 74)
 
-[node name="Background" type="Sprite2D" parent="." index="3" unique_id=1539773204]
-position = Vector2(152, 78)
+[node name="Background" parent="." index="3" unique_id=12398632]
 texture = ExtResource("4_la2ch")

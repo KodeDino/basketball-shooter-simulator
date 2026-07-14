@@ -12,7 +12,7 @@ enemy_score = 5
 current_level_number = 4
 is_special_level = true
 
-[node name="BasketballSpawnSpot" parent="." index="0"]
+[node name="BasketballSpawnSpot" parent="." index="0" unique_id=1875982852]
 position = Vector2(45, 59)
 
 [node name="Hoop" parent="." index="1" unique_id=230681014 instance=ExtResource("2_l28o5")]
@@ -22,15 +22,14 @@ end_position = Vector2(230, 124)
 special_level = true
 hoop_speed = 6.0
 
-[node name="Hud" parent="CanvasLayer" index="0"]
+[node name="Hud" parent="CanvasLayer" parent_id_path=PackedInt32Array(1287074844) index="0" unique_id=873600622]
 visible = false
 
-[node name="MarginContainer" parent="CanvasLayer" index="1"]
+[node name="MarginContainer" parent="CanvasLayer" parent_id_path=PackedInt32Array(1287074844) index="1" unique_id=1846728688]
 visible = false
 
-[node name="Intruction" parent="CanvasLayer" index="5" unique_id=1599139351 instance=ExtResource("4_785pr")]
+[node name="Intruction" parent="CanvasLayer" parent_id_path=PackedInt32Array(1287074844) index="5" unique_id=1599139351 instance=ExtResource("4_785pr")]
 instruction = "这是一个幻象关卡，赢得本关卡能够得到有利道具"
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="3" unique_id=1262086116]
-position = Vector2(143, 81)
+[node name="Background" parent="." index="3" unique_id=12398632]
 texture = ExtResource("5_6uqh5")

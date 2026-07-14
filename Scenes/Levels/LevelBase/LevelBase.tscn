@@ -42,6 +42,9 @@ visible = false
 
 [node name="Gadget" parent="CanvasLayer" unique_id=1150048253 instance=ExtResource("2_kp3ay")]
 
+[node name="Background" type="Sprite2D" parent="." unique_id=12398632]
+position = Vector2(140, 80)
+
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2034293193]
 offset_right = 288.0
 offset_bottom = 162.0

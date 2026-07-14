@@ -13,6 +13,5 @@ current_level_number = 7
 [node name="Hoop" parent="." index="1" unique_id=768015983 instance=ExtResource("2_hoop")]
 position = Vector2(218, 54)
 
-[node name="Background" type="Sprite2D" parent="." index="3" unique_id=1892333883]
-position = Vector2(147, 80)
+[node name="Background" parent="." index="3" unique_id=12398632]
 texture = ExtResource("4_4ucl3")
