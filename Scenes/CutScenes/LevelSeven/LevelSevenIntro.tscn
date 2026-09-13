@@ -5,9 +5,38 @@
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_intro03"]
 [ext_resource type="PackedScene" uid="uid://4k7u2gyx2fgx" path="res://Scenes/Levels/LevelSeven/LevelSeven.tscn" id="4_intro04"]
 [ext_resource type="Texture2D" uid="uid://bq8vu3k8s5qf2" path="res://Assets/Background/Level_07/Background_07_Rio.png" id="5_rq066"]
+[ext_resource type="Texture2D" uid="uid://dmwbi8jgmx32y" path="res://Assets/Character/Boss_07/Boss_07_Rio-Sheet.png" id="6_ief1q"]
+
+[sub_resource type="Animation" id="Animation_a82vl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_intro01"]
 resource_name = "level_seven_animation"
+length = 2.0
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -15,16 +44,41 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(2),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"show_panel"
 }]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4000001, 1.6, 1.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 126, 142), Rect2(126, 0, 126, 142), Rect2(252, 0, 126, 142), Rect2(0, 0, 126, 142), Rect2(126, 0, 126, 142), Rect2(252, 0, 126, 142), Rect2(0, 0, 126, 142), Rect2(126, 0, 126, 142), Rect2(252, 0, 126, 142), Rect2(0, 0, 126, 142), Rect2(126, 0, 126, 142)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_intro01"]
 _data = {
+&"RESET": SubResource("Animation_a82vl"),
 &"level_seven_animation": SubResource("Animation_intro01")
 }
 
@@ -45,3 +99,14 @@ next_scene = ExtResource("4_intro04")
 [node name="Background" type="Sprite2D" parent="." unique_id=1107089468]
 position = Vector2(139, 81)
 texture = ExtResource("5_rq066")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1578062764]
+offset_right = 288.0
+offset_bottom = 162.0
+color = Color(1, 1, 1, 0.45882353)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1057264322]
+position = Vector2(220, 101)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_ief1q")
+region_enabled = true

@@ -50,6 +50,7 @@ drag={
 [internationalization]
 
 locale/translations=PackedStringArray("res://Resources/DialogueTranslation/dialogues.en.translation", "res://Resources/DialogueTranslation/dialogues.zh.translation")
+locale/test="zh_CN"
 
 [rendering]
 
