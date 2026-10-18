@@ -1,7 +1,8 @@
 [gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://e8ay5st3q10f"]
 
+[ext_resource type="Texture2D" uid="uid://dtkbvobfop2fo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_3_Serious.png" id="1_5qigx"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
+[ext_resource type="Texture2D" uid="uid://chqtg5c2854df" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_4_Yell.png" id="2_xxmmq"]
 
 [resource]
 script = ExtResource("1_intro01")
@@ -12,7 +13,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L11_END_2",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("1_5qigx")
 }, {
 "character": "CHAR_QUEEN",
 "line": "L11_END_3",
@@ -20,7 +21,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L11_END_4",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("2_xxmmq")
 }, {
 "character": "CHAR_ALIEN",
 "line": "L11_END_5",

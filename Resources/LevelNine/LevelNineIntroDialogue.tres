@@ -1,8 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://cy7w5x3kakrn8"]
 
+[ext_resource type="Texture2D" uid="uid://dtkbvobfop2fo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_3_Serious.png" id="1_4rl6a"]
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
-[ext_resource type="Texture2D" uid="uid://c7hueeu5cboy5" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_1_Normal.png" id="2_intro02"]
-[ext_resource type="Texture2D" uid="uid://bl3l2tj5rhopd" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_10_Confident.png" id="2_qpnk7"]
+[ext_resource type="Texture2D" uid="uid://b2r482hk5hh5q" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_1_Normal.png" id="2_w2da6"]
+[ext_resource type="Texture2D" uid="uid://65k2qam8tc0l" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_5_Smile.png" id="3_jjp5r"]
 
 [resource]
 script = ExtResource("1_intro01")
@@ -13,7 +14,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L9_INTRO_2",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("1_4rl6a")
 }, {
 "character": "CHAR_ALIEN",
 "line": "L9_INTRO_3",
@@ -21,7 +22,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L9_INTRO_4",
-"texture": ExtResource("2_qpnk7")
+"texture": ExtResource("2_w2da6")
 }, {
 "character": "CHAR_ALIEN",
 "line": "L9_INTRO_5",
@@ -29,6 +30,6 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L9_INTRO_6",
-"texture": ExtResource("2_intro02")
+"texture": ExtResource("3_jjp5r")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

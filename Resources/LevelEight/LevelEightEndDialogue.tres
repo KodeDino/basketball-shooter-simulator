@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_end01"]
 [ext_resource type="Texture2D" uid="uid://c5gyax7ieqhd7" path="res://Assets/Bust Shot/Boss_08/Boss_08_Iceland_Bust Shot_5_Impressed.png" id="1_ktvjd"]
-[ext_resource type="Texture2D" uid="uid://birn3ykl86eax" path="res://Assets/Bust Shot/Soldiers/Soldier_Bust Shot_2_FREES!.png" id="2_27rvk"]
+[ext_resource type="Texture2D" uid="uid://ntqrh2ccof24" path="res://Assets/Bust Shot/Soldiers/Soldier_Bust_Shot_Winter_1.png" id="2_27rvk"]
 [ext_resource type="Texture2D" uid="uid://dclrkdd7vnrvi" path="res://Assets/Bust Shot/Boss_08/Boss_08_Iceland_Bust Shot_3_Confused.png" id="3_b3sgp"]
-[ext_resource type="Texture2D" uid="uid://k4ki7rksxqk4" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_4_Nervous.png" id="4_iufng"]
-[ext_resource type="Texture2D" uid="uid://ht76hukxmht7" path="res://Assets/Bust Shot/Soldiers/Soldier_Bust Shot_1_Normal.png" id="5_27rvk"]
+[ext_resource type="Texture2D" uid="uid://dtkbvobfop2fo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_3_Serious.png" id="4_b3sgp"]
+[ext_resource type="Texture2D" uid="uid://3740f50avf6b" path="res://Assets/Bust Shot/Soldiers/Soldier_Bust_Shot_Winter_0.png" id="5_iufng"]
 
 [resource]
 script = ExtResource("1_end01")
@@ -28,10 +28,10 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_CODY",
 "line": "L8_END_5",
-"texture": ExtResource("4_iufng")
+"texture": ExtResource("4_b3sgp")
 }, {
 "character": "CHAR_MILITARY",
 "line": "L8_END_6",
-"texture": ExtResource("5_27rvk")
+"texture": ExtResource("5_iufng")
 }])
 metadata/_custom_type_script = "uid://1jg5kmdowv5h"

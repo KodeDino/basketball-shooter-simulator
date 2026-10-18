@@ -3,11 +3,29 @@
 [ext_resource type="Script" uid="uid://yf75k6e5tbmd" path="res://Scenes/CutScenes/Cutscene.gd" id="1_intro01"]
 [ext_resource type="Resource" uid="uid://bw4yav2m7nsp6" path="res://Resources/LevelEight/LevelEightIntroDialogue.tres" id="2_intro02"]
 [ext_resource type="PackedScene" uid="uid://bh7k5nevgoxhj" path="res://Scenes/UI/Dialog/Dialog.tscn" id="3_intro03"]
+[ext_resource type="Texture2D" uid="uid://8ouglc8jfqk0" path="res://Assets/Background/Level_08/Background_08_Iceland_Intro-1.png" id="4_emuy8"]
 [ext_resource type="PackedScene" uid="uid://csyoc1mjypgoj" path="res://Scenes/Levels/LevelEight/LevelEight.tscn" id="4_intro04"]
 [ext_resource type="Texture2D" uid="uid://dm8aipg0cd0ue" path="res://Assets/Background/Level_08/Background_08_Iceland.png" id="5_hhxlm"]
+[ext_resource type="Texture2D" uid="uid://beofwhks7igxg" path="res://Assets/Background/Level_08/Background_08_Iceland_Intro-2.png" id="5_mbab2"]
+
+[sub_resource type="Animation" id="Animation_v0xn7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_hhxlm")]
+}
 
 [sub_resource type="Animation" id="Animation_intro01"]
 resource_name = "level_eight_animation"
+step = 0.05
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -15,16 +33,29 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(1),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"show_panel"
 }]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 0.95, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_emuy8"), ExtResource("5_mbab2"), ExtResource("4_emuy8"), ExtResource("5_mbab2"), ExtResource("4_emuy8"), ExtResource("5_hhxlm")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_intro01"]
 _data = {
+&"RESET": SubResource("Animation_v0xn7"),
 &"level_eight_animation": SubResource("Animation_intro01")
 }
 

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://1jg5kmdowv5h" path="res://Resources/DialogueResource.gd" id="1_intro01"]
 [ext_resource type="Texture2D" uid="uid://cdd41tskq52wl" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_2_Sigh.png" id="1_yhhjx"]
 [ext_resource type="Texture2D" uid="uid://dtkbvobfop2fo" path="res://Assets/Bust Shot/Main_Character/Main Character_Bust Shot_winter_3_Serious.png" id="2_0gvmi"]
+[ext_resource type="Texture2D" uid="uid://ddy1av1qus5ck" path="res://Assets/Bust Shot/Soldiers/Soldier_Bust_Shot_Winter_2.png" id="2_px6cj"]
 
 [resource]
 script = ExtResource("1_intro01")
@@ -21,7 +22,7 @@ dialogue_sequence = Array[Dictionary]([{
 }, {
 "character": "CHAR_MILITARY",
 "line": "L10_INTRO_4",
-"texture": null
+"texture": ExtResource("2_px6cj")
 }, {
 "character": "CHAR_ALIEN",
 "line": "L10_INTRO_5",
